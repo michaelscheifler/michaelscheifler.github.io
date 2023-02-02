@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/main.css" />
+</head>
+
+<body class="body">
+  <header class="header">
+    <div class="header__logo-box">
+      <a class="header__logo-link" href="index.html" title="Berchtesgaden">
+        <img src="../img/berchtesgaden360.png" alt="Berchtesgaden360" class="header__logo" />
+      </a>
+    </div>
+    <div class="header__navigation">
+      <input class="header__toggle" type="checkbox" id="header__toggle" />
+      <label for="header__toggle" class="header__label">
+        <span class="header__span"></span>
+      </label>
+      <nav class="header__nav">
+        <ul class="header__list">
+          <li class="header__item">
+            <a href="gastgeber-liste.html"><span>Gastgeber</span></a>
+          </li>
+          <li class="header__item">
+            <a href="unterkunft-liste.html"><span>Unterkünfte</span></a>
+          </li>
+          <li class="header__item">
+            <a href="wunschliste.html"><span>Wunschliste</span></a>
+          </li>
+          <li class="header__item">
+            <a href="ausflugsziel-liste.html"><span>Ausflugsziele</span></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="image image--poi" id="image">
+      <figure>
+        <picture>
+          <img src="../img/00011613-b.jpg" alt="Kneifelspitze" />
+        </picture>
+      </figure>
+    </div>
+
+    <section class="anchor" id="anchor">
+      <a href="#" class="anchor__slider"><span>Fotos</span></a>
+      <a href="#description" class="anchor__description"><span>Beschreibung</span></a>
+      <a href="#location" class="anchor__location"><span>Lage</span></a>
+      <a href="#comments" class="anchor__comments"><span>Kommentar</span></a>
+    </section>
+
+    <section class="ct pt-xxl" id="description">
+      <h1>Die Kneifelspitze</h1>
+      <h2>Der Berchtesgadener Hausberg</h2>
+      <p>
+        Viele Wege führen auf die Kneifelspitze, doch wenn Sie den schönsten Weg
+        beschreiten möchten, dann wandern Sie über die
+        <a title="Marxenhöhe" href="#">Marxenhöhe</a>,
+        die auf knapp 830 Höhenmetern liegt. Der Panoramablick von diesem
+        Aussichtspunkt ist sensationell und lohnt den kleinen Abstecher. Starten
+        Sie die Tour bei der altehrwürdigen Barock-Wallfahrtskirche
+        <a title="Maria Gern"
+          href="#"">Maria Gern</a> und
+        wandern Sie die ersten Meter hinter der Kirche steil aufwärts. Direkt an
+        der ersten Kehre zweigen Sie von der Straße ab und folgen einem Forstweg
+        in südöstlicher Richtung der Ihnen recht bald die Abzweigung in Richtung
+        Marxenhöhe beschert.
+      </p>
+      <h2>Rund um die Kneifelspitze</h2>
+      <p>Sie möchten ein weiteres Highlight in Form eines herrlichen Ausblick erleben? Dann zweigen Sie direkt am Gipfel der Kneifelspitze einige Meter in östlicher Richtung ab, von dem Aussichtspunkt eröffnet sich Ihnen ein zauberhaftes Panorama zur Mozartstadt <a title="
+          Salzburg" href="ausflugsziel/salzburg/">Salzburg</a>. Überhaupt finden Sie auf dem Weg zur Kneifelspitze
+        mehrere
+        Möglichkeiten, das atemberaubende Bild der Alpenwelt zu betrachten. Sitzbänke laden zum Verweilen, Träumen und
+        Seele baumeln lassen ein. So sehen Sie beispielsweise auf das Hochplateau des <a title="Ettenberg"
+          href="ausflugsziel/ettenberg/">Ettenberg</a>, wenn Sie kurz vor dem Gipfel der Kneifelspitze eine kleine Rast
+        einlegen.
+      </p>
+    </section>
+
+    <section class="grid ct pt-xxl" id="location">
+      <a href="#" class="btn btn--pano">Vogelperspektive anzeigen</a>
+      <a href="" class="btn btn--googlemaps">Kontaktdaten & Bewertungen</a>
+    </section>
+
+    <section class="comments ct pt-xxl" id="comments">
+      <div class="comments__list">
+        <div class="comments__item">
+          <h3 class="comments__info">
+            Kommentar von Marion | <time datetime="2022-07-08T13:36:38+02:00" class="comments__date">08.07.2022</time>
+          </h3>
+          <div class="comments__comment">
+            <p>
+              Kommentar Kommentar Kommentar Kommentar Kommentar Kommentar Kommentar Kommentar Kommentar Kommentar
+              Kommentar Kommentar Kommentar Kommentar Kommentar Kommentar Kommentar Kommentar Kommentar Kommentar
+              Kommentar Kommentar Kommentar Kommentar Kommentar Kommentar Kommentar Kommentar Kommentar
+            </p>
+          </div>
+          <div class="comments__reply">
+            <h3 class="comments__author">
+              Antwort von Martin
+            </h3>
+            <div class="comments__text">
+              <p>Antwort Antwort Antwort Antwort Antwort Antwort Antwort Antwort Antwort Antwort Antwort Antwort Antwort
+                Antwort Antwort Antwort Antwort Antwort Antwort Antwort Antwort Antwort Antwort Antwort Antwort Antwort
+                Antwort Antwort</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="form ct">
+      <h3>Einen Kommentar schreiben</h3>
+      <form action="#" class="form">
+        <div class="form__group">
+          <input type="text" class="form__input" id="name" placeholder="&nbsp;" name="name">
+          <label for="name" class="form__label">Name</label>
+        </div>
+        <div class="form__group">
+          <input type="email" class="form__input" id="email" placeholder="&nbsp;" name="name">
+          <label for="email" class="form__label">E-Mail</label>
+        </div>
+        <div class="form__group">
+          <textarea class="form__input form__input--textarea" id="textarea" placeholder="&nbsp;" rows="4"
+            cols="40"></textarea>
+          <label for="textarea" class="form__label">Kommentar</label>
+        </div>
+        <div class="form__group">
+          <button type="submit" class="btn">
+            Kommentar absenden
+          </button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__navigation">
+      <h5 class="heading-5">Für Urlauber</h5>
+      <nav class="footer__list">
+        <ul>
+          <li>
+            <a href="gastgeber-liste.html" title="Gastgeber">Gastgeberliste</a>
+          </li>
+          <li>
+            <a href="#" title="Panoramatour">Panoramatour</a>
+          </li>
+          <li>
+            <a href="#" title="FAQ">FAQ</a>
+          </li>
+          <li>
+            <a href="#" title="Kontakt">Kontakt</a>
+          </li>
+        </ul>
+      </nav>
+
+      <h5 class="heading-5">Für Gastgeber</h5>
+      <nav class="footer__list">
+        <ul>
+          <li>
+            <a href="#" title="Anmelden">Anmelden</a>
+          </li>
+        </ul>
+      </nav>
+
+      <h5 class="heading-5">Unternehmen</h5>
+      <nav class="footer__list">
+        <ul>
+          <li>
+            <a href="#" title="AGB">AGB</a>
+          </li>
+          <li>
+            <a href="#" title="Impressum">Impressum</a>
+          </li>
+          <li>
+            <a href="#" title="Datenschutz">Datenschutz</a>
+          </li>
+          <li>
+            <a href="#" title="Über uns">Über uns</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <a href="index.html" class="footer__partner" title="Berchtesgaden">Berchtesgaden</a>
+  </footer>
+</body>
+
+</html>

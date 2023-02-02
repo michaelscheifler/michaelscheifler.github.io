@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/main.css" />
+</head>
+
+<body class="body">
+  <header class="header">
+    <div class="header__logo-box">
+      <a class="header__logo-link" href="index.html" title="Berchtesgaden">
+        <img src="../img/berchtesgaden360.png" alt="Berchtesgaden360" class="header__logo" />
+      </a>
+    </div>
+    <div class="header__navigation">
+      <input class="header__toggle" type="checkbox" id="header__toggle" />
+      <label for="header__toggle" class="header__label">
+        <span class="header__span"></span>
+      </label>
+      <nav class="header__nav">
+        <ul class="header__list">
+          <li class="header__item">
+            <a href="gastgeber-liste.html"><span>Gastgeber</span></a>
+          </li>
+          <li class="header__item">
+            <a href="unterkunft-liste.html"><span>Unterkünfte</span></a>
+          </li>
+          <li class="header__item">
+            <a href="wunschliste.html"><span>Wunschliste</span></a>
+          </li>
+          <li class="header__item">
+            <a href="ausflugsziel-liste.html"><span>Ausflugsziele</span></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="hero">
+      <div class="hero__img">
+        <figure>
+          <picture>
+            <img src="../img/01391692.jpg" alt="Watzmann in Berchtesgaden" />
+          </picture>
+        </figure>
+      </div>
+      <h1 class="hero__title">
+        <strong class="hero__title--main"> Berchtesgaden&nbsp;360 </strong>
+        <span class="hero__title--sub"> Ferienwohnungen & Zimmer </span>
+      </h1>
+      <form action="#" class="hero__form form">
+        <div class="form__group form--arrival">
+          <input id="arrival" class="form__input" type="datepicker" name="arrival"
+            placeholder="&nbsp;" value="01.01.2023"/>
+          <label class="form__label" for="arrival">Früheste Anreise</label>
+  
+          <div class="cal1 cal1--modal-off" id="cal1">
+            <div class="cal1__container">
+              <table class="cal1__item">
+                <thead class="cal1__head">
+                  <tr class="cal1__title">
+                    <th class="cal1__previous"></th>
+                    <th>Januar 2023</th>
+                    <th class="cal1__next"></th>
+                  </tr>
+                  <tr class="cal1__daylist">
+                    <th>Mo</th>
+                    <th>Di</th>
+                    <th>Mi</th>
+                    <th>Do</th>
+                    <th>Fr</th>
+                    <th>Sa</th>
+                    <th>So</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="cal1__status">
+                    <td class="cal1__empty"></td>
+                    <td class="cal1__empty"></td>
+                    <td class="cal1__empty"></td>
+                    <td class="cal1__empty"></td>
+                    <td class="cal1__empty"></td>
+                    <td class="cal1__empty"></td>
+                    <td class="cal1__available">1</td>
+                  </tr>
+    
+                  <tr class="cal1__status">
+                    <td class="cal1__available">2</td>
+                    <td class="cal1__available">3</td>
+                    <td class="cal1__available">4</td>
+                    <td class="cal1__available">5</td>
+                    <td class="cal1__available">6</td>
+                    <td class="cal1__available">7</td>
+                    <td class="cal1__available">8</td>
+                  </tr>
+    
+                  <tr class="cal1__status">
+                    <td class="cal1__available">9</td>
+                    <td class="cal1__available">10</td>
+                    <td class="cal1__available">11</td>
+                    <td class="cal1__available">12</td>
+                    <td class="cal1__available">13</td>
+                    <td class="cal1__available">14</td>
+                    <td class="cal1__available">15</td>
+                  </tr>
+    
+                  <tr class="cal1__status">
+                    <td class="cal1__available">16</td>
+                    <td class="cal1__available">17</td>
+                    <td class="cal1__available">18</td>
+                    <td class="cal1__available">19</td>
+                    <td class="cal1__available">20</td>
+                    <td class="cal1__available">21</td>
+                    <td class="cal1__available">22</td>
+                  </tr>
+    
+                  <tr class="cal1__status">
+                    <td class="cal1__available">23</td>
+                    <td class="cal1__available">24</td>
+                    <td class="cal1__available">25</td>
+                    <td class="cal1__available">26</td>
+                    <td class="cal1__available">27</td>
+                    <td class="cal1__available">28</td>
+                    <td class="cal1__available">29</td>
+                  </tr>
+    
+                  <tr class="cal1__status">
+                    <td class="cal1__available">30</td>
+                    <td class="cal1__available">31</td>
+                    <td class="cal1__empty"></td>
+                    <td class="cal1__empty"></td>
+                    <td class="cal1__empty"></td>
+                    <td class="cal1__empty"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+  
+        <div class="form__group">
+          <input id="departure" class="form__input" type="datepicker" name="departure" placeholder="&nbsp;" value="10.01.2023" />
+          <label class="form__label" for="departure">Späteste Abreise</label>
+         
+          <section class="cal1 cal1--modal-off" id="cal1">
+            <div class="cal1__container">
+              <table class="cal1__item">
+                <thead class="cal1__head">
+                  <tr class="cal1__title">
+                    <th class="cal1__previous"></th>
+                    <th>Januar 2023</th>
+                    <th class="cal1__next"></th>
+                  </tr>
+                  <tr class="cal1__daylist">
+                    <th>Mo</th>
+                    <th>Di</th>
+                    <th>Mi</th>
+                    <th>Do</th>
+                    <th>Fr</th>
+                    <th>Sa</th>
+                    <th>So</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="cal1__status">
+                    <td class="cal1__empty"></td>
+                    <td class="cal1__empty"></td>
+                    <td class="cal1__empty"></td>
+                    <td class="cal1__empty"></td>
+                    <td class="cal1__empty"></td>
+                    <td class="cal1__empty"></td>
+                    <td class="cal1__available">1</td>
+                  </tr>
+    
+                  <tr class="cal1__status">
+                    <td class="cal1__available">2</td>
+                    <td class="cal1__available">3</td>
+                    <td class="cal1__available">4</td>
+                    <td class="cal1__available">5</td>
+                    <td class="cal1__available">6</td>
+                    <td class="cal1__available">7</td>
+                    <td class="cal1__available">8</td>
+                  </tr>
+    
+                  <tr class="cal1__status">
+                    <td class="cal1__available">9</td>
+                    <td class="cal1__available">10</td>
+                    <td class="cal1__available">11</td>
+                    <td class="cal1__available">12</td>
+                    <td class="cal1__available">13</td>
+                    <td class="cal1__available">14</td>
+                    <td class="cal1__available">15</td>
+                  </tr>
+    
+                  <tr class="cal1__status">
+                    <td class="cal1__available">16</td>
+                    <td class="cal1__available">17</td>
+                    <td class="cal1__available">18</td>
+                    <td class="cal1__available">19</td>
+                    <td class="cal1__available">20</td>
+                    <td class="cal1__available">21</td>
+                    <td class="cal1__available">22</td>
+                  </tr>
+    
+                  <tr class="cal1__status">
+                    <td class="cal1__available">23</td>
+                    <td class="cal1__available">24</td>
+                    <td class="cal1__available">25</td>
+                    <td class="cal1__available">26</td>
+                    <td class="cal1__available">27</td>
+                    <td class="cal1__available">28</td>
+                    <td class="cal1__available">29</td>
+                  </tr>
+    
+                  <tr class="cal1__status">
+                    <td class="cal1__available">30</td>
+                    <td class="cal1__available">31</td>
+                    <td class="cal1__empty"></td>
+                    <td class="cal1__empty"></td>
+                    <td class="cal1__empty"></td>
+                    <td class="cal1__empty"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+        </div>
+  
+        <div class="form__group">
+          <select id="duration" class="form__input" name="duration">
+            <option value="1">1 Nacht</option>
+            <option value="2">2 Nächte</option>
+            <option value="3">3 Nächte</option>
+            <option value="3">4 Nächte</option>
+            <option value="3">5 Nächte</option>
+            <option value="3">6 Nächte</option>
+            <option value="3">7 Nächte</option>
+          </select>
+          <label class="form__label" for="duration">Aufenthaltsdauer</label>
+        </div>
+  
+        <div class="form__group">
+          <input id="person" class="form__input" name="person" placeholder="&nbsp;" value="1 Erwachsener · 2 Kinder" />
+          <label class="form__label" for="person">Personen</label>
+  
+          <div class="person person--modal-off">
+            <div class="person__group">
+              <label for="adults">Erwachsene</label>
+              <a class="person__decrease" href="#">-</a>
+              <input class="person__quantity" id="adults" type="text" value="2" name="adults" />
+              <a class="person__increase" href="#">+</a>
+            </div>
+  
+            <div class="person__group">
+              <label for="children">Kinder</label>
+              <a class="person__decrease" href="#">-</a>
+              <input class="person__quantity" id="children" type="text" value="2" name="children" />
+              <a class="person__increase" href="#">+</a>
+            </div>
+
+            <div class="person__age">
+              <div class="form__group">
+                <select id="age" class="form__input" name="age">
+                  <option value="0">0 Jahre alt</option>
+                  <option value="1">1 Jahr alt</option>
+                  <option value="2">2 Jahre alt</option>
+                  <option value="3">3 Jahre alt</option>
+                  <option value="4">4 Jahre alt</option>
+                  <option value="5">5 Jahre alt</option>
+                  <option value="6">6 Jahre alt</option>
+                  <option value="7">7 Jahre alt</option>
+                  <option value="8">8 Jahre alt</option>
+                  <option value="9">9 Jahre alt</option>
+                  <option value="10">10 Jahre alt</option>
+                  <option value="11">11 Jahre alt</option>
+                  <option value="12">12 Jahre alt</option>
+                  <option value="13">13 Jahre alt</option>
+                  <option value="14">14 Jahre alt</option>
+                  <option value="15">15 Jahre alt</option>
+                  <option value="16">16 Jahre alt</option>
+                  <option value="17">17 Jahre alt</option>
+                </select>
+              </div>
+  
+              <div class="form__group">
+                <select id="age" class="form__input" name="age">
+                  <option value="0">0 Jahre alt</option>
+                  <option value="1">1 Jahr alt</option>
+                  <option value="2">2 Jahre alt</option>
+                  <option value="3">3 Jahre alt</option>
+                  <option value="4">4 Jahre alt</option>
+                  <option value="5">5 Jahre alt</option>
+                  <option value="6">6 Jahre alt</option>
+                  <option value="7">7 Jahre alt</option>
+                  <option value="8">8 Jahre alt</option>
+                  <option value="9">9 Jahre alt</option>
+                  <option value="10">10 Jahre alt</option>
+                  <option value="11">11 Jahre alt</option>
+                  <option value="12">12 Jahre alt</option>
+                  <option value="13">13 Jahre alt</option>
+                  <option value="14">14 Jahre alt</option>
+                  <option value="15">15 Jahre alt</option>
+                  <option value="16">16 Jahre alt</option>
+                  <option value="17">17 Jahre alt</option>
+                </select>
+              </div>
+  
+            </div>
+            
+            <a href="#" class="btn">Anwenden</a>    
+          </div>
+        </div>
+  
+        <button type="submit" id="submit" class="hero__submit btn">Suchen</button>
+  
+        <!-- <select id="type" class="search__select" name="type" placeholder="&nbsp;">
+          <option value="type">Unterkunftsart</option>
+          <option value="house">Ferienhaus</option>
+          <option value="apartment">Ferienwohnung</option>
+          <option value="room">Zimmer</option>
+        </select>
+  
+        <select id="bedroom" class="search__select" name="bedroom" placeholder="Schlafzimmer">
+          <option value="bedroom">Schlafzimmer</option>
+          <option value="1">1 Schlafzimmer</option>
+          <option value="2">2 Schlafzimmer</option>
+        </select>
+        
+        <div class="search__filter">
+          <label class="search__label" for="filter">Mehr Filter</label>
+          <input id="filter" class="search__input" name="filter" placeholder="&nbsp;" />
+        </div> 
+  
+        <a href="/unterkuenfte.html" class="search__submit">Suchen</a> -->
+      </form>
+    </section>
+
+    <section class="usp cc mb-lg">
+      <h2 class="h2 h2--host">Top Gastgeber</h2>
+      <p class="usp__text">
+        Nur 360 Gastgeber, die mit herrlicher Lage, malerischer Umgebung und
+        fantastischen Ausblick aufwarten können, werden in das Angebot
+        aufgenommen.
+      </p>
+
+      <h2 class="h2 h2--price">Bestpreisgarantie</h2>
+      <div class="usp__text">
+        <ul class="usp__list">
+          <li class="usp__item">Keine Vermittlungsprovision</li>
+          <li class="usp__item">Mietvertrag direkt mit dem Gastgeber</li>
+          <li class="usp__item">Aktuelle Belegungspläne</li>
+          <li class="usp__item">Unterkunft komfortabel online buchen</li>
+        </ul>
+      </div>
+
+      <h2 class="h2 h2--pano">Panoramaflug</h2>
+      <p class="usp__text">
+        Entdecken Sie Berchtesgaden mit seinen Gastgebern und Ausflugszielen
+        aus einer völlig neuen Perspektive.
+      </p>
+    </section>
+
+    <section class="intro cc mb-lg">
+      <figure class="intro__img">
+        <picture>
+          <img src="../img/01770618.jpg" alt="Königssee" />
+        </picture>
+      </figure>
+      <div class="intro__communities">
+        <h3>Traumhafter Urlaub hoch 5</h3>
+        <p class="intro__text"></p>
+        <p>
+          Zum Berchtesgadener Talkessel gehören fünf Gemeinden.
+          <a title="Ramsau" href="ausflugsziel/ramsau/">Ramsau</a>, das
+          eigenwillige und traditionsbewusste Dorf, ist ein landschaftliches
+          Sahnestück. Sonnig, sportlich und hochalpin geht es in
+          <a title="Schönau am Königssee" href="ausflugsziel/schoenau-am-koenigssee/">Schönau am Königssee</a>
+          zu.
+          <a title="Bischofswiesen" href="ausflugsziel/bischofswiesen/">Bischofswiesen</a>
+          erstreckt sich vom entlegenen Loipl bis zur wunderhübschen Stanggaß.
+          Auf halber Wegstrecke zwischen Berchtesgaden und Salzburg liegt
+          <a title="Marktschellenberg" href="ausflugsziel/marktschellenberg/">Marktschellenberg</a>. Zwei hübsche
+          Kirchen und der Untersberg dominieren das Dörfchen.
+          Nicht zuletzt sei Ihnen der Markt Berchtesgaden mitsamt Stiftskirche
+          ans Urlauber-Herz gelegt.
+        </p>
+      </div>
+      <figure class="intro__img">
+        <picture>
+          <img src="../img/00011613-b.jpg" alt="Watzmann" />
+        </picture>
+      </figure>
+      <div class="intro__overview">
+        <h3>Verschaffen Sie sich einen Überblick</h3>
+        <p class="intro__text">
+          Das Berchtesgadener Land braucht in Bayern gewiss keinen Vergleich
+          zu scheuen. Wie schön ist es da, dass Sie sich mit einem
+          Pa­no­ra­ma­flug die Urlaubsvorfreude versüßen können! So
+          realistisch als wären sie greifbar, schweben Sie über die Berge um
+          den Königssee. Entdecken Sie schon vor dem Reiseantritt die
+          Berchtesgadener Berge, bestaunen Sie via Mausklick den Nationalpark
+          und finden Sie die Ferienwohnung oder das Zimmer Ihrer Wahl.
+        </p>
+        <a href="https://pano.berchtesgaden360.de/" class="btn btn--pano">Tour starten</a>
+      </div>
+    </section>
+
+    <section class="gallery cc">
+      <h3>Eine kleine Vorauswahl unserer Gastgeber</h3>
+      <div class="gallery__list">
+        <figure class="gallery__item">
+          <span class="gallery__like"></span>
+          <a class="gallery__img-link" href="gastgeber-detail.html" target="_self">
+            <picture>
+              <img src="../img/01450405.jpg" alt="Gerstreitlehen" />
+            </picture>
+          </a>
+          <figcaption class="gallery__title">Gerstreitlehen</figcaption>
+        </figure>
+
+        <figure class="gallery__item">
+          <span class="gallery__like gallery__like--active"></span>
+          <a class="gallery__img-link" href="gastgeber-detail.html" target="_self">
+            <picture>
+              <img src="../img/01450405.jpg" alt="Gerstreitlehen" />
+            </picture>
+          </a>
+          <figcaption class="gallery__title">Gerstreitlehen</figcaption>
+        </figure>
+
+        <figure class="gallery__item">
+          <span class="gallery__like"></span>
+          <a class="gallery__img-link" href="gastgeber-detail.html" target="_self">
+            <picture>
+              <img src="../img/01450405.jpg" alt="Gerstreitlehen" />
+            </picture>
+          </a>
+          <figcaption class="gallery__title">Gerstreitlehen</figcaption>
+        </figure>
+
+        <figure class="gallery__item">
+          <span class="gallery__like gallery__like--active"></span>
+          <a class="gallery__img-link" href="gastgeber-detail.html" target="_self">
+            <picture>
+              <img src="../img/01450405.jpg" alt="Gerstreitlehen" />
+            </picture>
+          </a>
+          <figcaption class="gallery__title">Gerstreitlehen</figcaption>
+        </figure>
+
+        <figure class="gallery__item">
+          <span class="gallery__like"></span>
+          <a class="gallery__img-link" href="gastgeber-detail.html" target="_self">
+            <picture>
+              <img src="../img/01450405.jpg" alt="Gerstreitlehen" />
+            </picture>
+          </a>
+          <figcaption class="gallery__title">Gerstreitlehen</figcaption>
+        </figure>
+
+        <figure class="gallery__item">
+          <span class="gallery__like gallery__like--active"></span>
+          <a class="gallery__img-link" href="gastgeber-detail.html" target="_self">
+            <picture>
+              <img src="../img/01450405.jpg" alt="Gerstreitlehen" />
+            </picture>
+          </a>
+          <figcaption class="gallery__title">Gerstreitlehen</figcaption>
+        </figure>
+
+        <figure class="gallery__item">
+          <span class="gallery__like"></span>
+          <a class="gallery__img-link" href="gastgeber-detail.html" target="_self">
+            <picture>
+              <img src="../img/01450405.jpg" alt="Gerstreitlehen" />
+            </picture>
+          </a>
+          <figcaption class="gallery__title">Gerstreitlehen</figcaption>
+        </figure>
+
+        <figure class="gallery__item">
+          <span class="gallery__like gallery__like--active"></span>
+          <a class="gallery__img-link" href="gastgeber-detail.html" target="_self">
+            <picture>
+              <img src="../img/01450405.jpg" alt="Gerstreitlehen" />
+            </picture>
+          </a>
+          <figcaption class="gallery__title">Gerstreitlehen</figcaption>
+        </figure>
+
+        <figure class="gallery__item">
+          <span class="gallery__like"></span>
+          <a class="gallery__img-link" href="gastgeber-detail.html" target="_self">
+            <picture>
+              <img src="../img/01450405.jpg" alt="Gerstreitlehen" />
+            </picture>
+          </a>
+          <figcaption class="gallery__title">Gerstreitlehen</figcaption>
+        </figure>
+
+        <figure class="gallery__item">
+          <span class="gallery__like gallery__like--active"></span>
+          <a class="gallery__img-link" href="gastgeber-detail.html" target="_self">
+            <picture>
+              <img src="../img/01450405.jpg" alt="Gerstreitlehen" />
+            </picture>
+          </a>
+          <figcaption class="gallery__title">Gerstreitlehen</figcaption>
+        </figure>
+
+        <figure class="gallery__item">
+          <span class="gallery__like"></span>
+          <a class="gallery__img-link" href="gastgeber-detail.html" target="_self">
+            <picture>
+              <img src="../img/01450405.jpg" alt="Gerstreitlehen" />
+            </picture>
+          </a>
+          <figcaption class="gallery__title">Gerstreitlehen</figcaption>
+        </figure>
+
+        <figure class="gallery__item">
+          <span class="gallery__like gallery__like--active"></span>
+          <a class="gallery__img-link" href="gastgeber-detail.html" target="_self">
+            <picture>
+              <img src="../img/01450405.jpg" alt="Gerstreitlehen" />
+            </picture>
+          </a>
+          <figcaption class="gallery__title">Gerstreitlehen</figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__navigation">
+      <h5 class="heading-5">Für Urlauber</h5>
+      <nav class="footer__list">
+        <ul>
+          <li>
+            <a href="gastgeber-liste.html" title="Gastgeber">Gastgeberliste</a>
+          </li>
+          <li>
+            <a href="#" title="Panoramatour">Panoramatour</a>
+          </li>
+          <li>
+            <a href="#" title="FAQ">FAQ</a>
+          </li>
+          <li>
+            <a href="#" title="Kontakt">Kontakt</a>
+          </li>
+        </ul>
+      </nav>
+
+      <h5 class="heading-5">Für Gastgeber</h5>
+      <nav class="footer__list">
+        <ul>
+          <li>
+            <a href="#" title="Anmelden">Anmelden</a>
+          </li>
+        </ul>
+      </nav>
+
+      <h5 class="heading-5">Unternehmen</h5>
+      <nav class="footer__list">
+        <ul>
+          <li>
+            <a href="#" title="AGB">AGB</a>
+          </li>
+          <li>
+            <a href="#" title="Impressum">Impressum</a>
+          </li>
+          <li>
+            <a href="#" title="Datenschutz">Datenschutz</a>
+          </li>
+          <li>
+            <a href="#" title="Über uns">Über uns</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <a href="index.html" class="footer__partner" title="Berchtesgaden">Berchtesgaden</a>
+  </footer>
+</body>
+
+</html>

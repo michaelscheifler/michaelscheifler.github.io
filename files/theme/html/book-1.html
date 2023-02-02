@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/main.css" />
+</head>
+
+<body class="body">
+  <header class="header">
+    <div class="header__logo-box">
+      <a class="header__logo-link" href="index.html" title="Berchtesgaden">
+        <img src="../img/berchtesgaden360.png" alt="Berchtesgaden360" class="header__logo" />
+      </a>
+    </div>
+    <div class="header__navigation">
+      <input class="header__toggle" type="checkbox" id="header__toggle" />
+      <label for="header__toggle" class="header__label">
+        <span class="header__span"></span>
+      </label>
+      <nav class="header__nav">
+        <ul class="header__list">
+          <li class="header__item">
+            <a href="gastgeber-liste.html"><span>Gastgeber</span></a>
+          </li>
+          <li class="header__item">
+            <a href="unterkunft-liste.html"><span>Unterkünfte</span></a>
+          </li>
+          <li class="header__item">
+            <a href="wunschliste.html"><span>Wunschliste</span></a>
+          </li>
+          <li class="header__item">
+            <a href="ausflugsziel-liste.html"><span>Ausflugsziele</span></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <section class="progress mt mb">
+      <ul class="progress__list">
+        <li class="progress__item">
+          <div class="progress__line">
+          </div>
+          <div class="progress__number">
+              1
+          </div>
+          <div class="progress__title">Adresse</div>
+        </li>
+
+        <li class="progress__item">
+          <div class="progress__line progress__line--disabled">
+          </div>
+          <div class="progress__number progress__number--disabled">
+              2
+          </div>
+          <div class="progress__title">Übersicht</div>
+        </li>
+
+        <li class="progress__item">
+          <div class="progress__line progress__line--disabled">
+          </div>
+          <div class="progress__number progress__number--disabled">
+            3
+          </div>
+          <div class="progress__title">Bestätigung</div>
+        </li>
+      </ul>
+    </section>
+
+    <div class="grid grid--book cc">
+      <div class="grid__col1 grid__col1--gap">
+        <section class="overview" id="overview">
+          <h1>Gerstreitlehen-Fewo 1</h1>
+
+          <ul class="overview__list">
+            <li class="overview__person">3 Personen</li>
+            <li class="overview__bedroom">1 Schlafzimmer</li>
+            <li class="overview__bathroom">1 Badezimmer</li>
+            <li class="overview__number">0781-01</li>
+          </ul>
+        </section>
+
+        <section class="optional">
+          <h2>Optionale Leistungen</h2>
+          <p>Sie können optional noch weitere Leistungen aus der unten stehenden Liste hinzubuchen.</p>
+
+          <form action="#" class="form">
+            <table>
+              <tbody class="optional__items">
+
+                <tr class="optional__item">
+                  <td class="optional__designation">Fahrrad
+                    <span class="optional__description">
+                      Pro Person / Pro Tag
+                    </span>
+                  </td>
+                  <td class="optional__quantity">
+                    <div class="form__group">
+                      <select class="form__input" name="bike">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                      </select>
+                    </div>
+                  </td>
+                  <td class="optional__price">6,00 €</td>
+                </tr>
+
+                <tr class="optional__item">
+                  <td class="optional__designation">Frühstück
+                    <span class="optional__description">
+                      Pro Person
+                    </span>
+                  </td>
+                  <td class="optional__quantity">
+                    <div class="form__group">
+                      <select class="form__input" name="breakfast">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                      </select>
+                    </div>
+                  </td>
+                  <td class="optional__price">9,50 €</td>
+                </tr>
+
+                <tr class="optional__item">
+                  <td class="optional__designation">Handtuchpaket
+                    <span class="optional__description">
+                      Pro Person
+                    </span>
+                  </td>
+                  <td class="optional__quantity">
+                    <div class="form__group">
+                      <select class="form__input" name="towl">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                      </select>
+                    </div>
+                  </td>
+                  <td class="optional__price">24,00 €</td>
+                </tr>
+
+                <tr class="optional__item">
+                  <td class="optional__designation">Hochstuhl
+                    <span class="optional__description">
+                      Pro Tag
+                    </span>
+                  </td>
+                  <td class="optional__quantity">
+                    <div class="form__group">
+                      <select class="form__input" name="chair">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                      </select>
+                    </div>
+                  </td>
+                  <td class="optional__price">5,00 €</td>
+                </tr>
+
+              </tbody>
+            </table>
+          </form>
+
+        </section>
+
+        <section class="contact">
+          <h2>Anschrift</h2>
+          <form action="#" class="form form--contact">
+
+            <div class="form__group">
+              <input class="form__input" id="company" type="text" name="company" placeholder="&nbsp;">
+              <label class="form__label" for="company">Firma</label>
+            </div>
+
+            <div class="form__group">
+              <select id="salutation" class="form__input" name="salutation">
+                <option value="0">Keine Angaben</option>
+                <option value="1">Frau</option>
+                <option value="2">Herr</option>
+                <option value="3">Familie</option>
+              </select>
+              <label class="form__label" for="salutation">Anrede</label>
+            </div>
+
+            <div class="form__group">
+              <input class="form__input" id="firstname" type="text" name="firstname" placeholder="&nbsp;">
+              <label class="form__label" for="firstname">Vorname</label>
+            </div>
+
+            <div class="form__group">
+              <input class="form__input" id="lastname" type="text" name="lastname" placeholder="&nbsp;">
+              <label class="form__label" for="lastname">Nachname</label>
+            </div>
+
+            <div class="form__group">
+              <input class="form__input" id="street" type="text" name="street" placeholder="&nbsp;">
+              <label class="form__label" for="street">Straße</label>
+            </div>
+
+            <div class="form__group">
+              <input class="form__input" id="streetnumber" type="text" name="streetnumber" placeholder="&nbsp;">
+              <label class="form__label" for="streetnumber">Hausnummer</label>
+            </div>
+
+            <div class="form__group">
+              <input class="form__input" id="postal" type="text" name="postal" placeholder="&nbsp;">
+              <label class="form__label" for="postal">Postleitzahl</label>
+            </div>
+
+            <div class="form__group">
+              <input class="form__input" id="city" type="text" name="city" placeholder="&nbsp;">
+              <label class="form__label" for="city">Ort</label>
+            </div>
+
+            <div class="form__group">
+              <select class="form__input" id="country" name="country">
+                <option value="1" selected>Deutschland</option>
+                <option value="2">Österreich</option>
+                <option value="3">Schweiz</option>
+              </select>
+              <label class="form__label" for="country">Land</label>
+            </div>
+
+            <div class="form__group">
+              <input class="form__input" id="phone" type="text" name="phone" placeholder="&nbsp;">
+              <label class="form__label" for="phone">Telefon</label>
+            </div>
+
+            <div class="form__group form__group--fullwidth">
+              <input class="form__input" id="email" type="email" name="email" placeholder="&nbsp;">
+              <label class="form__label" for="email">E-Mail</label>
+            </div>
+
+            <div class="form__group form__group--fullwidth">
+              <textarea class="form__input form__input--textarea" id="comment" name="comment"
+                placeholder="&nbsp;"></textarea>
+              <label class="form__label" for="comment">Bemerkung</label>
+            </div>
+
+          </form>
+        </section>
+
+      </div>
+
+      <div class="grid__col2">
+        <section class="book" id="book">
+          <!-- Padding for jump mark -->
+          <div class="book__container">
+            <!--Padding not possible because of outline -->
+            <div class="book__header">
+              <span class="book__from">ab</span>
+              <span class="book__price">93,00 €</span>
+              <p class="book__details">pro ÜN / 2 Personen</p>
+            </div>
+            <form action="#" class="form form--book">
+              <div class="form__group">
+                <input id="arrival" class="form__input" type="datepicker" name="arrival" placeholder="&nbsp;"
+                  value="01.01.2023" />
+                <label class="form__label" for="arrival">Früheste Anreise</label>
+
+                <div class="cal1 cal1--modal-off" id="cal1">
+                  <div class="cal1__container">
+                    <table class="cal1__item">
+                      <thead class="cal1__head">
+                        <tr class="cal1__title">
+                          <th class="cal1__previous"></th>
+                          <th>Januar 2023</th>
+                          <th class="cal1__next"></th>
+                        </tr>
+                        <tr class="cal1__daylist">
+                          <th>Mo</th>
+                          <th>Di</th>
+                          <th>Mi</th>
+                          <th>Do</th>
+                          <th>Fr</th>
+                          <th>Sa</th>
+                          <th>So</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr class="cal1__status">
+                          <td class="cal1__empty"></td>
+                          <td class="cal1__empty"></td>
+                          <td class="cal1__empty"></td>
+                          <td class="cal1__empty"></td>
+                          <td class="cal1__empty"></td>
+                          <td class="cal1__empty"></td>
+                          <td class="cal1__available">1</td>
+                        </tr>
+
+                        <tr class="cal1__status">
+                          <td class="cal1__available">2</td>
+                          <td class="cal1__available">3</td>
+                          <td class="cal1__available">4</td>
+                          <td class="cal1__available">5</td>
+                          <td class="cal1__available">6</td>
+                          <td class="cal1__available">7</td>
+                          <td class="cal1__available">8</td>
+                        </tr>
+
+                        <tr class="cal1__status">
+                          <td class="cal1__available">9</td>
+                          <td class="cal1__available">10</td>
+                          <td class="cal1__available">11</td>
+                          <td class="cal1__available">12</td>
+                          <td class="cal1__available">13</td>
+                          <td class="cal1__available">14</td>
+                          <td class="cal1__available">15</td>
+                        </tr>
+
+                        <tr class="cal1__status">
+                          <td class="cal1__available">16</td>
+                          <td class="cal1__available">17</td>
+                          <td class="cal1__available">18</td>
+                          <td class="cal1__available">19</td>
+                          <td class="cal1__available">20</td>
+                          <td class="cal1__available">21</td>
+                          <td class="cal1__available">22</td>
+                        </tr>
+
+                        <tr class="cal1__status">
+                          <td class="cal1__available">23</td>
+                          <td class="cal1__available">24</td>
+                          <td class="cal1__available">25</td>
+                          <td class="cal1__available">26</td>
+                          <td class="cal1__available">27</td>
+                          <td class="cal1__available">28</td>
+                          <td class="cal1__available">29</td>
+                        </tr>
+
+                        <tr class="cal1__status">
+                          <td class="cal1__available">30</td>
+                          <td class="cal1__available">31</td>
+                          <td class="cal1__empty"></td>
+                          <td class="cal1__empty"></td>
+                          <td class="cal1__empty"></td>
+                          <td class="cal1__empty"></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form__group">
+                <input id="departure" class="form__input" type="datepicker" name="departure" placeholder="&nbsp;"
+                  value="10.01.2023" />
+                <label class="form__label" for="departure">Späteste Abreise</label>
+
+                <section class="cal1 cal1--modal-off" id="cal1">
+                  <div class="cal1__container">
+                    <table class="cal1__item">
+                      <thead class="cal1__head">
+                        <tr class="cal1__title">
+                          <th class="cal1__previous"></th>
+                          <th>Januar 2023</th>
+                          <th class="cal1__next"></th>
+                        </tr>
+                        <tr class="cal1__daylist">
+                          <th>Mo</th>
+                          <th>Di</th>
+                          <th>Mi</th>
+                          <th>Do</th>
+                          <th>Fr</th>
+                          <th>Sa</th>
+                          <th>So</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr class="cal1__status">
+                          <td class="cal1__empty"></td>
+                          <td class="cal1__empty"></td>
+                          <td class="cal1__empty"></td>
+                          <td class="cal1__empty"></td>
+                          <td class="cal1__empty"></td>
+                          <td class="cal1__empty"></td>
+                          <td class="cal1__available">1</td>
+                        </tr>
+
+                        <tr class="cal1__status">
+                          <td class="cal1__available">2</td>
+                          <td class="cal1__available">3</td>
+                          <td class="cal1__available">4</td>
+                          <td class="cal1__available">5</td>
+                          <td class="cal1__available">6</td>
+                          <td class="cal1__available">7</td>
+                          <td class="cal1__available">8</td>
+                        </tr>
+
+                        <tr class="cal1__status">
+                          <td class="cal1__available">9</td>
+                          <td class="cal1__available">10</td>
+                          <td class="cal1__available">11</td>
+                          <td class="cal1__available">12</td>
+                          <td class="cal1__available">13</td>
+                          <td class="cal1__available">14</td>
+                          <td class="cal1__available">15</td>
+                        </tr>
+
+                        <tr class="cal1__status">
+                          <td class="cal1__available">16</td>
+                          <td class="cal1__available">17</td>
+                          <td class="cal1__available">18</td>
+                          <td class="cal1__available">19</td>
+                          <td class="cal1__available">20</td>
+                          <td class="cal1__available">21</td>
+                          <td class="cal1__available">22</td>
+                        </tr>
+
+                        <tr class="cal1__status">
+                          <td class="cal1__available">23</td>
+                          <td class="cal1__available">24</td>
+                          <td class="cal1__available">25</td>
+                          <td class="cal1__available">26</td>
+                          <td class="cal1__available">27</td>
+                          <td class="cal1__available">28</td>
+                          <td class="cal1__available">29</td>
+                        </tr>
+
+                        <tr class="cal1__status">
+                          <td class="cal1__available">30</td>
+                          <td class="cal1__available">31</td>
+                          <td class="cal1__empty"></td>
+                          <td class="cal1__empty"></td>
+                          <td class="cal1__empty"></td>
+                          <td class="cal1__empty"></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </section>
+              </div>
+
+              <div class="form__group form__group--person">
+                <input id="person" class="form__input" name="person" placeholder="&nbsp;"
+                  value="1 Erwachsener · 2 Kinder" />
+                <label class="form__label" for="person">Personen</label>
+
+                <div class="person person--modal-off">
+                  <div class="person__group">
+                    <label for="adults">Erwachsene</label>
+                    <a class="person__decrease" href="#">-</a>
+                    <input class="person__quantity" id="adults" type="text" value="2" name="adults" />
+                    <a class="person__increase" href="#">+</a>
+                  </div>
+
+                  <div class="person__group">
+                    <label for="children">Kinder</label>
+                    <a class="person__decrease" href="#">-</a>
+                    <input class="person__quantity" id="children" type="text" value="2" name="children" />
+                    <a class="person__increase" href="#">+</a>
+                  </div>
+
+                  <div class="person__age">
+                    <div class="form__group">
+                      <select id="age" class="form__input" name="age">
+                        <option value="0">0 Jahre alt</option>
+                        <option value="1">1 Jahr alt</option>
+                        <option value="2">2 Jahre alt</option>
+                        <option value="3">3 Jahre alt</option>
+                        <option value="4">4 Jahre alt</option>
+                        <option value="5">5 Jahre alt</option>
+                        <option value="6">6 Jahre alt</option>
+                        <option value="7">7 Jahre alt</option>
+                        <option value="8">8 Jahre alt</option>
+                        <option value="9">9 Jahre alt</option>
+                        <option value="10">10 Jahre alt</option>
+                        <option value="11">11 Jahre alt</option>
+                        <option value="12">12 Jahre alt</option>
+                        <option value="13">13 Jahre alt</option>
+                        <option value="14">14 Jahre alt</option>
+                        <option value="15">15 Jahre alt</option>
+                        <option value="16">16 Jahre alt</option>
+                        <option value="17">17 Jahre alt</option>
+                      </select>
+                    </div>
+
+                    <div class="form__group">
+                      <select id="age" class="form__input" name="age">
+                        <option value="0">0 Jahre alt</option>
+                        <option value="1">1 Jahr alt</option>
+                        <option value="2">2 Jahre alt</option>
+                        <option value="3">3 Jahre alt</option>
+                        <option value="4">4 Jahre alt</option>
+                        <option value="5">5 Jahre alt</option>
+                        <option value="6">6 Jahre alt</option>
+                        <option value="7">7 Jahre alt</option>
+                        <option value="8">8 Jahre alt</option>
+                        <option value="9">9 Jahre alt</option>
+                        <option value="10">10 Jahre alt</option>
+                        <option value="11">11 Jahre alt</option>
+                        <option value="12">12 Jahre alt</option>
+                        <option value="13">13 Jahre alt</option>
+                        <option value="14">14 Jahre alt</option>
+                        <option value="15">15 Jahre alt</option>
+                        <option value="16">16 Jahre alt</option>
+                        <option value="17">17 Jahre alt</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <a href="#" class="btn">Anwenden</a>
+                </div>
+              </div>
+
+              <div class="calc">
+                <div class="calc__title">
+                  Gesamtmiete
+                </div>
+                <table class="calc__table">
+                  <tbody class="calc__items">
+                    <tr class="calc__item">
+                      <td class="calc__designation">Objektmiete
+                        <span class="calc__description">
+                          7 Nächte
+                        </span>
+                      </td>
+                      <td class="calc__price">231,00 €</td>
+                    </tr>
+                    <tr class="calc__item">
+                      <td class="calc__designation">Extras
+                      </td>
+                      <td class="calc__price">24,00 €</td>
+                    </tr>
+                    <tr class="calc__item">
+                      <td class="calc__designation">Gebühren
+                      </td>
+                      <td class="calc__price">8,00 €</td>
+                    </tr>
+                    <tr class="calc__item">
+                      <td class="calc__designation">Endreinigung
+                      </td>
+                      <td class="calc__price">56,00 €</td>
+                    </tr>
+                    <tr class="calc__item">
+                      <td class="calc__designation calc__designation--total">Endpreis
+                        <span class="calc__description">(inkl. MwSt)</span>
+                      </td>
+                      <td class="calc__price calc__price--total">319,00 €</td>
+                    </tr>
+                    <tr class="calc__item">
+                      <td class="calc__designation">Kaution
+                        <span class="calc__description">Nicht im Endpreis enthalten, Erstattbar</span>
+                      </td>
+                      <td class="calc__price">500,00 €</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+              </div>
+
+              <a href="book-2.html" class="form__submit btn">Daten prüfen</a>
+
+              <!-- <select id="type" class="search__select" name="type" placeholder="&nbsp;">
+          <option value="type">Unterkunftsart</option>
+          <option value="house">Ferienhaus</option>
+          <option value="apartment">Ferienwohnung</option>
+          <option value="room">Zimmer</option>
+        </select>
+  
+        <select id="bedroom" class="search__select" name="bedroom" placeholder="Schlafzimmer">
+          <option value="bedroom">Schlafzimmer</option>
+          <option value="1">1 Schlafzimmer</option>
+          <option value="2">2 Schlafzimmer</option>
+        </select>
+        
+        <div class="search__filter">
+          <label class="search__label" for="filter">Mehr Filter</label>
+          <input id="filter" class="search__input" name="filter" placeholder="&nbsp;" />
+        </div> 
+  
+        <a href="/unterkuenfte.html" class="search__submit">Suchen</a> -->
+            </form>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__navigation">
+      <h5 class="heading-5">Für Urlauber</h5>
+      <nav class="footer__list">
+        <ul>
+          <li>
+            <a href="gastgeber-liste.html" title="Gastgeber">Gastgeberliste</a>
+          </li>
+          <li>
+            <a href="#" title="Panoramatour">Panoramatour</a>
+          </li>
+          <li>
+            <a href="#" title="FAQ">FAQ</a>
+          </li>
+          <li>
+            <a href="#" title="Kontakt">Kontakt</a>
+          </li>
+        </ul>
+      </nav>
+
+      <h5 class="heading-5">Für Gastgeber</h5>
+      <nav class="footer__list">
+        <ul>
+          <li>
+            <a href="#" title="Anmelden">Anmelden</a>
+          </li>
+        </ul>
+      </nav>
+
+      <h5 class="heading-5">Unternehmen</h5>
+      <nav class="footer__list">
+        <ul>
+          <li>
+            <a href="#" title="AGB">AGB</a>
+          </li>
+          <li>
+            <a href="#" title="Impressum">Impressum</a>
+          </li>
+          <li>
+            <a href="#" title="Datenschutz">Datenschutz</a>
+          </li>
+          <li>
+            <a href="#" title="Über uns">Über uns</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <a href="index.html" class="footer__partner" title="Berchtesgaden">Berchtesgaden</a>
+  </footer>
+</body>
+
+</html>
