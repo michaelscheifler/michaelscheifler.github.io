@@ -1,0 +1,21 @@
+.optional {
+  &__items {
+    display: grid;
+    grid-template-columns: 1fr max-content max-content;
+    grid-gap: 1rem;
+    align-items: center;
+  }
+
+  &__item {
+    display: contents;
+  }
+
+  &__description {
+    display: block;
+    @include txtStyle(1.6rem, $fw-n, 1, auto, $grey2);
+  }
+
+  &__price {
+    justify-self: end;
+  }
+}

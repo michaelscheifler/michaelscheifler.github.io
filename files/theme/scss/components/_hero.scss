@@ -1,0 +1,92 @@
+.hero {
+  display: grid;
+  height: calc(100vh - 14.5rem);
+  grid-template-columns: [full-start] 1fr [center-start] auto [center-end] 1fr [full-end];
+  grid-template-rows: 2vh 1fr auto 1fr;
+  grid-gap: 2rem;
+  // justify-items: center; // Probleme mit Firefox
+  // align-items: center;
+  background-color: $clr-primary;
+  min-height: 47rem; // 470px
+  margin-bottom: $spacer-lg;
+
+  &__img {
+    grid-column: full-start / full-end;
+    grid-row: 1 / -1;
+
+    img {
+      @include image;
+      min-width: 3.2rem;
+      height: calc(100vh - 14.9rem);
+      min-height: 47rem;
+    }
+  }
+
+  &__title {
+    grid-column: center-start / center-end;
+    grid-row: 2;
+    align-self: start;
+    text-align: center;
+    margin: 0;
+    // Wegen ausgeblendeter Suchfunktion
+    // @media only screen and (min-aspect-ratio: 6/10) and (orientation: portrait) {
+    //     align-self: end;
+    // }
+
+    // z-index: 10; 
+    // lazy images
+
+    &--main {
+      @include txtStyle(2.6rem, $fw-eb, 1.2, none, $white);
+      letter-spacing: 0.1rem;
+      text-shadow: 0.2rem 0.2rem 0.3rem $black;
+      display: block;
+
+      @include mq(320) {
+        font-size: 8vw;
+      }
+
+      @include mq(600) {
+        font-size: 5.5rem;
+      }
+    }
+
+    &--sub {
+      @include txtStyle(1.7rem, $fw-eb, 1.2, none, $white);
+      letter-spacing: 0.1rem;
+      text-shadow: 0.2rem 0.2rem 0.3rem $black;
+      display: block;
+
+      @include mq(320) {
+        font-size: 5.3vw;
+      }
+
+      @include mq(600) {
+        font-size: 3.24rem;
+      }
+    }
+  }
+
+  &__form {
+    grid-column: center-start / center-end;
+    grid-row: 3;
+    background-color: $white;
+    padding: 2rem;
+    border-radius: $radius;
+    justify-self: center;
+
+    @include mq(570) {
+      grid-template-columns: repeat(2, max-content);
+    }
+
+    @include mq(1400) {
+      grid-template-columns: auto auto 14rem auto;
+    }
+  }
+
+  &__submit {
+    grid-column: 1 / -1;
+    max-width: 30rem;
+    justify-self: center;
+  }
+}

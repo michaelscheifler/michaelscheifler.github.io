@@ -1,0 +1,98 @@
+// Colorset
+$black: hsla(0, 0%, 28%, 1);
+$blue1: hsla(209, 100%, 40%, 1);
+$blue2: scale-color($blue1, $lightness: 20%);
+$green:hsla(75, 62%, 37%, 1);
+$grey1: hsla(0, 0%, 33%, 1);
+$grey2: scale-color($grey1, $lightness: 60%);
+$grey3: scale-color($grey1, $lightness: 70%);
+$grey4: scale-color($grey1, $lightness: 80%);
+$grey5: scale-color($grey1, $lightness: 90%);
+$grey6: hsla(0, 0%, 17%, 1);
+$orange: hsla(39, 100%, 50%, 1);
+$red: hsla(14, 95%, 42%, 1);
+$white: hsla(0, 0%, 100%, 1);
+$transparent: hsla(0, 0%, 100%, 0);
+
+$clr-primary: $blue1;
+$clr-secondary: $blue2;
+// $clr-background: $white;
+
+// Color Content
+$clr-confirm: $green;
+$clr-confirm-background: scale-color($clr-confirm, $lightness: 70%);
+$clr-error: $red;
+$clr-error-background: scale-color($clr-error, $lightness: 70%);
+$clr-text: $black;
+$clr-menu: scale-color($clr-text, $lightness: 20%);
+$clr-modal-window: hsla(0, 0%, 0%, .8);
+$clr-shadow: hsla(0, 0%, 0%, .2);
+$clr-placeholder: $grey2;
+$clr-table1: $grey3;
+$clr-table2: $grey4;
+$clr-table3: $grey5;
+$clr-progress1: $green;
+$clr-progress2: scale-color($clr-progress1, $lightness: 50%);
+
+// Color Calendar
+$clr-cal-available: $green;
+// $clr-cal-available-hover: $clr-primary;
+// $clr-cal-available-past: scale-color($clr-cal-free, $alpha: -50%);
+// $clr-cal-available-unavailable: scale-color($clr-cal-free, $alpha: -50%);
+$clr-cal-occupied: $red;
+// $clr-cal-occupied-past: scale-color($clr-cal-occupied, $alpha: -80%);
+// $clr-cal-arrival: $clr-primary;
+// $clr-cal-period: $clr-primary;
+// $clr-cal-departure: $clr-primary;
+// $clr-cal-selection-arrival: $clr-primary;
+// $clr-cal-selection-period: scale-color($clr-cal-arrival, $alpha: -30%);
+// $clr-cal-owner: $orange;
+// $clr-cal-owner-not: $orange;
+
+// Font
+$default-font-size: 1.8rem;
+$font-primary: 'Nunito Sans',
+sans-serif;
+
+// $ff-serif: '';
+// $ff-sans: '';
+// $ff-body: $ff-sans;
+// $ff-heading: $ff-serif;
+// $ff-accent: $ff-serif;
+// $fw-el: 200;
+// $fw-l: 300;
+$fw-n: 400;
+// $fw-m: 500;
+$fw-sb: 600;
+$fw-b: 700;
+$fw-eb: 800;
+// $fw-h: 900;
+
+// Styling
+$radius: .5rem;
+$center-width: 120rem;
+$center-text: 65rem;
+$spacer-top: 3rem;
+$spacer-bottom: 3rem;
+$spacer-sm: 1rem;
+$spacer-md: 3rem;
+$spacer-lg: 4rem;
+$spacer-xl: 6rem;
+
+// @include mq(600) {
+    // $spacer-top: 3rem;
+    // $spacer-sm: 1rem;
+    // $spacer-md: 3rem;
+    // $spacer-lg: 4rem;
+    // $spacer-xl: 6rem;
+// }
+
+// @include mq(1200) {
+    // $spacer-top: 3rem;
+    // $spacer-sm: 1rem;
+    // $spacer-md: 3rem;
+    // $spacer-lg: 4rem;
+    // $spacer-xl: 6rem;
+// }
+
+// $margin-vw: calc(2vw + .5rem);

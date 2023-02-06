@@ -1,0 +1,176 @@
+// Text with standard-value for hyphens and text
+@mixin txtStyle($fs, $fw, $flh, $fhp: inherit, $fclr: $clr-text) {
+  font-family: $font-primary;
+  font-size: $fs;
+  font-weight: $fw;
+  line-height: $flh;
+  hyphens: $fhp;
+  color: $fclr;
+}
+
+// Text-link
+@mixin txtlink {
+  @include txtStyle(inherit, $fw-sb, inherit, inherit, $clr-primary);
+
+  &:link,
+  &:visited {
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+  }
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    text-decoration-line: underline;
+  }
+
+  &:active {
+    text-decoration: none;
+  }
+}
+
+// Mobile First - Media Queries
+@mixin mq($screen-min) {
+  @media only screen and (min-width: calc($screen-min/16*1em)) {
+    @content;
+  }
+}
+
+// Content center/full width
+@mixin content-center {
+  width: calc(98% - 1rem);
+  max-width: $center-width;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@mixin content-full {
+  width: calc(98% - 1rem);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@mixin content-center-text {
+  width: calc(98% - 1rem);
+  max-width: $center-text;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// Form
+@mixin form {
+  appearance: none;
+  display: block;
+  user-select: initial; // to make input possible
+  font-family: $font-primary;
+  font-size: $default-font-size;
+  color: $clr-text;
+  text-align: left;
+  hyphens: initial;
+  width: 100%;
+  padding: 1.2rem;
+  border: 0.1rem solid $grey2;
+  border-radius: $radius;
+  background-color: $transparent;
+  cursor: text;
+
+  // blue border if in focus
+  &:focus {
+    outline: none;
+    border: 0.1rem solid $clr-primary;
+    background-color: $transparent;
+  }
+
+  // green border if valid
+  &:not(:focus):valid {
+    // border: .1rem solid $clr-confirm; // wegen Anfrageformular deaktiviert
+  }
+
+  // red border if invalid
+  &:not(:placeholder-shown):not(:focus):invalid {
+    // border: .2rem solid $clr-error; // wegen Anfrageformular deaktiviert
+  }
+}
+
+// Icomoon
+@mixin icomoon($unicode, $font-size, $color) {
+  content: $unicode;
+  font-size: $font-size;
+  color: $color;
+
+  display: inline-block;
+  font-family: "icomoon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  speak: none;
+  text-transform: none;
+  line-height: 1;
+  text-rendering: geometricPrecision;
+}
+
+@mixin icon-grid($unicode, $font-size, $color) {
+  display: grid;
+  grid-template-columns: max-content auto;
+  align-items: center;
+  justify-items: start;
+  grid-gap: 1rem;
+
+  &::before {
+    @include icomoon($unicode, $font-size, $color);
+  }
+}
+
+// Object detail line
+@mixin detail-line {
+  border-bottom: 0.1rem solid $grey2;
+  padding: 0 0 $spacer-md;
+}
+
+// Menu-item
+@mixin menu-item {
+  // li > .active,
+  // li > a.active {
+  //   font-weight: $fw-eb;
+  //   font-size: 1.4rem;
+  //   color: $clr-text;
+  // }
+
+  a:link,
+  a:visited {
+    padding: 1.5rem 1rem;
+    text-decoration: none;
+    @include txtStyle(1.6rem, $fw-b, inherit, none, $clr-menu);
+    transition: color 0.2s ease-in-out;
+  }
+
+  a:hover,
+  a:active {
+    color: $clr-text;
+  }
+}
+
+// Image
+@mixin image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+// Modal
+@mixin modal {
+  position: absolute;
+  top: 120%;
+  z-index: 2;
+  width: 100%;
+  background-color: $white;
+  border: 0.1rem solid $clr-primary;
+  border-radius: $radius;
+  padding: 1rem;
+
+  &--active {
+    display: grid;
+    grid-gap: 1rem;
+  }
+}

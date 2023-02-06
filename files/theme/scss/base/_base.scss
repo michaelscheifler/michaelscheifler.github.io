@@ -1,0 +1,51 @@
+//  Basic reset 
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+// Rem size depending on screen-size
+html {
+    font-size: 62.5%; // 1 rem = 10px  (10 / 16 = 62.5%)
+
+    @include mq(1200) {
+        font-size: 68%; // 1 rem = 11px
+    }
+
+    @include mq(1800) {
+        font-size: 83%; // 1 rem = 12px
+    }
+
+    @media print {
+        font-size: 40%; // 1 rem = 11px
+    }
+
+    box-sizing: border-box;
+    user-select: none;
+    scroll-behavior: smooth;
+}
+
+// Hide invisible Contao elements
+// .invisible {
+//     border: 0;
+//     clip: rect(0 0 0 0);
+//     height: 1px;
+//     margin: -1px;
+//     overflow: hidden;
+//     padding: 0;
+//     position: absolute;
+//     width: 1px;
+// }
+
+// Wrapper size
+body {
+    min-width: 32rem;
+}
+
+// Color Placeholder
+::placeholder {
+    color: $black;
+}

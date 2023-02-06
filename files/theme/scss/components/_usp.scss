@@ -1,0 +1,58 @@
+.usp {
+  @include mq(600) {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-column-gap: 4rem;
+    grid-row-gap: 3rem;
+    max-width: 60rem;
+  }
+
+  @include mq(1000) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 0;
+    max-width: $center-width;
+  }
+
+  .h2 {
+    margin: 3rem 0 1rem;
+    hyphens: none;
+
+    @include mq(600) {
+      margin: 0;
+    }
+
+    @include mq(1000) {
+      grid-row: 1;
+      margin: 0 0 1rem;
+    }
+
+    &--host {
+      @include icon-grid("\f21e", inherit, $clr-primary);
+    }
+
+    &--price {
+      @include icon-grid("\e901", inherit, $clr-primary);
+    }
+
+    &--pano {
+      @include icon-grid("\e902", inherit, $clr-primary);
+    }
+  }
+
+  &__text {
+    @include mq(1000) {
+      grid-row: 2;
+    }
+  }
+
+  &__list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__item {
+    @include icon-grid("\f00c", inherit, $clr-primary);
+    align-items: baseline;
+  }
+}

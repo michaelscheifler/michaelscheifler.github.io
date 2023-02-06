@@ -1,0 +1,30 @@
+.location {
+  &__map {
+    border: 0.1rem solid $grey3;
+
+    img {
+      @include image;
+    }
+  }
+
+  &__container {
+    width: 100%;
+    border-collapse: collapse;
+
+    & td {
+      padding: 0.4rem;
+
+      &:nth-child(2) {
+        text-align: right;
+      }
+    }
+
+    & tr:nth-child(odd) {
+      td {
+        background-color: $grey5;
+        border-top: 0.3rem solid $grey3;
+        border-bottom: 0.3rem solid $grey3;
+      }
+    }
+  }
+}

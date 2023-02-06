@@ -1,0 +1,17 @@
+.image {
+  &--poi {
+    img {
+      display: block;
+      width: 100%;
+      min-width: 3.2rem;
+      height: calc(100vh - 11.2rem);
+      object-fit: cover;
+      // min-height: 47rem; // 470px
+
+      @media only screen and (orientation: portrait) {
+        height: 100vw;
+        max-height: calc(100vh - 11.2rem);
+      }
+    }
+  }
+}

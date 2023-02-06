@@ -1,0 +1,108 @@
+.cal1 {
+  &--modal-off {
+    display: none;
+  }
+
+  &--modal-on {
+    @include modal;
+  }
+
+  &__container {
+    display: grid;
+    @include mq(650) {
+      grid-auto-flow: column;
+    }
+
+    grid-gap: 3rem;
+  }
+
+  &__item:nth-of-type(2) {
+    display: none;
+    @include mq(650) {
+      display: table;
+    }
+  }
+
+  &__previous {
+    @include icon-grid("\f104", 3rem, inherit);
+    &--hidden {
+      @include mq(650) {
+        visibility: hidden;
+      }
+    }
+  }
+
+  &__title {
+    display: grid;
+    grid-auto-flow: column;
+  }
+
+  &__next {
+    @include icon-grid("\f105", 3rem, inherit);
+    justify-self: end;
+
+    &--hidden {
+      @include mq(650) {
+        visibility: hidden;
+      }
+    }
+  }
+
+  &__daylist {
+    display: grid;
+    grid-auto-flow: column;
+  }
+
+  &__status {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 0.2rem;
+    margin-top: 0.2rem;
+
+    & td {
+      height: 3rem;
+      display: grid;
+      align-items: center;
+      justify-content: center;
+      color: $white;
+    }
+  }
+
+  &__empty {
+  }
+
+  &__available {
+    background-color: $clr-cal-available;
+  }
+
+  &__occupied {
+    height: 3rem;
+    background-color: $clr-cal-occupied;
+
+    &--start {
+      background: linear-gradient(
+        135deg,
+        $clr-cal-available 50%,
+        $clr-cal-occupied 50%
+      );
+    }
+
+    &--end {
+      background: linear-gradient(
+        135deg,
+        $clr-cal-occupied 50%,
+        $clr-cal-available 50%
+      );
+    }
+
+    &--change {
+      background: linear-gradient(
+        135deg,
+        $clr-cal-occupied 48%,
+        $grey3 48%,
+        $grey3 52%,
+        $clr-cal-occupied 52%
+      );
+    }
+  }
+}

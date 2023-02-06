@@ -1,0 +1,294 @@
+// https://medium.com/@eugeniolujambio/accessible-css-only-floating-labels-74bf9173bc5f
+
+.form {
+  display: grid;
+  grid-template-columns: auto;
+  grid-gap: 2rem;
+
+  &--book {
+    @include mq(570) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include mq(1050) {
+      grid-template-columns: 1fr;
+    }
+
+    @include mq(1400) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  &--contact {
+    @include mq(570) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  &__group {
+    position: relative;
+    display: grid;
+
+    &--person {
+      grid-column: 1 / -1;
+    }
+
+    &--fullwidth {
+      grid-column: 1 / -1;
+    }
+
+    //   &--textarea,
+    //   &--data-protection {
+    //     grid-column: 1 / -1;
+    //     display: block;
+    //   }
+
+    //   &--signature {
+    //     grid-column: 2 / -1;
+    //   }
+
+    //   &--hide {
+    //     display: none;
+    //   }
+  }
+
+  &__label {
+    position: absolute;
+    top: -0.8rem;
+    left: 0.8rem;
+    padding: 0 0.5rem;
+    touch-action: manipulation;
+    transition: all 0.2s;
+  }
+
+  &__input {
+    @include form;
+
+    &--textarea {
+      resize: vertical;
+      min-height: 30rem;
+      display: block;
+    }
+
+    &::placeholder {
+      color: $clr-placeholder;
+      opacity: 0;
+      transition: all 0.2s;
+    }
+
+    &:placeholder-shown + label {
+      transform: translate(0, 2rem);
+      color: $clr-placeholder;
+      cursor: text;
+      z-index: -1;
+    }
+
+    &:not(:placeholder-shown) + label,
+    &:focus + label {
+      transform: translate(0, 0);
+      color: $clr-primary;
+      font-weight: $fw-b;
+      font-size: 80%;
+      background-color: white;
+      cursor: pointer;
+      z-index: 1;
+    }
+
+    // green label if valid
+    // &:not(:placeholder-shown):not(:focus):valid + label {
+    //   color: $clr-confirm;
+    // }
+
+    // red label if not valid
+    // &:not(:placeholder-shown):not(:focus):invalid + label {
+    //   color: $clr-error;
+    // }
+
+    //   &--disabled {
+    //     cursor: not-allowed;
+    //     border: 0.1rem solid $grey3;
+    //     color: $grey3;
+    //   }
+
+    //   &--right {
+    //     text-align: right;
+    //   }
+
+    //   &--signature {
+    //     height: 10rem;
+    //   }
+  }
+
+  &__mandatory {
+    display: none;
+  }
+
+  &--comments {
+    @include content-center;
+    max-width: $center-text;
+    margin-top: 4rem;
+  }
+
+  p.error {
+    grid-row: 2;
+    color: $clr-error;
+  }
+
+  .sr-only {
+    display: none;
+  }
+
+  // &__title {
+  //   grid-column: 1 / -1;
+  //   margin: 4rem 0 0;
+
+  //   &--table {
+  //     margin-bottom: 1.5rem;
+  //   }
+  // }
+
+  // &__person {
+  //   position: relative;
+  // }
+
+  // &__login-error {
+  //   color: $clr-error;
+  // }
+
+  // &__price {
+  //   overflow: auto;
+  // }
+
+  // &__guest,
+  // &__travel,
+  // &__equipment,
+  // &__persons,
+  // &__signature {
+  //   display: grid;
+  //   grid-gap: 2rem;
+  //   // grid-template-columns: auto;
+
+  //   @include mq(500) {
+  //     grid-template-columns: repeat(2, 1fr);
+  //   }
+
+  //   @media print {
+  //     grid-template-columns: repeat(3, 1fr);
+  //   }
+  // }
+
+  // &__signature {
+  //   margin-top: 5rem;
+  // }
+
+  // &__accommodation {
+  //   display: grid;
+  //   grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+  //   grid-gap: 2rem;
+  // }
+
+  // &__guests {
+  //   display: grid;
+  //   grid-gap: 2rem;
+  // }
+
+  // &__btn {
+  //   display: grid;
+  //   grid-gap: 1rem;
+  //   margin-top: $spacer-top;
+
+  //   &--multicolumn {
+  //     @include mq(500) {
+  //       grid-template-columns: repeat(2, 1fr);
+  //     }
+  //   }
+
+  //   @media print {
+  //     display: none;
+  //   }
+  // }
+
+  // &__group--reset {
+  //   display: none;
+  // }
+
+  // // &--book,
+  // &--multicolumn,
+  // &--contact,
+  // &--request {
+  //   @include mq(500) {
+  //     grid-template-columns: repeat(2, 1fr);
+  //   }
+  // }
+
+  // &--poi {
+  //   max-width: 30rem;
+  // }
+
+  // &--search {
+  //   display: grid;
+  //   grid-template-rows: auto;
+  //   grid-template-columns: auto;
+  //   grid-gap: 1rem;
+  //   margin-bottom: 1rem;
+
+  //   @include mq(600) {
+  //     grid-template-columns: repeat(2, auto);
+  //   }
+  // }
+
+  // &--house {
+  //   .form__group:nth-of-type(1),
+  //   .form__group:nth-of-type(2),
+  //   .form__group:nth-of-type(3),
+  //   .form__group:nth-of-type(4),
+  //   .form__group:nth-of-type(5),
+  //   .form__group:nth-of-type(6),
+  //   .form__group:nth-of-type(7) {
+  //     display: none;
+  //   }
+  // }
+
+  &__submit {
+    grid-column: 1 / -1;
+  }
+
+  &__select {
+    @include form;
+
+    &--label {
+      display: none;
+    }
+  }
+}
+
+// @media print {
+
+// html {
+//     font-size: 40%; // 1 rem = 11px
+// }
+
+// .header,
+// #footer,
+// .form__btn {
+//     display: none;
+// }
+
+// .form__travel,
+// .form__guest {
+//     grid-template-columns: repeat(3, 1fr);
+// }
+
+// .form__signature {
+//     margin-top: 5rem;
+// grid-template-columns: repeat(3, 1fr);
+// }
+
+// .form__group--signature {
+//     grid-column: 2 / -1;
+// }
+
+// .form__input--signature {
+//     height: 10rem;
+// }
+// }

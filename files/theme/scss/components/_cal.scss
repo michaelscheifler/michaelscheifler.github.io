@@ -1,0 +1,144 @@
+.cal {
+  &__wrapper {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: auto 1fr;
+  }
+
+  &__legend {
+    display: grid;
+    align-content: start;
+    padding-top: 3rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: $grey3;
+  }
+
+  &__description {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(2, max-content);
+    align-items: center;
+    padding-right: 0.1rem;
+  }
+
+  &__box-available {
+    width: 1.5rem;
+    height: 2.5rem;
+    margin: 0.1rem 1rem;
+    background: $clr-cal-available;
+  }
+
+  &__box-occupied {
+    width: 1.5rem;
+    height: 2.5rem;
+    margin: 0.1rem 1rem;
+    background: $clr-cal-occupied;
+  }
+
+  &__accomodations {
+    display: grid;
+    grid-template-columns: max-content;
+    grid-gap: 0.5rem;
+    padding: 1rem;
+  }
+
+  &__accommodation {
+    @include icon-grid("\f07a", 1.7rem, inherit);
+
+    &:hover {
+      text-decoration-line: none;
+    }
+  }
+
+  &__container {
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 0.5rem;
+    align-content: start;
+    justify-content: start;
+    overflow-x: scroll;
+  }
+
+  &__item {
+    display: grid;
+    align-content: start;
+    & tr {
+      display: grid;
+    }
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 2.2rem;
+    background-color: $grey3;
+
+    &:not(:empty) {
+      @include icon-grid("\f073", 1.7rem, inherit);
+      padding-left: 1rem;
+    }
+  }
+
+  &__daylist {
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 0.2rem;
+
+    & > th {
+      display: grid;
+      align-items: center;
+      text-align: center;
+      width: 3rem;
+      height: 6rem;
+      font-size: 1.4rem;
+      color: $white;
+      background-color: $black;
+    }
+  }
+
+  &__status {
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 0.2rem;
+    margin-top: 0.2rem;
+
+    & td {
+      height: 3rem;
+    }
+  }
+
+  &__available {
+    background-color: $clr-cal-available;
+  }
+
+  &__occupied {
+    height: 3rem;
+    background-color: $clr-cal-occupied;
+
+    &--start {
+      background: linear-gradient(
+        135deg,
+        $clr-cal-available 50%,
+        $clr-cal-occupied 50%
+      );
+    }
+
+    &--end {
+      background: linear-gradient(
+        135deg,
+        $clr-cal-occupied 50%,
+        $clr-cal-available 50%
+      );
+    }
+
+    &--change {
+      background: linear-gradient(
+        135deg,
+        $clr-cal-occupied 48%,
+        $grey3 48%,
+        $grey3 52%,
+        $clr-cal-occupied 52%
+      );
+    }
+  }
+}

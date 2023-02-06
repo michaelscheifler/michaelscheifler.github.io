@@ -1,0 +1,95 @@
+.btn {
+  &,
+  &:link,
+  &:visited {
+    @include txtStyle($default-font-size, $fw-eb, inherit, none, $white);
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    border: 0.2rem solid $clr-primary;
+    border-radius: $radius;
+    padding: 1rem 0;
+    // margin: 5rem;
+    background-color: $clr-primary;
+    width: 100%;
+    cursor: pointer;
+    white-space: normal;
+    // max-width: 65rem;
+    transition: background-color 0.2s ease-in-out;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    cursor: pointer;
+    background-color: scale-color($clr-primary, $lightness: -10%);
+    border: 0.2rem solid scale-color($clr-primary, $lightness: -10%);
+    // outline-style: none;
+  }
+
+  &--back {
+    margin-top: $spacer-top;
+  }
+
+  &--backlink {
+  }
+
+  &--faq {
+    margin-top: $spacer-top;
+  }
+
+  &--insurance {
+    margin-top: $spacer-top;
+  }
+
+  &--maps {
+    // margin-top: $spacer-top;
+  }
+
+  &--pano {
+    // margin-top: 1rem;
+  }
+
+  &--submit {
+    grid-column: 1 / -1;
+  }
+
+  // &--cancel,
+  // &--print,
+  // &--send,
+  &--white {
+    &,
+    &:link,
+    &:visited {
+      color: $clr-primary;
+      background-color: $white;
+    }
+  }
+
+  &--disabled {
+    &,
+    &:link,
+    &:visited,
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: $clr-error;
+      cursor: default;
+      border: 0.2rem solid $clr-error;
+    }
+  }
+
+  // &--pano {
+  //     @include content-full;
+  //     text-transform: uppercase;;
+  // }
+
+  &--booking {
+  }
+}
+
+// .more a,
+// .back a,
+// .submit {
+//     margin: 2rem 0 2rem;
+// }

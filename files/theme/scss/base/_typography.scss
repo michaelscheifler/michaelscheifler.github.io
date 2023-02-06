@@ -1,0 +1,165 @@
+//  Base-font
+body {
+  @include txtStyle($default-font-size, $fw-n, 1.5, auto);
+}
+
+// Heading 1 - 5 without margin
+h1 {
+  @include txtStyle(3.2rem, $fw-eb, 1.16, auto, $clr-primary);
+
+  @include mq(1200) {
+    font-size: 3.8rem;
+  }
+}
+
+h2 {
+  @include txtStyle(2.6rem, $fw-eb, 1.13, auto);
+
+  @include mq(1200) {
+    font-size: 3.2rem;
+  }
+}
+
+h3 {
+  @include txtStyle(2.2rem, $fw-sb, 1.25, none);
+  // border-bottom: .1rem solid $grey1;
+}
+
+h4 {
+  @include txtStyle(2rem, $fw-b, 1.44, none);
+}
+
+h5 {
+  @include txtStyle(1.8rem, $fw-b, 1.44, none);
+}
+
+.text {
+  h1 {
+    margin: 0 0 3rem;
+  }
+
+  h2,
+  h3,
+  h4,
+  h5 {
+    margin: 0 0 1rem;
+  }
+
+  p {
+    margin: 0 0 2rem;
+  }
+}
+
+// List
+// ul,
+// ol {
+//   margin: 0 0 0 4rem;
+//   background-color: grey;
+// }
+
+// li {
+//   margin: 0 0 1rem;
+//   padding-left: 0.5rem;
+// }
+
+ul ul,
+ul ol,
+ol ul,
+ol ol {
+  list-style-type: lower-alpha;
+  // margin-left: 2.5rem;
+}
+
+// Link
+a {
+  @include txtlink;
+}
+
+// FAQ
+.h3--question {
+  display: grid;
+  grid-template-columns: max-content auto;
+  align-items: center;
+  grid-gap: 1rem;
+  // margin: 6rem 0 2rem;
+
+  &::before {
+    content: "?";
+    font-size: 2rem;
+    background-color: $clr-primary;
+    color: $white;
+
+    display: inline-block;
+    padding: 0.9rem;
+    border-radius: 100%;
+    width: 4rem;
+    height: 4rem;
+    text-align: center;
+  }
+}
+
+// p {
+//     &:not(:last-of-type) {
+//         margin: 0 0 2rem;
+//     }
+// }
+
+// ul,
+// .list {
+//     padding-left: 1.8rem;
+// }
+
+// ol {
+//     margin-bottom: 2rem;
+//     padding-left: 2rem;
+
+//     li {
+//         padding: 1rem 0 1rem 1rem;
+//     }
+
+// .lower-alpha {
+//     list-style-type: lower-alpha;
+//     padding-left: 3rem;
+// }
+
+//     .compressed {
+//         padding: 0 0 0 1rem;
+//     }
+// }
+
+// ul {
+//     padding-left: 1.8rem;
+//     margin-bottom: 2rem;
+
+//     &--second {
+//         margin-bottom: 0;
+//     }
+// }
+
+// .pagetitle {
+//     display: grid;
+//     grid-gap: 1rem;
+//     text-align: center;
+//     text-transform: uppercase;
+//     margin-bottom: $spacer-lg;
+
+//     &--main {
+//         @include txtStyle (1.3rem, $fw-b, 1.4, none, $grey2);
+//         letter-spacing: .1rem;
+//     }
+
+//     &--sub {
+//         @include txtStyle (2rem, $fw-n, 1.4, none);
+//         letter-spacing: .1rem;
+
+//         display: grid;
+//         grid-gap: 1rem;
+//         justify-items: center;
+
+//         &::after {
+//             content: '';
+//             width: 50%;
+//             border-bottom: 3px solid $clr-primary;
+//         }
+//     }
+// }

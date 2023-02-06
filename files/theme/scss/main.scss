@@ -1,0 +1,50 @@
+@charset 'UTF-8';
+
+// 1. Configuration and helpers
+// @import 'abstracts/functions';
+@import "abstracts/variables";
+@import "abstracts/mixins";
+
+// 2. Vendors
+// @import "vendors/lightslider";
+
+// 3. Base stuff
+@import "base/base";
+@import "base/fonts";
+@import "base/typography";
+@import "base/helpers";
+
+// 4. Layout-related sections
+@import "layout/header";
+@import "layout/footer";
+
+// 5. Components
+@import "components/anchor";
+@import "components/book";
+@import "components/cal";
+@import "components/cal1";
+@import "components/calc";
+// @import "components/checkbox";
+@import "components/form";
+@import "components/btn";
+@import "components/features";
+@import "components/gallery";
+@import "components/grid";
+@import "components/hero";
+@import "components/house";
+@import "components/image";
+@import "components/intro";
+@import "components/location";
+@import "components/optional";
+@import "components/overview";
+@import "components/person";
+@import "components/price";
+@import "components/progress";
+@import "components/service";
+@import "components/usp";
+@import "components/slider";
+// @import "components/table";
+
+// 6. Page-specific styles
+
+// 7. Themes

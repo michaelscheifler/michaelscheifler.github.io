@@ -1,0 +1,40 @@
+.overview {
+  &__list {
+    display: grid;
+    margin: 0;
+    list-style: none;
+
+    @include mq(400) {
+      grid-template-columns: repeat(2, max-content);
+      grid-column-gap: 2rem;
+      grid-row-gap: 0;
+    }
+
+    @include mq(650) {
+      grid-template-columns: repeat(4, max-content);
+      grid-column-gap: 2rem;
+      grid-row-gap: 0;
+    }
+
+    li {
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+  &__number {
+    @include icon-grid("\e900", 2rem, inherit);
+  }
+
+  &__person {
+    @include icon-grid("\f007", 2rem, inherit);
+  }
+
+  &__bedroom {
+    @include icon-grid("\f236", 2rem, inherit);
+  }
+
+  &__bathroom {
+    @include icon-grid("\f2cd", 2rem, inherit);
+  }
+}

@@ -1,0 +1,27 @@
+.book {
+  @include mq(1050) {
+    position: sticky;
+    top: 1rem;
+  }
+
+  &__container {
+    display: grid;
+    grid-gap: 2rem;
+    border-radius: $radius;
+    border: 0.1rem solid $clr-primary;
+    padding: 2rem;
+  }
+
+  &__header {
+    justify-self: center;
+    line-height: 1;
+  }
+
+  &__price {
+    font-size: 2.8rem;
+  }
+
+  &__details {
+    font-size: 1.2rem;
+  }
+}

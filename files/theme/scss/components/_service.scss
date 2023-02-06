@@ -1,0 +1,21 @@
+.service {
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-gap: 3rem;
+  }
+
+  &__item {
+    background-color: $grey5;
+    border: 0.3rem solid $grey3;
+
+    & h3,
+    p {
+      padding: 1rem;
+    }
+  }
+
+  &__title {
+    background-color: $grey4;
+  }
+}
