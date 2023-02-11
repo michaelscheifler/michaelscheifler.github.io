@@ -1,7 +1,6 @@
 .overview {
   &__list {
     display: grid;
-    margin: 0;
     list-style: none;
 
     @include mq(400) {
@@ -14,11 +13,6 @@
       grid-template-columns: repeat(4, max-content);
       grid-column-gap: 2rem;
       grid-row-gap: 0;
-    }
-
-    li {
-      padding: 0;
-      margin: 0;
     }
   }
 

@@ -29,6 +29,37 @@
   }
 }
 
+// Button
+@mixin btn {
+  &,
+  &:link,
+  &:visited {
+    @include txtStyle($default-font-size, $fw-eb, inherit, none, $white);
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    border: 0.2rem solid $clr-primary;
+    border-radius: $radius;
+    padding: 1rem 0;
+    // margin: 5rem;
+    background-color: $clr-primary;
+    width: 100%;
+    cursor: pointer;
+    white-space: normal;
+    // max-width: 65rem;
+    transition: background-color 0.2s ease-in-out;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    cursor: pointer;
+    background-color: scale-color($clr-primary, $lightness: -10%);
+    border: 0.2rem solid scale-color($clr-primary, $lightness: -10%);
+    // outline-style: none;
+  }
+}
+
 // Mobile First - Media Queries
 @mixin mq($screen-min) {
   @media only screen and (min-width: calc($screen-min/16*1em)) {

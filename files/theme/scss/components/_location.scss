@@ -21,9 +21,9 @@
 
     & tr:nth-child(odd) {
       td {
-        background-color: $grey5;
-        border-top: 0.3rem solid $grey3;
-        border-bottom: 0.3rem solid $grey3;
+        background-color: $clr-background;
+        border-top: 0.2rem solid $clr-primary;
+        border-bottom: 0.2rem solid $clr-primary;
       }
     }
   }

@@ -2,6 +2,9 @@
 $black: hsla(0, 0%, 28%, 1);
 $blue1: hsla(209, 100%, 40%, 1);
 $blue2: scale-color($blue1, $lightness: 20%);
+$blue3: scale-color($blue1, $lightness: 40%);
+$blue4: scale-color($blue1, $lightness: 60%);
+$blue5: scale-color($blue1, $lightness: 80%);
 $green:hsla(75, 62%, 37%, 1);
 $grey1: hsla(0, 0%, 33%, 1);
 $grey2: scale-color($grey1, $lightness: 60%);
@@ -33,6 +36,8 @@ $clr-table2: $grey4;
 $clr-table3: $grey5;
 $clr-progress1: $green;
 $clr-progress2: scale-color($clr-progress1, $lightness: 50%);
+$clr-disabled: $grey2;
+$clr-background: $blue5;
 
 // Color Calendar
 $clr-cal-available: $green;
