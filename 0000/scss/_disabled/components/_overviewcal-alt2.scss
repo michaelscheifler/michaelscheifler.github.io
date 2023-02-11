@@ -1,0 +1,116 @@
+.overviewcal {
+
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: start;
+
+    &__legend {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-column-gap: .5rem;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    %legend-color {
+        width: 2.8rem;
+        height: 2.8rem;
+        margin: .2rem 0;
+    }
+
+    &__available-color {
+        @extend %legend-color;
+        background: $clr-cal-free;
+    }
+
+    &__occupied-color {
+        @extend %legend-color;
+        background: $clr-cal-full;
+    }
+
+    &__available-text,
+    &__occupied-text {
+        @include txtStyle (1.7rem, $fw-eb, 1, none, $clr-text);
+    }
+
+    &__accomodation {
+        grid-column: 1 / -1;
+        height: 2.8rem;
+        @include icon-grid("\f07a", 1.7rem, inherit);
+        @include txtStyle (1.7rem, $fw-eb, 1, none, $clr-primary);
+        text-decoration: none;
+    }
+
+    &__months {
+        overflow-x: auto;
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: .5rem;
+    }
+
+    &__month {
+        width: 100rem;
+        border-collapse: collapse;
+    }
+
+    &__title {
+        padding: 1rem;
+        font-weight: $fw-b;
+        font-size: 1.6rem;
+        text-transform: uppercase;
+
+        &:not(:empty) {
+            @include icon-grid("\f073", 2rem, inherit);
+        }
+    }
+
+    &__table {
+        border-collapse: collapse;
+    }
+
+    &__weekday,
+    &__day {
+        // width: 3rem;
+        font-size: 1.4rem;
+        font-weight: $fw-n;
+        color: $white;
+        border-right: .2rem solid $white;
+        background-color: $black;
+    }
+
+    &__weekdays {
+        border-bottom: .2rem solid $white;
+    }
+
+
+    %occupancy {
+        height: 3rem;
+        border-right: .2rem solid $white;
+        border-bottom: .2rem solid $white;
+    }
+
+    &__arrival {
+        @extend %occupancy;
+        background: linear-gradient(90deg, $clr-cal-free 50%, $clr-cal-full 50%);
+    }
+
+    &__departure {
+        @extend %occupancy;
+        background: linear-gradient(90deg, $clr-cal-full 50%, $clr-cal-free 50%);
+    }
+
+    &__available {
+        @extend %occupancy;
+        background: $clr-cal-free;
+    }
+
+    &__occupied {
+        @extend %occupancy;
+        background: $clr-cal-full;
+    }
+
+    &__change {
+        @extend %occupancy;
+        background: $clr-cal-full;
+    }
+}

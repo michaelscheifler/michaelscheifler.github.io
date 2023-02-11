@@ -1,0 +1,13 @@
+.pano {
+    display: grid;
+    background-color: orange;
+    place-items: center;
+    text-align: center;
+    height: 20rem;
+
+    .h2 {
+        @include content-center;
+        @include txtStyle (2.4rem, $fw-b, 1.5, none, $clr-primary);
+        text-transform: uppercase;
+    }
+}

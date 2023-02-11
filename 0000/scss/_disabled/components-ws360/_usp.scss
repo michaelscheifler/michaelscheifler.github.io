@@ -1,0 +1,38 @@
+.usp {
+    @include content-center;
+
+    display: grid;
+    align-items: center;
+    grid-gap: $spacer-sm;
+    margin-bottom: $spacer-md;
+    max-width: $center-width;
+
+    @include mq(600) {
+        grid-gap: $spacer-lg;
+        margin-bottom: $spacer-lg;
+        grid-template-columns: 1fr 2fr;
+    }
+
+    @include mq(1200) {
+        grid-gap: $spacer-xl;
+        margin-bottom: $spacer-xl;
+    }
+
+
+    &__h2 {
+        @include txtStyle (2rem, $fw-b, 1.5, none, $clr-primary);
+        text-transform: uppercase;
+        letter-spacing: .15rem;
+        margin: 2rem 0 1rem;
+
+        @include mq(600) {
+            text-align: right;
+        }
+    }
+
+    &__text {
+        // &:not(:last-child) {
+        //     margin-bottom: $spacer-sm;
+        // }
+    }
+}

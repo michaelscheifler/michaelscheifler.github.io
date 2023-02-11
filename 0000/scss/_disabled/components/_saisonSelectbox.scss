@@ -1,0 +1,27 @@
+.saisonSelectbox {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    margin-bottom: 1rem;
+
+    &::before {
+        @include icomoon("\f107", 3rem, inherit);
+        grid-row: 1;
+        grid-column: 3;
+        justify-self: end;
+        margin: 0 1rem;
+        z-index: -1;
+    }
+
+    [id="ctrlSaisonSelect"] {
+        grid-row: 1;
+        grid-column: 2 / 4;
+        margin-right: 1rem;
+        @include form;
+        height: 5rem;
+    }
+
+    [id="ctrlCalNext"] {
+        justify-self: end;
+    }
+}

@@ -1,0 +1,229 @@
+// Calendar object-detail
+.fewo_calendar {
+
+    // Layout
+    display: block;
+
+    tbody {
+        display: block;
+    }
+
+    .month {
+        font-size: 1.8rem;
+        font-weight: $fw-b;
+        color: $clr-text;
+        text-align: center;
+        padding: 0 0 1rem;
+    }
+
+    tr {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        font-size: 1.4rem;
+        text-align: center;
+
+        &:nth-of-type(1) {
+            grid-template-columns: 1fr;
+        }
+
+        &:nth-of-type(2) {
+            td {
+                font-size: 1.2rem;
+                color: $clr-text;
+                padding: 0;
+            }
+        }
+
+        &:nth-of-type(8) {
+            td.day_empty {
+                display: none;
+            }
+        }
+    }
+
+    td {
+        margin: .1rem;
+        padding: 1.3rem 0;
+        color: $white;
+        font-weight: $fw-b;
+    }
+
+    [data-tooltip]:after {
+        content: initial !important;
+    }
+
+
+    // Color
+    .in_past {
+        background: $clr-cal-full-past;
+        cursor: not-allowed;
+    }
+
+    .day_free {
+        background: $clr-cal-free;
+        cursor: pointer;
+
+        &:hover {
+            background: $clr-cal-free-hover;
+            cursor: pointer;
+        }
+
+        &.unavailable,
+        &.unavailable:hover {
+            background: $clr-cal-free-unavailable;
+            cursor: not-allowed;
+        }
+
+        &.selected,
+        // Customer Login
+        &.selected:hover,
+        // Customer Login
+        &.active {
+            background: $clr-cal-period;
+            cursor: pointer;
+        }
+
+        &.arrival {
+            background: $clr-cal-arrival;
+            cursor: pointer;
+        }
+
+        &.departure {
+            background: $clr-cal-departure;
+        }
+    }
+
+    .day_full,
+    .day_full_import {
+        background: $clr-cal-full;
+        cursor: not-allowed;
+    }
+
+    .day_start,
+    .day_start_import {
+        background: linear-gradient(90deg, $clr-cal-free 50%, $clr-cal-full 50%);
+        cursor: not-allowed;
+
+        &:hover {
+            background: linear-gradient(90deg, $clr-cal-free 50%, $clr-cal-full 50%);
+            cursor: not-allowed;
+        }
+
+        &.unavailable,
+        &.unavailable:hover {
+            background: linear-gradient(90deg, $clr-cal-free-unavailable 50%, $clr-cal-full 50%);
+            cursor: not-allowed;
+        }
+
+        &.departure,
+        &.departure:hover {
+            background: $clr-cal-departure;
+        }
+    }
+
+    .day_stop,
+    .day_stop_import {
+        background: linear-gradient(90deg, $clr-cal-full 50%, $clr-cal-free 50%);
+        cursor: pointer;
+
+        &:hover {
+            background: $clr-cal-free-hover;
+            cursor: pointer;
+        }
+
+        &.unavailable,
+        &.unavailable:hover {
+            background: linear-gradient(90deg, $clr-cal-full 50%, $clr-cal-free-unavailable 50%);
+            cursor: not-allowed;
+        }
+
+        &.arrival {
+            background: $clr-cal-arrival;
+            cursor: pointer;
+        }
+    }
+
+    // Selection Hover
+    &.stopSelection {
+
+        .day_free {
+
+            &.unavailable,
+            &.unavailable:hover {
+                cursor: not-allowed;
+            }
+
+            &.arrival {
+                background: $clr-cal-selection-arrival;
+                cursor: not-allowed;
+            }
+
+            &.active {
+                background: $clr-cal-selection-period;
+                cursor: pointer;
+            }
+        }
+
+        .day_full {
+            background: $clr-cal-full-past;
+        }
+
+        .day_start {
+
+            &.unavailable,
+            &.unavailable:hover {
+                background: linear-gradient(90deg, $clr-cal-free-unavailable 50%, $clr-cal-full-past 50%);
+                cursor: not-allowed;
+            }
+
+            &:hover {
+                background: $clr-cal-selection-period;
+                cursor: pointer;
+            }
+        }
+
+        .day_stop {
+
+            &.unavailable,
+            &.unavailable:hover {
+                background: linear-gradient(90deg, $clr-cal-full-past 50%, $clr-cal-free-past 50%);
+                cursor: not-allowed;
+            }
+
+            &.arrival,
+            &.arrival:hover {
+                background: $clr-cal-selection-arrival;
+                cursor: not-allowed;
+            }
+        }
+    }
+
+
+
+    // Owner
+
+    .day_full_owner {
+        background: $clr-cal-owner;
+        cursor: pointer;
+    }
+
+    .day_start_owner {
+        background: linear-gradient(90deg, $clr-cal-free 50%, $clr-cal-owner 50%);
+        cursor: not-allowed;
+
+        &:hover {
+            background: linear-gradient(90deg, $clr-cal-free 50%, $clr-cal-owner 50%);
+            cursor: not-allowed;
+        }
+    }
+
+    .day_stop_owner {
+        background: linear-gradient(90deg, $clr-cal-owner 50%, $clr-cal-free 50%);
+        cursor: pointer;
+
+        &:hover {
+            background: $clr-cal-free-hover;
+            cursor: pointer;
+        }
+    }
+}

@@ -1,0 +1,16 @@
+.contact {
+    @include content-center;
+    padding-bottom: $spacer-lg;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+
+    @include mq(700) {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .h2 {
+        margin-bottom: 2rem;
+    }
+}

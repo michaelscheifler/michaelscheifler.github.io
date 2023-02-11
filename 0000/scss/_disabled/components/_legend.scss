@@ -1,0 +1,142 @@
+.legend {
+
+    // display: grid;
+    // grid-auto-flow: column;
+    // grid-template-columns: max-content 1fr;
+    
+
+    // &__legend {
+        display: grid;
+        grid-gap: .2rem;
+        // text-transform: uppercase;
+        // background-color: $grey4;
+    // }
+
+    @include mq(500) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    
+    &__description {
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-columns: max-content;
+        grid-gap: 1rem;
+        align-items: center;
+        height: 3.6rem;
+        padding: 0 1rem;
+    }
+
+    %legend-clr {
+        width: 2rem;
+        height: 3rem;
+    }
+
+    &__clr-confirm {
+        @extend %legend-clr;
+        background: $clr-confirm;
+    }
+
+    &__clr-error {
+        @extend %legend-clr;
+        background: $clr-error;
+    }
+
+    &__text {
+        @include txtStyle (1.7rem, $fw-eb, 1, none, $clr-text);
+    }
+
+    // &__accomodations {
+    //     display: grid;
+    //     grid-gap: .2rem;
+    // }
+
+    // &__accomodation {
+    //     height: 3rem;
+    //     @include icon-grid("\f07a", 1.7rem, inherit);
+    //     @include txtStyle (1.7rem, $fw-eb, 1, none, $clr-primary);
+    //     text-decoration: none;
+    //     background-color: $white;
+    //     padding: 0 2rem;
+    // }
+
+    // &__months {
+    //     display: grid;
+    //     grid-auto-flow: column;
+    //     grid-gap: .5rem;
+    //     overflow-x: hidden;
+    //     cursor: grab;
+    //     justify-content: start;
+    // }
+    
+    // &__title {
+    //     padding: 1rem;
+    //     @include txtStyle (1.7rem, $fw-eb, 1, none, $clr-text);
+    //     text-transform: uppercase;
+    //     background-color: $grey4;
+
+    //     &:not(:empty) {
+    //         @include icon-grid("\f073", 2rem, inherit);
+    //     }
+    // }
+
+    // &__weekdays,
+    // &__days {
+    //     display: grid;
+    //     grid-auto-flow: column;
+    //     grid-gap: .2rem;
+    //     height: 2rem;
+    //     justify-content: start;
+    // }
+    
+    // &__weekday,
+    // &__day {
+    //     display: grid;
+    //     @include txtStyle (1.4rem, $fw-n, 1, none, $white);
+    //     background-color: $black;
+    //     width: 3rem;
+    //     text-align: center;
+    //     align-items: center;
+    // }
+    
+    // &__occupancies {
+    //     display: grid;
+    //     grid-gap: 0.2rem;
+    //     padding-top: .2rem;
+    // }
+
+    // &__occupancy {
+    //     display: grid;
+    //     grid-auto-flow: column;
+    //     grid-gap: .2rem;
+    // }
+
+    // %occupancy {
+    //     height: 3rem;
+    // }
+
+    // &__arrival {
+    //     @extend %occupancy;
+    //     background: linear-gradient(90deg, $clr-cal-available 50%, $clr-cal-occupied 50%);
+    // }
+
+    // &__departure {
+    //     @extend %occupancy;
+    //     background: linear-gradient(90deg, $clr-cal-occupied 50%, $clr-cal-available 50%);
+    // }
+
+    // &__available {
+    //     @extend %occupancy;
+    //     background: $clr-cal-available;
+    // }
+
+    // &__occupied {
+    //     @extend %occupancy;
+    //     background: $clr-cal-occupied;
+    // }
+
+    // &__change {
+    //     @extend %occupancy;
+    //     background: $clr-cal-occupied;
+    // }
+}

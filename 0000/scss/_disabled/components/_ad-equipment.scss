@@ -1,0 +1,96 @@
+.ad-equipment {
+    @include content-center;
+    max-width: $center-text;
+
+    .heading-1 {
+        margin: 2rem 0 1rem;
+    }
+
+    .heading-2 {
+        margin: 0 0 2rem;
+    }
+
+    .heading-3 {
+        margin: 2rem 0 0;
+    }
+
+    .paragraph {
+        margin-bottom: 2rem;
+    }
+
+    .checkbox_toggler_first,
+    .checkbox_toggler {
+        border-bottom: .1rem solid $grey2;
+        padding: 0 0 1rem;
+        margin: 3rem 0 2rem;
+        font-weight: $fw-b;
+        font-size: 2.4rem;
+    }
+
+    .tl_checkbox_container {
+        border: 0;
+
+        span:nth-of-type(1) {
+            display: none;
+        }
+    }
+
+    legend {
+        display: none;
+    }
+
+    label {
+        display: inline-block;
+        border: .1rem solid $blue;
+        border-radius: 5rem;
+        padding: .2rem 2rem .2rem .4rem;
+        margin: .4rem .2rem;
+        transition: all .2s;
+        cursor: pointer;
+
+        &::before {
+            display: inline-block;
+            @include icomoon("\f067", inherit, $blue);
+            padding: 1rem;
+            transition: transform .3s ease-in-out;
+        }
+    }
+
+    input[type="checkbox"] {
+        display: none;
+
+        &:checked+label {
+            background-color: $blue;
+            color: $white;
+            transition: all .2s;
+
+            &::before {
+                content: "\f00c";
+                padding: 1rem .9rem;
+                color: $white;
+                transform: rotate(-360deg);
+                transition: transform .3s ease-in-out;
+            }
+        }
+    }
+
+    .formsubmit {
+        margin: 5rem 0 !important; // Inline style
+
+        .submit {
+            @include btn-primary;
+            max-width: none;
+        }
+    }
+
+    .success {
+        font-weight: $fw-b;
+        text-align: center;
+        color: $white;
+        background-color: $green;
+        border: .1rem solid $green;
+        border-radius: $radius;
+        padding: 1rem 0;
+        margin: 5rem 0;
+    }
+}

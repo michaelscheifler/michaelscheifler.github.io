@@ -1,0 +1,17 @@
+[id="header"] {
+    z-index: 10;
+    border-bottom: .1rem solid $grey2;
+    box-shadow: 0 0 1rem $clr-shadow;
+
+    .inside {
+        @include content-full;
+        display: grid;
+        grid-template-columns: 1fr auto;
+        align-items: center;
+    }
+
+    .logo {
+        display: block;
+        padding-top: .5rem;
+    }
+}

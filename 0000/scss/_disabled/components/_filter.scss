@@ -1,0 +1,56 @@
+.filter .formbody {
+    @include content-full;
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem; 
+
+    @include mq(500) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include mq(600) {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    @include mq(1000) {
+        grid-auto-flow: column;
+    }
+
+    // Reisezeitraum
+    .fld_period {
+        grid-column: 1 / 3;
+    }
+
+    .fld_minDate,
+    .fld_maxDate {
+        display: none;
+    }
+
+    .fld_resetFilter {
+        grid-column: 1 / -1;
+
+        @include mq(600) {
+            grid-column: 4;
+        }
+
+        @include mq(1000) {
+            grid-column: 7;
+        }
+
+        display: grid;
+        place-content: center;
+
+        a {
+            @include btn-tertiary;
+        }
+    }
+
+    input[type="text"] {
+        @include form;
+    }
+
+    select {
+        @include form;
+    }
+}

@@ -1,0 +1,34 @@
+.apartment {
+    @include content-center;
+
+    &__facts {
+        display: grid;
+        justify-content: start;
+        grid-column-gap: 2rem;
+        @include detail-line;
+
+        @include mq(350) {
+            grid-template-columns: repeat(2, auto);
+        }
+
+        @include mq(600) {
+            grid-template-columns: repeat(4, auto);
+        }
+    }
+
+    &__person {
+        @include icon-grid("\f007", 2rem, inherit);
+    }
+
+    &__bedroom {
+        @include icon-grid("\f236", 2rem, inherit);
+    }
+
+    &__bathroom {
+        @include icon-grid("\f2cd", 2rem, inherit);
+    }
+
+    &__space {
+        @include icon-grid("\e900", 2rem, inherit);
+    }
+}

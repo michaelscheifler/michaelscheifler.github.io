@@ -1,0 +1,302 @@
+.fewo_calendar:after,
+.fewo_calendar tr:after {
+    float:none;
+    clear:both;
+    display:block;
+    content:"";
+}
+.ios .fewo_calendar td.day_free[data-tooltip]:hover:before,
+.ios .fewo_calendar td.day_start[data-tooltip]:hover:before,
+.ios .fewo_calendar td.day_stop[data-tooltip]:hover:before,
+.ios .fewo_calendar td.day_full[data-tooltip]:hover:before,
+.ios .fewo_calendar td.day_free:hover:after,
+.ios .fewo_calendar td.day_start:hover:after,
+.ios .fewo_calendar td.day_stop:hover:after,
+.ios .fewo_calendar td.day_full:hover:after {
+    display:none !important;
+}
+.stopSelection.fewo_calendar td.unavailable.day_free,
+.stopSelection.fewo_calendar td.unavailable.day_free:hover {
+    background:#C0D0BE;
+}
+.stopSelection.fewo_calendar td.day_full,
+.stopSelection.fewo_calendar td.day_full:hover {
+    background:#E8B7B0;
+}
+.stopSelection.fewo_calendar td.day_stop.unavailable,
+.stopSelection.fewo_calendar td.day_stop.unavailable:hover {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e8b7b0+50,c0d0be+50 */
+        background: rgb(232,183,176);
+    /* Old browsers */
+        background: -moz-linear-gradient(-45deg, rgba(232,183,176,1) 50%, rgba(192,208,190,1) 50%);
+    /* FF3.6-15 */
+        background: -webkit-linear-gradient(-45deg, rgba(232,183,176,1) 50%,rgba(192,208,190,1) 50%);
+    /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(135deg, rgba(232,183,176,1) 50%,rgba(192,208,190,1) 50%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e8b7b0', endColorstr='#c0d0be',GradientType=1 );
+    /* IE6-9 fallback on horizontal gradient */;
+}
+.stopSelection.fewo_calendar td.day_start.unavailable,
+.stopSelection.fewo_calendar td.day_start.unavailable:hover {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c0d0be+50,e8b7b0+50 */
+        background: rgb(192,208,190);
+    /* Old browsers */
+        background: -moz-linear-gradient(-45deg, rgba(192,208,190,1) 50%, rgba(232,183,176,1) 50%);
+    /* FF3.6-15 */
+        background: -webkit-linear-gradient(-45deg, rgba(192,208,190,1) 50%,rgba(232,183,176,1) 50%);
+    /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(135deg, rgba(192,208,190,1) 50%,rgba(232,183,176,1) 50%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c0d0be', endColorstr='#e8b7b0',GradientType=1 );
+    /* IE6-9 fallback on horizontal gradient */;
+}
+.fewo_calendar td.day_free[data-tooltip]:before,
+.fewo_calendar td.day_start[data-tooltip]:before,
+.fewo_calendar td.day_stop[data-tooltip]:before,
+.fewo_calendar td.day_full[data-tooltip]:before {
+    left:50%;
+    position:absolute;
+    display:none;
+    border-top:8px solid #bababf;
+    transform: translateX(-50%);
+    z-index: 950;
+    content: "";
+    border-right: 8px solid transparent;
+    border-left: 8px solid transparent;
+    border-bottom: 0px solid transparent;
+    bottom: 39px;
+}
+.fewo_calendar td.day_free[data-tooltip]:hover:before,
+.fewo_calendar td.day_start[data-tooltip]:hover:before,
+.fewo_calendar td.day_stop[data-tooltip]:hover:before,
+.fewo_calendar td.day_full[data-tooltip]:hover:before {
+    display:block;
+}
+.fewo_calendar td.day_free[data-tooltip]:after,
+.fewo_calendar td.day_start[data-tooltip]:after,
+.fewo_calendar td.day_stop[data-tooltip]:after,
+.fewo_calendar td.day_full[data-tooltip]:after {
+    bottom:46px;
+    padding:5px 10px 2px;
+    background-color:#fff;
+    border:1px solid #bababf;
+    border-radius:3px;
+    font-size:12px;
+    line-height:1.4;
+    color:#383838;
+    behavior:url('assets/css3pie/1.0.0/PIE.htc');
+    font-weight:normal !important;
+}
+.fewo_calendar .cal_week td.no-saison {
+    color:#7d7d7d;
+}
+.fewo_calendar .cal_week td {
+    color:#fff;
+}
+.fewo_calendar {
+    float:left;
+    display:block;
+    // margin-right:17px;
+    margin-bottom:14px;
+    padding:2px 1px 1px 2px;
+    background-color:#fff;
+    border:1px solid #e4e4e4;
+}
+#formBooking .formbody {
+    margin-bottom:20px;
+}
+.fewo_calendar:nth-child(2n+2) {
+    margin-right:0;
+}
+.fewo_calendar thead {
+    display:block;
+}
+.fewo_calendar tbody {
+    display:block;
+}
+.fewo_calendar tr {
+    overflow:visible;
+    display:block;
+}
+.fewo_calendar tbody td.no_saison {
+    font-weight:normal;
+    color:#aaa;
+}
+.fewo_calendar td {
+    width:36px;
+    height:36px;
+    position:relative;
+    float:left;
+    display:block;
+    margin-right:1px;
+    margin-bottom:1px;
+    text-align:center;
+    line-height:35px;
+}
+.fewo_calendar td.month {
+    width:100%;
+    display:block;
+}
+.fewo_calendar td.day_empty {
+    background-color:#fff;
+}
+.fewo_calendar td.in_past,
+.fewo_calendar td.day_free.in_past,
+.fewo_calendar td.day_free.in_past:hover {
+    background-color:#E6B1B1;
+    font-weight:normal;
+    text-decoration:none;
+    cursor:not-allowed;
+    font-weight: 300;
+}
+.fewo_calendar td.day_full {
+    cursor:not-allowed;
+    background:#B40000;
+}
+.fewo_calendar td.day_free {
+    background-color:#3C9D46;
+    cursor:pointer;
+}
+.fewo_calendar td.day_start {
+    text-decoration:underline;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3C9D46+50,B40000+50 */
+                background: #3C9D46;
+    /* Old browsers */
+                background: -moz-linear-gradient(-45deg, #3C9D46 50%, #B40000 50%);
+    /* FF3.6-15 */
+                background: -webkit-linear-gradient(-45deg, #3C9D46 50%,#B40000 50%);
+    /* Chrome10-25,Safari5.1-6 */
+                background: linear-gradient(135deg, #3C9D46 50%,#B40000 50%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3C9D46', endColorstr='#B40000',GradientType=1 );
+    /* IE6-9 fallback on horizontal gradient */
+                cursor:pointer;
+}
+.fewo_calendar td.day_start.unavailable,
+.fewo_calendar td.day_start.unavailable:hover {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#306B2E+50,B40000+50 */
+                background: #306B2E;
+    /* Old browsers */
+                background: -moz-linear-gradient(-45deg, #306B2E 50%, #B40000 50%);
+    /* FF3.6-15 */
+                background: -webkit-linear-gradient(-45deg, #306B2E 50%,#B40000 50%);
+    /* Chrome10-25,Safari5.1-6 */
+                background: linear-gradient(135deg, #306B2E 50%,#B40000 50%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#306B2E', endColorstr='#B40000',GradientType=1 );
+    /* IE6-9 fallback on horizontal gradient */;
+}
+.fewo_calendar td.day_stop {
+    text-decoration:underline;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#B40000+3C9D46+50 */
+                background: #3C9D46;
+    /* Old browsers */
+                background: -moz-linear-gradient(-45deg, #B40000 50%, #3C9D46 50%);
+    /* FF3.6-15 */
+                background: -webkit-linear-gradient(-45deg, #B40000 50%,#3C9D46 50%);
+    /* Chrome10-25,Safari5.1-6 */
+                background: linear-gradient(135deg, #B40000 50%,#3C9D46 50%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#B40000', endColorstr='#3C9D46',GradientType=1 );
+    /* IE6-9 fallback on horizontal gradient */
+                cursor:pointer;
+}
+.fewo_calendar td.day_stop.unavailable,
+.fewo_calendar td.day_stop.unavailable:hover {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#B40000+50,306B2E+50 */
+                background: #306B2E;
+    /* Old browsers */
+                background: -moz-linear-gradient(-45deg, #B40000 50%, #306B2E 50%);
+    /* FF3.6-15 */
+                background: -webkit-linear-gradient(-45deg, #B40000 50%,#306B2E 50%);
+    /* Chrome10-25,Safari5.1-6 */
+                background: linear-gradient(135deg, #B40000 50%,#306B2E 50%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#B40000', endColorstr='#306B2E',GradientType=1 );
+    /* IE6-9 fallback on horizontal gradient */;
+}
+.fewo_calendar td.unavailable,
+.fewo_calendar td.unavailable.day_free:hover,
+.stopSelection.fewo_calendar td.unavailable.day_free.minStay {
+    background-color:#306B2E;
+    text-decoration:none;
+    cursor:not-allowed;
+}
+.fewo_calendar td.arrival,
+.fewo_calendar td.arrival.day_stop,
+.fewo_calendar td.day_stop:hover,
+.fewo_calendar td.arrival.selected,
+.fewo_calendar td.departure.selected,
+.fewo_calendar td.day_free:hover,
+.fewo_calendar td.day_start:hover,
+.fewo_calendar td.arrival.day_stop.unavailable:hover,
+.fewo_calendar td.departure.selected.unavailable:hover,
+.fewo_calendar td.arrival.unavailable:hover,
+.fewo_calendar td.day_free.departure,
+.fewo_calendar td.day_free.active.arrival,
+.fewo_calendar td.day_free.active.departure,
+.fewo_calendar td.day_free.active:hover {
+    background:#337EB6;
+}
+.filter_period_modal_body .stopSelection .day_free:hover {
+    background:#3C9D46;
+}
+.fewo_calendar td.selected,
+.fewo_calendar td.selected.unavailable:hover {
+    background:#BAD1E9;
+}
+.fewo_calendar td.day_free.active,
+.fewo_calendar td.day_free.active.unavailable {
+    background: #bad0ea;
+}
+.fewo_calendar td.arrival,
+.fewo_calendar td.arrival.day_stop,
+td.arrival_day:hover,
+.fewo_calendar td.arrival:hover,
+td.unavailable.arrival,
+td.unavailable.arrival:hover,
+td.day_free.arrival:hover,
+.cal_week td.day_free.arrival.active:hover,
+.fewo_calendar td.arrival.selected,
+.fewo_calendar td.day_free.active.arrival,
+.filter_period_modal_body .stopSelection .day_free.arrival,
+.stopSelection.fewo_calendar td.day_free.active.arrival:hover,
+.stopSelection.fewo_calendar td.unavailable.day_free.unavailable.arrival,
+.stopSelection.fewo_calendar td.day_stop.unavailable.arrival,
+.fewo_calendar td.day_free.unavailable.arrival:hover {
+    background:#1B7EB7 url("files/images/arrow-arrival.svg") center center no-repeat;
+    background-size:100%;
+}
+td.departure_day,
+.fewo_calendar td.departure,
+.fewo_calendar td.departure.selected,
+.fewo_calendar td.departure.selected.unavailable:hover,
+.fewo_calendar td.day_free.active.departure:hover,
+.fewo_calendar td.day_free.active.departure,
+.stopSelection.fewo_calendar td.day_free.active:hover,
+.stopSelection.fewo_calendar td.day_start.active:hover,
+.stopSelection.fewo_calendar td.day_start.unavailable.departure,
+.stopSelection.fewo_calendar td.day_start.unavailable.departure:hover {
+    background:#1B7EB7 url("files/images/arrow-departure.svg") center center no-repeat;
+    background-size:100%;
+}
+.filter_period_modal_body .stopSelection .day_free,
+.filter_period_modal_body .stopSelection .day_free:hover {
+    opacity: 0.3;
+    cursor: default;
+}
+.filter_period_modal_body .stopSelection .day_free.bookingAvailable,
+.filter_period_modal_body .stopSelection .day_free.arrival {
+    opacity: 1;
+    cursor: pointer;
+}
+.mobile .fewo_calendar,
+.mobile .fewo_calendar:nth-child(4n+4) {
+    float:none;
+    clear:both;
+    display:inline-block;
+    margin-right:auto;
+    margin-bottom:10px;
+    margin-left:auto;
+}

@@ -1,0 +1,55 @@
+.custom {
+    display: grid;
+    grid-template-rows: 80vh min-content 40vw repeat(3, auto);
+    grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+
+    &>* {
+        padding: 1rem;
+    }
+}
+
+[id="sidebar"] {
+    background-color: $color-primary;
+    grid-column: sidebar-start / sidebar-end;
+    grid-row: 1 / -1;
+}
+
+[id="navigation"] {
+    // background-color: $color-grey-dark-1;
+    grid-column: full-start / col-end 6;
+}
+
+[id="realtors"] {
+    background-color: $color-secondary;
+    grid-column: col-start 7 / full-end;
+}
+
+[id="features"] {
+    // background-color: $color-grey-light-2;
+    grid-column: center-start / center-end;
+}
+
+[id="story__pictures"] {
+    background-color: $color-primary;
+    grid-column: full-start / col-end 4;
+}
+
+[id="story__content"] {
+    background-color: $color-grey-light-1;
+    grid-column: col-start 5 / full-end;
+}
+
+[id="homes"] {
+    background-color: $color-secondary;
+    grid-column: center-start / center-end;
+}
+
+[id="gallery"] {
+    background-color: $color-grey-dark-1;
+    grid-column: full-start / full-end;
+}
+
+[id="bottom"] {
+    background-color: $color-secondary;
+    grid-column: full-start / full-end;
+}

@@ -1,0 +1,50 @@
+.booking-note {
+    @include content-center;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-column-gap: 2rem;
+    grid-row-gap: 4rem;
+    justify-content: center;
+    max-width: 120rem;
+    margin: 0 auto $spacer-lg;
+
+    @include mq(1000) {
+        grid-template-columns: repeat(3, 5rem 1fr);
+    }
+
+    %icon-align {
+        align-items: start;
+        justify-self: center;
+        grid-gap: 0;
+    }
+
+    &__euro {
+        @extend %icon-align;
+        @include icon-grid("\e901", 4rem, $clr-primary);
+    }
+
+    &__tax {
+        @extend %icon-align;
+        @include icon-grid("\f207", 4rem, $clr-primary);
+    }
+
+    &__contract {
+        @extend %icon-align;
+        @include icon-grid("\f15c", 4rem, $clr-primary);
+    }
+
+    &__title {
+        margin: 0;
+    }
+
+    &__list {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    &__item {
+        @include icon-grid("\f00c", inherit, $clr-primary);
+        align-items: baseline;
+        margin: 0;
+    }
+}

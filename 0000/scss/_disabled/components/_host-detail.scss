@@ -1,0 +1,23 @@
+.host-detail {
+    @include content-center;
+    max-width: $center-text;
+
+    h1 {
+        margin: 2rem 0 1rem;
+    }
+
+    .fewo_house_description {
+        @include detail-line;
+            column-width: 30rem;
+            column-gap: 3rem;
+    }
+
+    .bigmap {
+        display: none;
+    }
+
+    .fewo_map {
+        width: 100% !important; // Inline style
+        height: 70vh !important; // Inline style
+    }
+}

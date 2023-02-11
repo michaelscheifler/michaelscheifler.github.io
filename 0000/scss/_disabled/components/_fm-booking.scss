@@ -1,0 +1,1284 @@
+.detailKalender #ctrlBookingPlans {
+    padding-left:58px;
+}
+.fewo_bookingplan:after {
+    float:none;
+    clear:both;
+    display:block;
+    content:"";
+}
+.detailKalender .saisonSelectbox .fmSelectbox {
+    width:194px;
+    right:0;
+    top:-45px;
+    position:absolute;
+}
+.detailKalender #ctrlCalPrev,
+.detailKalender #ctrlCalNext {
+    top:140px;
+}
+.section_addons:after {
+    float:none;
+    clear:both;
+    display:block;
+    content:"";
+}
+.booking_addons_options .booking_addon {
+    width:100%;
+    float:left;
+    padding:5px 10px;
+}
+.booking_addons_options .booking_addon:after {
+    float:none;
+    clear:both;
+    display:block;
+    content:"";
+}
+.booking_addons_options .booking_addon_qty {
+    width:55%;
+    float:left;
+}
+.booking_addons_options .booking_addon_price {
+    width:45%;
+    float:right;
+    text-align:right;
+    line-height:49px;
+}
+.booking_addons_options .booking_addon label {
+    float:left;
+    display:block;
+    line-height:49px;
+}
+.booking_addons_options .booking_addon .fmSelectbox {
+    width:100px;
+    float:right;
+}
+.booking_addons_options .booking_addon:nth-child(2n+2) {
+    background-color:#f6f6f6;
+}
+#traveldate_wrapper {
+    display:none;
+}
+#traveldate_wrapper.show {
+    display:block;
+}
+.bookingSteps {
+    left:94px;
+    right:24px;
+    top:20px;
+    position:absolute;
+}
+.bookingSteps > div {
+    float:left;
+    line-height:30px;
+}
+.bookingSteps .stepBar {
+    width:25%;
+    height:16px;
+    position:relative;
+    display:block;
+    margin-top:7px;
+    margin-bottom:7px;
+    background-color:#f7f7f7;
+    content:"";
+}
+.bookingSteps .stepBar.barFilled {
+    background-color:#008489;
+}
+.bookingSteps .bookingStep {
+    position:relative;
+}
+.bookingSteps > div > span {
+    left:50%;
+    top:0;
+    position:absolute;
+    padding-right:15px;
+    padding-left:15px;
+    white-space:nowrap;
+    background-color:#fff;
+    border-right:1px solid #dbdbdb;
+    border-left:1px solid #dbdbdb;
+    transform:translate(-50%,0);
+    z-index:9;
+}
+.bookingSteps i {
+    margin-right:5px;
+    color:#008489;
+}
+.bookingSteps span span {
+    margin-right:5px;
+    font-weight:bold;
+    color:#008489;
+}
+.bookingSteps.phase1 .step3,
+.bookingSteps.phase1 .step3 span {
+    color:#aaa;
+}
+.bookingSteps .stepBar.arrowBar:before {
+    left:50%;
+    top:50%;
+    position:absolute;
+    font:23px/30px fontAwesome;
+    content:"\f101";
+    transform:translate(-50%,-50%);
+}
+.bookingSteps .stepBar.arrowBar.barFilled:before {
+    color:#fff;
+}
+.mod_fewo_booking_config input.submit#btn_booking_disabled {
+    background-color:#e4e4e4;
+    cursor:default;
+}
+.fewo_offers .fewo_offer_image img {
+    display:block;
+}
+#booking_reset {
+    float:right;
+    display:block;
+    margin-right:20px;
+    line-height:44px;
+    cursor:pointer;
+}
+#booking_reset:hover {
+    color:#666;
+}
+#booking_reset:before {
+    margin-right:5px;
+    font-family:FontAwesome;
+    content:"\f00d";
+}
+#fewo_filter_period #filter_traveldate_selection .fmSelectbox .fmDropdownBox {
+    bottom:30px;
+}
+.datepicker_bootstrap {
+    width:234px;
+    height:277px;
+    margin-top:5px;
+    padding:5px;
+    background-color:#fff;
+    -webkit-box-shadow:0 0 5px 0 rgba(0,0,0,.1);
+    box-shadow:0 0 5px 0 rgba(0,0,0,.1);
+    border:1px solid #cce1ff;
+    border-radius:0;
+    z-index:9999;
+}
+.sslBox {
+    position:relative;
+    font-size:15px;
+}
+.sslBox .left_headline {
+    bottom:46px;
+    left:0;
+    position:absolute;
+    margin-bottom:5px;
+    font-weight:700;
+}
+.sslBox .left_headline:before {
+    margin-right:8px;
+    font-family:fontAwesome;
+    color:#4F8A10;
+    content:"\f023";
+}
+.booking #rightBookingWrap {
+    padding:40px 50px;
+    background-color:#fff;
+    border:1px solid #ddd;
+}
+.fewo_booking_address .form_fields {
+    margin-bottom:20px;
+    padding:40px 350px 40px 50px;
+    background-color:#fff;
+}
+.fewo_booking_address .form_fields:after {
+    float:none;
+    clear:both;
+    display:block;
+    content:"";
+}
+.fewo_booking_address .address_headline {
+    margin:0;
+    padding-bottom:4px;
+    font-size:24px;
+    color:#2F393D;
+    font-weight: 700;
+}
+.saisonSelectbox #ctrlCalPrev {
+    left:24px;
+}
+#fewo_filter_period,
+#traveldate_container {
+    width:708px;
+    height:512px;
+    left:50%;
+    top:50%;
+    position:fixed;
+    background-color:#fff;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+    z-index: 99999999;
+    transform:translate(-50%,-50%);
+}
+#fewo_filter_period .fmCurrentLabel,
+#traveldate_wrapper .fmCurrentLabel {
+    height:32px;
+    line-height:32px;
+}
+#fewo_filter_period .fmSelectbox .fmCurrentLabel:before {
+    line-height:32px;
+}
+.fewo_tooltip {
+    padding:5px 10px;
+    background-color:#fff6df;
+    border:1px solid #febb02;
+    border-radius:0;
+}
+.fewo_tooltip .tip-title {
+    margin-top:0;
+    padding:0;
+    border-bottom:1px solid #febb02;
+    font:12px 'KlavikaWebBasic';
+    font-weight:normal;
+}
+.fewo_tooltip .tip-text {
+    padding:5px 0 0;
+    font-size:11px;
+    font-weight:normal;
+    background-color:transparent;
+}
+.datepicker_bootstrap .month.unavailable,
+.datepicker_bootstrap .year.unavailable {
+    color: #bbbbbb !important;
+}
+.datepicker_bootstrap .months .month:nth-child(even),
+.datepicker_bootstrap .years .year:nth-child(even) {
+    margin-right:0;
+}
+#fewo_prices input[type="checkbox"]:checked + .cb:after {
+    font:14px/13px fontAwesome;
+    color:#1b7eb7;
+    content:"\f00c";
+}
+#fewo_prices li input[type="checkbox"] {
+    position:absolute;
+    display:none;
+    visibility:hidden;
+}
+#fewo_prices li {
+    overflow:visible;
+    float:left;
+    display:block;
+    padding-top:5px;
+    padding-bottom:5px;
+    line-height:24px;
+}
+#fewo_prices .cb {
+    width:13px;
+    height:13px;
+    display:block;
+    margin-top:5px;
+    margin-left:30px;
+    border:1px solid #bababf;
+    border-radius:2px;
+    line-height:13px;
+    content:"";
+    cursor:pointer;
+}
+.fewo_contact_data {
+    width:100%;
+    margin-bottom:10px;
+    padding:10px 20px;
+    background-color:#fff;
+    border:1px solid #cce1ff;
+}
+.fewo_contact_data_elem .customerLabel {
+    width:120px;
+    display:inline-block;
+    line-height:1.5;
+}
+.fewo_contact_data_elem .customerLabel:after {
+    content:':';
+}
+.fewo_change_data input,
+#formBooking .formsubmit input.return {
+    border:0;
+    text-decoration:underline;
+    color:#f55856;
+    background: none;
+      cursor: pointer;
+}
+.mod_fewo_booking_config .fewo_no_offer .fewo_offer_data {
+    padding-left:10px;
+    line-height:60px;
+}
+.hasOffer .l4,
+.hasOffer .l4,
+.hasOffer .booking_price_sum {
+    text-decoration:line-through;
+}
+.fewo_booking .booking_pricelist:after {
+    float:none;
+    clear:both;
+    display:block;
+    content:"";
+}
+.booking_pricelist .booking_price.offer {
+    background-color:#FFEDDF;
+}
+.fewo_booking .fewo_booking_info:after {
+    float:none;
+    clear:both;
+    display:block;
+    content:"";
+}
+.fewo_booking_info_item {
+    float:left;
+    margin-right:30px;
+}
+.fewo_booking_info_item .info_item_label {
+    display:inline-block;
+    margin-right:5px;
+    font-weight:bold;
+}
+.booking_pricelist .regular_price.princeinfo .l1:before {
+    color: #42b12d;
+    content: "";
+    font-family: fontAwesome;
+    margin-right: 5px;
+}
+.booking_pricelist .regular_price.princeinfo .l2 {
+    width:20%;
+    float:left;
+    text-align:right;
+}
+.booking_pricelist .regular_price.princeinfo .l1 {
+    width:80%;
+    float:left;
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    -o-box-sizing: border-box; 
+    -ms-box-sizing: border-box; 
+    box-sizing: border-box;
+}
+.booking_pricelist .regular_price {
+    overflow:hidden;
+    background-color:#F5FBF6;
+    border-bottom:1px solid #fff;
+    color:#0ab21b;
+}
+.fewo_alert {
+    height:auto !important;
+    border:1px solid #b94a48 !important;
+    width:680px !important;
+    border-radius: 0 !important;
+    background-color: #F2DEDE !important;
+    text-align: center !important;
+    color: #b94a48 !important;
+    top:45% !important;
+    position:fixed !important;
+    left: 50% !important;
+    margin-left: -340px;
+}
+.fewo_alert:before {
+    margin-top:4px;
+    margin-right:5px;
+    font:14px fontAwesome;
+    content: "";
+}
+.booking_pricelist .booking_price.subtotal {
+    background-color:#E9F0FA;
+}
+.fewo_change_data #btnChange {
+    height:auto;
+    margin:0 0 35px;
+    padding:5px 10px;
+    background-color:#fff;
+    border:1px solid #48A4DA;
+    border-radius:3px;
+    font:13px 'KlavikaWebBasic';
+    text-decoration:none;
+    color:#48A4DA;
+}
+.fewo_change_data #btnChange:hover {
+    background-color:#48A4DA;
+    text-decoration:none;
+    color:#fff;
+}
+.fewo_booking .booking_pricelist {
+    width:100%;
+    margin-bottom:25px;
+    border:1px solid #cce1ff;
+}
+.fewo_booking .booking_pricelist .booking_total {
+    width:100%;
+    float:left;
+    background-color:#E9F0FA;
+    border-top:4px solid #cce1ff;
+    font-size:18px;
+    font-weight:bold;
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    -o-box-sizing: border-box; 
+    -ms-box-sizing: border-box; 
+    box-sizing: border-box;
+}
+.fewo_booking .booking_pricelist .booking_total > div {
+    width:50%;
+    float:left;
+}
+.fewo_booking .booking_pricelist .booking_total .booking_price_total {
+    float:right;
+    padding-right:0;
+    text-align:right;
+}
+.fewo_booking .fewo_booking_info {
+    width:100%;
+    margin:0 0 10px;
+    padding:10px 20px;
+    background-color:#e9f0fa;
+    border:1px solid #cce1ff;
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    -o-box-sizing: border-box; 
+    -ms-box-sizing: border-box; 
+    box-sizing: border-box;
+}
+.booking_pricelist .booking_price {
+    overflow:hidden;
+    background-color:#fff;
+    border-bottom:1px solid #f3f4f6;
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    -o-box-sizing: border-box; 
+    -ms-box-sizing: border-box; 
+    box-sizing: border-box;
+}
+.booking_pricelist > div {
+    padding:5px 20px;
+}
+.fewo_booking .booking_pricelist .booking_price_item {
+    width:40%;
+    float:left;
+}
+.fewo_booking .booking_pricelist .booking_price_qty,
+.fewo_booking .booking_pricelist .booking_price_single,
+.fewo_booking .booking_pricelist .booking_price_sum {
+    width:17%;
+    float:left;
+}
+.fewo_booking .booking_pricelist .booking_price_sum {
+    width:26%;
+    text-align:right;
+}
+.fewo_offers .offer_row,
+.fewo_offers .fewo_no_offer {
+    border-bottom:1px solid #e4e4e4;
+}
+.fewo_offers .fewo_offer_detailbutton span.active:after {
+    content:"\f106 ";
+}
+#ctrlCalYear {
+    width:155px;
+    height:36px;
+    right:200px;
+    top:48px;
+    position:absolute;
+    padding-left:20px;
+    text-align:center;
+    background:#fff url("files/icons/kalender.svg") left center no-repeat;
+    border:1px solid #DBDBDB;
+    border-radius:4px;
+    line-height:34px;
+    color:#484848;
+    cursor:pointer;
+    background-size:20px auto;
+    background-position:8px center;
+}
+#ctrlCalYear:hover {
+    border-color:#3C3F40;
+}
+#ctrlCalPrev:hover,
+#ctrlCalNext:hover {
+    border-color:#3C3F40;
+}
+.fewo_booking_pricedata ul.price_element .l1.padded:before {
+    margin-right:5px;
+    font-family:fontAwesome;
+    color:#42B12D;
+    content:"\f058";
+}
+.mod_fewo_booking_config .fewo_booking_prices:after {
+    float:none;
+    clear:both;
+    display:block;
+    content:"";
+}
+.mod_fewo_booking_config .fewo_booking_prices {
+    border:1px solid #cce1ff;
+}
+.fewo_booking_prices .fmCurrentLabel {
+    height:31px;
+    margin-top:2px;
+    text-align:left;
+    line-height:31px;
+}
+.fewo_booking_wrapper .form_info_label,
+.fewo_booking_wrapper .fewo_booking_dateselector,
+.fewo_booking_wrapper .fewo_booking_dateselector > div {
+    width:auto;
+    display:inline-block;
+    vertical-align:top;
+}
+.fewo_booking_wrapper .fewo_booking_dateselector > div {
+    margin-top:8px;
+}
+.fewo_booking_wrapper .fewo_booking_dateselector > div input {
+    width:90px;
+    height:26px;
+    margin-right:0;
+    padding-top:6px;
+    padding-right:0;
+    padding-left:8px;
+    text-align:left;
+    -webkit-box-shadow:0 0 0 0;
+    box-shadow:0 0 0 0;
+    border-top:0px solid #CCE1FF;
+    border-right:0px solid #CCE1FF;
+    border-bottom:1px solid #CCE1FF;
+    border-left:0px solid #CCE1FF;
+    font:17px 'KlavikaWebBasic';
+    background:transparent;
+    cursor:default;
+}
+.fewo_booking_wrapper .fewo_booking_dateselector > div label {
+    height:30px;
+    float:left;
+    display:block;
+    padding-top:0;
+    line-height:30px;
+}
+.fewo_booking_wrapper .fewo_booking_dateselector > div label:after {
+    content:":";
+}
+.fewo_booking_pricedata ul.price_element .l1.padded {
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    -o-box-sizing: border-box; 
+    -ms-box-sizing: border-box; 
+    box-sizing: border-box;
+}
+.fewo_booking_pricedata ul {
+    overflow:hidden;
+    background-color:#F5FBF6;
+    border-bottom:1px solid #fff;
+    color:#0ab21b;
+}
+.fewo_booking_pricedata .regular_price {
+    background-color:#E9F0FA;
+    border-bottom:1px solid #fff;
+    color:#47403a;
+}
+.mod_fewo_booking_config li {
+    list-style-type:none;
+}
+.fewo_bookingplans .fewo_info {
+    width:100%;
+    height:54px;
+    padding-right:15px;
+    padding-left:15px;
+    text-align:left;
+    background-color:#fff6df;
+    border:1px solid #febb02;
+    line-height:52px;
+    font-weight:500;
+}
+.mod_fewo_booking_config .fewo_booking_wrapper {
+    width:100%;
+    float:left;
+    clear:both;
+    padding:0;
+    background-color:#E9F0FA;
+    border:1px solid #CCE1FF;
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    -o-box-sizing: border-box; 
+    -ms-box-sizing: border-box; 
+    box-sizing: border-box;
+}
+.fewo_booking_wrapper,
+.fewo_people_adults ul {
+    width:100%;
+    overflow:visible;
+    float:left;
+    background-color:#fff;
+    border-bottom:1px solid #hf2;
+}
+.mod_fewo_booking_config .form_info {
+    width:100%;
+    float:left;
+    display:block;
+}
+.mod_fewo_booking_config .form_info span.form_info_label {
+    margin-right:10px;
+    margin-left:20px;
+    font-size:15px;
+    line-height:44px;
+    font-weight:bold;
+}
+.mod_fewo_booking_config .fewo_booking_prices .fewo_sum {
+    overflow:hidden;
+    clear:both;
+    margin:0;
+    padding:5px 20px;
+    background-color:#E9F0FA;
+    border-top:4px solid #cce1ff;
+}
+#fewo_prices .fewo_sum li {
+    font-size:18px;
+    font-weight:bold;
+}
+#fewo_prices li.l1 {
+    width:50%;
+    margin-left:0;
+}
+#fewo_prices li.l2 {
+    width:10%;
+    min-height:1px;
+    padding-top:0;
+    padding-bottom:0;
+}
+#fewo_prices li.l4,
+#fewo_prices li.l3 {
+    width:20%;
+    height:1px;
+    text-align:right;
+}
+.fewo_booking_prices > div ul {
+    margin:0;
+    padding-right:20px;
+    padding-left:20px;
+}
+#fewo_prices .tooltip {
+    height:16px;
+    display:inline-block;
+    margin-left:6px;
+    padding-right:4px;
+    padding-left:4px;
+    border:1px solid #ccc;
+    border-radius:1px;
+    font-size:11px;
+    line-height:16px;
+    cursor: help;
+}
+#fewo_prices .tooltip:after {
+    font-family:'KlavikaWebBasic';
+    color:#0ab21b;
+    content: "info";
+}
+.fewo_booking_wrapper,
+ul.fewo_service,
+ul.regular_price,
+.fewo_people_child ul {
+    width:100%;
+    overflow:visible;
+    float:left;
+    background-color:#fff;
+    border-bottom:1px solid #hf2;
+}
+.mod_fewo_booking_config .formsubmit {
+    float:right;
+    display:block;
+    margin-top:20px;
+    margin-right:0;
+    margin-bottom:0;
+}
+.mod_fewo_booking_config .formsubmit input,
+.fewo_booking .formsubmit input,
+.mod_fewo_booking_config input.submit {
+    height:44px;
+    float:right;
+    margin-top:20px;
+    padding:0 40px 0 20px;
+    background:#FF5A5F url("files/icons/arrow-right-white.svg") right center no-repeat;
+    border:0px solid;
+    border-radius:4px;
+    font-size:20px;
+    line-height:40px;
+    color:#fff;
+    text-transform:uppercase;
+    cursor: pointer;
+    font-weight:700;
+    background-size:30px;
+    background-position:right 5px center;
+}
+.mod_fewo_booking_config .formsubmit input:hover,
+.fewo_booking .formsubmit input:hover,
+.mod_fewo_booking_config input.submit:hover {
+    background-color:#ff7e82;
+    background-repeat:no-repeat;
+}
+.fewo_booking_pricedata .offer_price {
+    background-color:#FFEDDF;
+    color:#47403a;
+}
+.fewo_offers .fewo_offer_detailbutton span:after {
+    float:right;
+    margin-left:5px;
+    font:18px/24px fontAwesome;
+    content:"\f107";
+}
+.fewo_offers > div.active {
+    background-color:#e2f0f9;
+}
+.fewo_offers .fewo_offer_detailbutton span {
+    height:26px;
+    bottom:5px;
+    right:5px;
+    position:absolute;
+    padding-right:10px;
+    padding-left:10px;
+    background-color:#fff;
+    border:1px solid #008489;
+    border-radius:3px;
+    font-size:15px;
+    line-height:24px;
+    color:#008489;
+    cursor:pointer;
+}
+.fewo_offers .fewo_offer_detailbutton span:hover {
+    background-color:#008489;
+    color:#fff;
+}
+.fewo_offers > div.active .offer_selection:before {
+    left:-5px;
+    top:-11px;
+    position:absolute;
+    display:block;
+    font:30px FontAwesome;
+    color:#008489;
+    content:"\f00c";
+}
+.fewo_offers .fewo_offer_selection span {
+    width:20px;
+    height:20px;
+    left:50%;
+    top:50%;
+    position:absolute;
+    display:block;
+    border:2px solid #008489;
+    border-radius:50%;
+    content:"";
+    transform: translate(-50%, -50%);
+    cursor:pointer;
+}
+.fewo_offers .fewo_offer_minstay:before {
+    margin-right:5px;
+    margin-left:15px;
+    font:15px fontAwesome;
+    content:"\f186 ";
+}
+.fewo_offers .fewo_offer_date:before {
+    margin-right:5px;
+    font:14px fontAwesome;
+    content:"\f073 ";
+}
+.fewo_offers .offer_row .fewo_offer_title {
+    display:block;
+    font-weight:bold;
+}
+.fewo_offers .offer_row .fewo_offer_data {
+    margin-top:5px;
+    margin-left:10px;
+}
+.fewo_offers .fewo_offer_selection {
+    width:60px;
+    height:60px;
+    position:relative;
+    display:block;
+    border-right:1px solid #e4e4e4;
+}
+.fewo_offers .fewo_offer_detailtext {
+    max-height:0;
+    overflow:hidden;
+    padding:0 170px 0 62px;
+    border-bottom:0px solid #e4e4e4;
+    transition: max-height 0.1s, padding-top 0.1s, padding-bottom 0.1s;
+}
+.fewo_offers .fewo_offer_detailtext.active {
+    max-height:1000px;
+    padding:25px 170px 10px 62px;
+    border-bottom:1px solid #ccc;
+    transition: max-height 0.5s, padding-top 0.1s, padding-bottom 0.1s;
+}
+.fewo_offers .offer_row:after,
+.fewo_offers .fewo_no_offer:after {
+    float:none;
+    clear:both;
+    display:block;
+    content:"";
+}
+.fewo_offers .offer_row > div,
+.fewo_offers .fewo_no_offer > div {
+    float:left;
+}
+.fewo_offers > div {
+    position:relative;
+}
+.fewo_offers:after {
+    float:none;
+    clear:both;
+    display:block;
+    content:"";
+}
+.fewo_offers {
+    margin-bottom:30px;
+    background-color:#fff;
+    border-top:1px solid #e4e4e4;
+    border-right:1px solid #e4e4e4;
+    border-bottom:0px solid #e4e4e4;
+    border-left:1px solid #e4e4e4;
+}
+.no-saison {
+    background-color:#f1f1f1;
+    text-decoration:line-through;
+}
+#fewo_overlay_period .saisonSelectbox #ctrlCalPrev,
+#fewo_overlay_period .saisonSelectbox #ctrlCalNext,
+#traveldate_wrapper .saisonSelectbox #ctrlCalPrev,
+#traveldate_wrapper .saisonSelectbox #ctrlCalNext {
+    top:148px;
+}
+.selected-button,
+.datepicker_bootstrap .days .day.selected,
+.datepicker_bootstrap .days .day.selected:hover,
+.datepicker_bootstrap .months .month.selected,
+.datepicker_bootstrap .months .month.selected:hover,
+.datepicker_bootstrap .years .year.selected,
+.datepicker_bootstrap .years .year.selected:hover {
+    background-color:#92d67f;
+}
+.datepicker_bootstrap .months .month,
+.datepicker_bootstrap .years .year {
+    height:24px;
+    padding-top:10px;
+    behavior:url('assets/css3pie/1.0.0/PIE.htc');
+}
+.datepicker_bootstrap .header .next:before {
+    width:28px;
+    height:28px;
+    text-align:center;
+    font:24px/30px fontAwesome;
+    content:"\f105";
+}
+.datepicker_bootstrap .header .previous:before {
+    width:28px;
+    height:28px;
+    text-align:center;
+    font:24px/30px fontAwesome;
+    content:"\f104 ";
+}
+.datepicker_bootstrap .header .previous {
+    left:5px;
+}
+.datepicker_bootstrap .header .next {
+    right:6px;
+}
+.datepicker_bootstrap .header .previous,
+.datepicker_bootstrap .header .next {
+    width:30px;
+    height:30px;
+    top:5px;
+    border-radius:3px;
+    font-size:0;
+    behavior:url('assets/css3pie/1.0.0/PIE.htc');
+    border: 1px solid #ccc !important;
+}
+.datepicker_bootstrap .header .previous:hover,
+.datepicker_bootstrap .header .next:hover {
+    background-color:#F3F4F6;
+}
+.datepicker_bootstrap .arrival:before,
+.datepicker_bootstrap .arrival:after,
+.datepicker_bootstrap .departure:before,
+.datepicker_bootstrap .departure:after {
+    display:none;
+}
+.datepicker_bootstrap .body .slider > div thead th {
+    height:31px;
+    line-height:30px;
+}
+.datepicker_bootstrap .day.arrival {
+    color:#666;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ade19f+50,fde1e1+50 */
+    background: rgb(173,225,159); /* Old browsers */
+    background: -moz-linear-gradient(-45deg,  rgba(173,225,159,1) 50%, rgba(253,225,225,1) 50%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg,  rgba(173,225,159,1) 50%,rgba(253,225,225,1) 50%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg,  rgba(173,225,159,1) 50%,rgba(253,225,225,1) 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ade19f', endColorstr='#fde1e1',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+.datepicker_bootstrap .day.departure {
+    color:#666;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fde1e1+50,ade19f+50 */
+    background: rgb(253,225,225); /* Old browsers */
+    background: -moz-linear-gradient(-45deg,  rgba(253,225,225,1) 50%, rgba(173,225,159,1) 50%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg,  rgba(253,225,225,1) 50%,rgba(173,225,159,1) 50%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg,  rgba(253,225,225,1) 50%,rgba(173,225,159,1) 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fde1e1', endColorstr='#ade19f',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+.datepicker_bootstrap .day.departure:hover {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fde1e1+50,42b12d+50 */
+    background: rgb(253,225,225); /* Old browsers */
+    background: -moz-linear-gradient(-45deg,  rgba(253,225,225,1) 50%, rgba(66,177,45,1) 50%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg,  rgba(253,225,225,1) 50%,rgba(66,177,45,1) 50%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg,  rgba(253,225,225,1) 50%,rgba(66,177,45,1) 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fde1e1', endColorstr='#42b12d',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+.datepicker_bootstrap .day.arrival:hover {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#42b12d+50,fde1e1+50 */
+    background: rgb(66,177,45); /* Old browsers */
+    background: -moz-linear-gradient(-45deg,  rgba(66,177,45,1) 50%, rgba(253,225,225,1) 50%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg,  rgba(66,177,45,1) 50%,rgba(253,225,225,1) 50%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg,  rgba(66,177,45,1) 50%,rgba(253,225,225,1) 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#42b12d', endColorstr='#fde1e1',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+.datepicker_bootstrap .day {
+    color:#666;
+    background-color:#ade19f !important;
+}
+.datepicker_bootstrap .days td.day.selected {
+    background-color:#1b7eb7 !important;
+}
+.datepicker_bootstrap .day.selected.today.unavailable,
+.datepicker_bootstrap .days td.day.selected.today.unavailable:hover {
+    background-color:#3583CA !important;
+    color: #fff !important;
+}
+.datepicker_bootstrap .day.unavailable.in-past,
+.datepicker_bootstrap .days td.day.unavailable.in-past:hover {
+    text-decoration:line-through;
+    background-color:#F4F4F4 !important;
+}
+.datepicker_bootstrap .day.unavailable,
+.datepicker_bootstrap .days td.day.unavailable:hover {
+    text-decoration:none;
+    background-color:#FDE1E1 !important;
+    color:#666666 !important;
+}
+.datepicker_bootstrap .days td.day:hover {
+    background-color:#1b7eb7 !important;
+    color: #ffffff !important;
+}
+.selected-button,
+.datepicker_bootstrap .days .day.selected,
+.datepicker_bootstrap .days .day.selected:hover,
+.datepicker_bootstrap .days td.day.otherMonth.selected:hover {
+    background:#1b7eb7 !important;
+    color:#ffffff !important;
+}
+#fewo_overlay_period .fewo_bookingplans .fewo_bookingplan,
+#traveldate_wrapper .fewo_bookingplan {
+    float:none;
+    padding-top:15px;
+    padding-bottom:0;
+    padding-left:82px;
+    border-bottom:1px solid #E8E8E4;
+}
+.datepicker_bootstrap .months .month:hover,
+.datepicker_bootstrap .years .year:hover {
+    background-color:#E6E6E6;
+}
+.datepicker_bootstrap .months .month.unavailable:hover,
+.datepicker_bootstrap .years .year.unavailable:hover {
+    background-color:#fff;
+}
+.datepicker_bootstrap .months .month,
+.datepicker_bootstrap .years .year {
+    width:49%;
+    float:left;
+    margin-top:2%;
+    margin-right:2%;
+    background-color:#E9EBEF;
+    font: 16px 'KlavikaWebBasic';
+}
+.datepicker_bootstrap .header .title .titleText:hover {
+    background: transparent !important;
+}
+.datepicker_bootstrap .header .title .titleText:hover > div {
+    background-color:#F3F4F6;
+    text-decoration:none;
+}
+.datepicker_bootstrap .header .title .titleText {
+    padding:0;
+}
+.datepicker_bootstrap .header .title .titleText > div {
+    width:140px;
+    height:30px;
+    margin-top:0;
+    padding-right:10px;
+    padding-left:10px;
+    border:1px solid #ccc;
+    border-radius:3px;
+    font-size:14px;
+    line-height:30px;
+    color:#4d4f52;
+    text-transform:uppercase;
+}
+.datepicker_bootstrap .header .previous,
+.datepicker_bootstrap .header .next {
+    border-bottom: 6px solid transparent;
+    border-top: 6px solid transparent;
+}
+.datepicker_bootstrap .header {
+    height:41px;
+    padding-bottom:0;
+    border:0 solid;
+}
+.datepicker_bootstrap .titles .day {
+    text-align:center;
+    border:2px solid #fff;
+    font-size:12px;
+    font-weight:normal;
+    color:#333;
+    background: none !important;
+}
+.datepicker_bootstrap .day.unavailable.in-past.otherMonth,
+.datepicker_bootstrap .days td.day.unavailable.in-past.otherMonth:hover {
+    background: none;
+    color: #fff !important;
+}
+.datepicker_bootstrap .day.otherMonth,
+.datepicker_bootstrap .days td.day.otherMonth:hover {
+    background: none !important;
+    color: #ffffff!important;
+}
+.datepicker_bootstrap .body .slider > div > div,
+.datepicker_bootstrap .body .slider > div table,
+.datepicker_bootstrap .body .slider > div,
+.datepicker_bootstrap .body {
+    margin-top:0;
+    height: 235px !important;
+}
+.datepicker_bootstrap .days td {
+    height:31px;
+    text-align:center;
+    background-color:#F0F0F0;
+    border:2px solid #fff;
+    font-size:13px;
+    line-height:30px;
+    border-radius:0 !important;
+}
+#submit_period_modal,
+#traveldate_submit {
+    height:42px;
+    float:right;
+    display:block;
+    padding-top:10px;
+    padding-right:20px;
+    padding-left:20px;
+    text-align:center;
+    background-color:#FF5A5F;
+    border-radius:4px;
+    font-size:16px;
+    text-decoration:none;
+    color:#fff;
+    text-transform:uppercase;
+    cursor: pointer;
+    font-weight:500;
+}
+#submit_period_modal:hover,
+#traveldate_submit:hover {
+    background-color:#ff7e82;
+    text-decoration:none;
+}
+#fewo_overlay_period .saisonSelectbox #ctrlCalNext,
+#traveldate_wrapper .saisonSelectbox #ctrlCalNext {
+    right:24px;
+}
+#fewo_overlay_period #btnReset,
+.traveldate_reset {
+    float:right;
+    margin-right:24px;
+    padding-right:10px;
+    padding-left:10px;
+    border:1px solid #DBDBDB;
+    border-radius:3px;
+    cursor:pointer;
+}
+#fewo_overlay_period #btnReset:hover,
+.traveldate_reset:hover {
+    border-color:#3C3F40;
+}
+#fewo_overlay_period .filter_period_modal_body:after,
+.traveldate_body:after {
+    float:none;
+    clear:both;
+    display:block;
+    content:"";
+}
+#fewo_overlay_period .filter_period_modal_body,
+.traveldate_body {
+    margin-bottom:10px;
+}
+#fewo_overlay_period .fewo_booking_data,
+#traveldate_wrapper .traveldate_data {
+    margin-bottom:10px;
+}
+.dateRange #dateStart,
+.dateRange #dateStop {
+    display:block;
+    font-weight:bold;
+}
+.fewo_overlay_content .dateRange > span,
+#traveldate_wrapper .dateRange > span {
+    width:160px;
+    height:50px;
+    position:relative;
+    float:left;
+    margin-right:10px;
+    padding:4px 15px 1px 42px;
+    background:#fff url("files/icons/kalender.svg") left center no-repeat;
+    font-size:14px;
+    background-position: 10px center;
+    background-size:20px auto;
+}
+#fewo_filter_period .filter_period_modal_footer,
+.traveldate_footer {
+    overflow:hidden;
+    padding:15px;
+    background-color:#f6f6f6;
+}
+#fewo_filter_period #filter_traveldate_selection:before {
+    font:16px/32px 'KlavikaWebBasic';
+    content: "Reisedauer";
+    float: left;
+    margin-left: 24px;
+    width: 90px;
+}
+#fewo_filter_period #filter_traveldate_selection .fmSelectbox {
+    float: left;
+    width: 175px;
+}
+#fewo_overlay_period #btnReset:after,
+.traveldate_reset:after {
+    height:32px;
+    font-family:fontAwesome;
+    line-height:30px;
+    content: "\f00d";
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 5px;
+}
+#fewo_overlay_period .saisonSelectbox,
+#traveldate_wrapper .saisonSelectbox {
+    position:absolute;
+    float:none;
+    margin-top:0;
+    margin-bottom:0;
+}
+#fewo_overlay_period .saisonSelectbox .fmSelectbox,
+#traveldate_wrapper .saisonSelectbox .fmSelectbox {
+    width:194px;
+    right:20px;
+    top:-42px;
+    position:absolute;
+}
+.saisonSelectbox .fmSelectbox .fmCurrentLabel {
+    height:36px;
+    line-height:36px;
+}
+.saisonSelectbox {
+    width:100%;
+    position:relative;
+    overflow:visible;
+    margin-top:10px;
+}
+#ctrlCalPrev {
+    width:50px;
+    height:50px;
+    left:0;
+    top:250px;
+    position:absolute;
+    display:inline-block;
+    text-align:center;
+    background-color:#fff;
+    border:1px solid #ccc;
+    border-radius:4px;
+    font-size:0;
+    line-height:50px;
+    cursor: pointer;
+}
+#ctrlCalPrev:before {
+    display:block;
+    font:24px/46px fontAwesome;
+    color:#47403a;
+    content:"\f104";
+}
+#ctrlCalNext {
+    width:50px;
+    height:50px;
+    right:0;
+    top:250px;
+    position:absolute;
+    text-align:center;
+    background-color:#fff;
+    border:1px solid #ccc;
+    border-radius:4px;
+    font-size:0;
+    line-height:50px;
+    cursor: pointer;
+}
+#ctrlCalNext:before {
+    display:block;
+    font:24px/46px fontAwesome;
+    color:#47403a;
+    content:"\f105";
+}
+#fewo_filter_period .filter_period_modal_header h3,
+.traveldate_headline h3 {
+    height:50px;
+    margin-bottom:0;
+    padding-right:24px;
+    padding-left:24px;
+    background-color:#f6f6f6;
+    line-height:50px;
+    font-weight:500;
+}
+#fewo_overlay_period .fewo_overlay_background,
+#traveldate_wrapper {
+    background-color:rgba(0,0,0,.6);
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 999999;
+}
+#fewo_overlay_period {
+    background: transparent none repeat scroll 0 0 !important;
+        opacity: 1 !important;
+        z-index: 99999999 !important;
+}
+#ctrlBookingPlans {
+    width:100%;
+    margin:0;
+    padding-top:15px;
+    padding-bottom:0;
+    text-align:center;
+}
+.fewo_booking_info {
+    margin-bottom:20px;
+}
+.fewo_plan_legend {
+    margin-top:10px;
+    margin-bottom:30px;
+    padding-left:0;
+    font-size:12px;
+}
+.fewo_bookingplans .fewo_plan_legend table td {
+    width:67px;
+    height:20px;
+    padding-top:4px;
+    padding-left:5px;
+    text-align:left;
+    border:0px;
+    font-size:12px;
+    color:#333;
+}

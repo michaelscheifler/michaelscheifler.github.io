@@ -1,0 +1,144 @@
+.ad-booking {
+    @include content-center;
+    max-width: $center-text;
+
+    .heading-1 {
+        margin: 2rem 0 1rem;
+    }
+
+    .paragraph {
+        margin-bottom: 2rem;
+    }
+
+    .bookingnew_link {
+        @include btn-primary;
+        max-width: none;
+        text-transform: none;
+        margin: 0 0 2rem;
+    }
+
+    .legend_headline {
+        display: none;
+    }
+
+    // Legend
+    .legend_list {
+        display: grid;
+        grid-template-columns: repeat(1, max-content);
+
+        @include mq(550) {
+            grid-template-columns: repeat(4, max-content);
+        }
+
+        justify-content: center;
+        grid-column-gap: 2rem;
+        grid-row-gap: .5rem;
+        list-style-type: none;
+        padding: 0;
+        margin: 0 0 2rem;
+
+        .legend_l2,
+        .legend_l3 {
+            display: none;
+        }
+
+        a {
+            display: grid;
+            grid-template-columns: repeat(2, max-content);
+            grid-gap: .5rem;
+
+            div {
+                grid-column: 1;
+                grid-row: 1;
+            }
+        }
+    }
+
+    .status {
+        &_buchung {
+            width: 2rem;
+            background-color: $clr-error;
+        }
+
+        &_owner {
+            width: 2rem;
+            background-color: $blue;
+        }
+
+        &_cancel {
+            width: 2rem;
+            background-color: $black;
+        }
+    }
+
+    // Reset filter
+    .legend_l6 {
+        @include btn-tertiary;
+        justify-self: end;
+
+        a {
+            display: inline-block;
+        }
+    }
+
+    // Bookings
+    .bookingtoggler {
+        @include icon-grid("\f141", inherit, $clr-text);
+    }
+
+    .activate::before {
+        @include icomoon("\f0c9", inherit, $clr-text);
+    }
+
+    .bookingaccordion {
+
+        // Booking list
+        table {
+            display: grid;
+        }
+
+        thead {
+            display: none;
+        }
+
+        tr {
+            display: grid;
+            grid-template-columns: 1rem 1fr auto 2rem;
+            grid-gap: 2rem;
+            padding: 1rem 0;
+
+            &:nth-child(odd) {
+                background-color: $grey4;
+            }
+
+            td {
+                &:nth-of-type(1) {
+                    display: contents;
+                }
+
+                &:nth-of-type(4) {
+                    display: none;
+                }
+
+                &:nth-of-type(5) {
+                    .fewoadmin_edit {
+                        @include icon-grid("\f040", inherit, $clr-text);
+
+                        img {
+                            display: none;
+                        }
+                    }
+                }
+
+                &:nth-of-type(6) {
+                    display: none;
+                }
+            }
+
+            .fewoadmin_edit {
+                text-decoration: none;
+                color: $clr-text;
+            }
+        }
+    }
+}

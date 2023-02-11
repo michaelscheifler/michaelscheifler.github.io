@@ -1,0 +1,12 @@
+.image-pano {
+    border-bottom: .5rem solid $clr-primary;
+    margin-bottom: $spacer-lg;
+
+
+    img {
+        // max-width: $center-width;
+        width: 100%;
+        display: block;
+        object-fit: cover;
+    }
+}

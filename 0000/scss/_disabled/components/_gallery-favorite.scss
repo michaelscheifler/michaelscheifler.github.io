@@ -1,0 +1,34 @@
+.gallery-favorite {
+    @include content-full;
+    margin: $spacer auto;
+
+    .heading-1 {
+        margin: 0 0 1rem;
+    }
+
+    .fewo_info {
+        grid-column: 1 / -1;
+    }
+
+    .fewo_items {
+        @include gallery;
+    }
+
+    .fewo_list_item {
+
+        .fewo_leaflet {
+            grid-column: 2;
+            grid-row: 1;
+            z-index: 2;
+
+            .delete_leaflet_link {
+                font-size: 0;
+                text-decoration: none; // Link - different from other galeries
+                cursor: pointer;
+                padding: 1.5rem;
+                @include icon-grid("\f004", 3rem, $white);
+                grid-gap: 0;
+            }
+        }
+    }
+}

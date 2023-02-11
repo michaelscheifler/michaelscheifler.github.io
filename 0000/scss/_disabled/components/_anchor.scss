@@ -1,0 +1,65 @@
+.anchor {
+    z-index: 2;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-evenly;
+    // margin: 0 0 $spacer-top;
+    border-bottom: .1rem solid $grey2;
+    box-shadow: 0 0 1rem $clr-shadow;
+
+    position: sticky;
+    top: 0;
+    background-color: $white;
+
+    a {
+        grid-gap: 0;
+
+        @include mq(650) {
+            grid-gap: 1rem;
+        }
+    }
+
+    @include mq(650) {
+        justify-content: center;
+        grid-gap: 3rem;
+    }
+
+    @include menu-item;
+
+    &__slider {
+        @include icon-grid("\f030", 1.7rem, inherit);
+    }
+
+    &__overview {
+        @include icon-grid("\f036", 1.7rem, inherit);
+    }
+
+    &__map {
+        @include icon-grid("\f041", 1.7rem, inherit);
+    }
+
+    &__gallery {
+        @include icon-grid("\e8f0", 1.7rem, inherit);
+    }
+
+    &__book {
+        @include icon-grid("\f07a", 1.7rem, inherit);
+    }
+
+    &__calendar {
+        @include icon-grid("\f073", 1.7rem, inherit);
+    }
+
+    // ergänzen Fernglas
+    &__nearby {
+        @include icon-grid("", 1.7rem, inherit);
+    }
+
+    span {
+        display: none;
+
+        @include mq(650) {
+            display: initial;
+        }
+    }
+}

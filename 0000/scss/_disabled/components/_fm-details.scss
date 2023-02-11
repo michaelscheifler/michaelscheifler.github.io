@@ -1,0 +1,676 @@
+.appthaus .socialLinkBox a,
+.bmSite .socialLinkBox a {
+    right:25px;
+}
+.booking_terms {
+    float:none;
+    clear:both;
+    padding-top:10px;
+    font-size:14px;
+}
+.booking_overview_container .fewo_titleImage img {
+    display:block;
+    margin-bottom:10px;
+}
+.booking_confirm_error {
+    position:relative;
+    float:none;
+    clear:both;
+    display:block;
+    margin-top:20px;
+    padding:10px 10px 10px 70px;
+    background-color:#F9E7E7;
+    border:1px solid #E06E62;
+    font-size:16px;
+    color:#E06E62;
+}
+.booking_confirm_error:before {
+    left:10px;
+    position:absolute;
+    font:50px/50px fontAwesome;
+    content:"\f071";
+    top:50%;
+    transform:translate(0,-50%);
+}
+.booking_customer_options textarea {
+    height:100px;
+}
+.section_travelinformation {
+    margin-bottom:40px;
+    padding-top:20px;
+    padding-bottom:20px;
+    border-top:1px solid #e4e4e4;
+    border-bottom:1px solid #e4e4e4;
+}
+.booking_confirm_button:after {
+    float:none;
+    clear:both;
+    display:block;
+    content:"";
+}
+#ce_booking_form input[type="submit"] {
+    float:right;
+    margin-top:40px;
+    margin-bottom:40px;
+    background-color:#FF5A5F;
+    border-color:#FF5A5F;
+}
+#ce_booking_form input[type="submit"]:hover {
+    background-color:#ff7e82;
+    border-color:#ff7e82;
+}
+.booking_overview_container input[type="submit"] {
+    width:100%;
+    float:none;
+    clear:both;
+    background-color:#FF5A5F;
+    border-color:#FF5A5F;
+}
+.booking_overview_container input[type="submit"]:hover {
+    background-color:#ff7e82;
+    border-color:#ff7e82;
+}
+.booking_addons_headline,
+.booking_customer_headline {
+    margin-bottom:20px;
+    font-size:28px;
+    line-height:1;
+    font-weight: 500;
+}
+.section_addons {
+    margin-bottom:40px;
+    padding-bottom:40px;
+    border-bottom:1px solid #e4e4e4;
+}
+.booking_overview_container {
+    width:346px;
+    float:right;
+    padding:19px;
+    background-color:#fff;
+    border:1px solid #e4e4e4;
+}
+.booking_main,
+.booking_terms,
+#ce_booking_form .formsubmit {
+    margin-right:370px;
+}
+#ce_booking_form .booking_confirm_button input[type="submit"] {
+    margin-top:0;
+    margin-bottom:0;
+}
+.ce_quickbooking_prices .price_part {
+    margin-bottom:5px;
+    padding-bottom:5px;
+    border-bottom:1px solid #e4e4e4;
+    font-size:15px;
+}
+.ce_quickbooking_prices .price_value {
+    float:right;
+}
+.ce_quickbooking_prices .price_total {
+    margin-bottom:15px;
+    font-weight: 500;
+}
+.ce_quickbooking input[type="submit"] {
+    width:100%;
+    background-color:#FF5A5F;
+}
+.ce_quickbooking input[type="submit"]:hover {
+    background-color:#ff7e82;
+}
+.ce_quickbooking .formsubmit {
+    margin-bottom:20px;
+    padding-bottom:20px;
+    border-bottom:1px solid #e4e4e4;
+}
+.ce_quickbooking .box_apply input[type="button"] {
+    width:49%;
+    height:32px;
+    float:left;
+    margin-top:10px;
+    padding:0;
+    text-align:center;
+    background-color:#fff;
+    border:1px solid #008489;
+    border-radius:4px;
+    font-size:16px;
+    line-height:30px;
+    color:#008489;
+    cursor:pointer;
+    font-weight: 500;
+}
+.ce_quickbooking .box_apply input[type="button"]:hover {
+    background-color:#008489;
+    color:#fff;
+}
+.ce_quickbooking .box_apply:after {
+    float:none;
+    clear:both;
+    display:block;
+    content:"";
+}
+.ce_quickbooking .box_apply input[type="button"].btnApply {
+    margin-right:2%;
+    background-color:#008489;
+    color:#fff;
+}
+.ce_quickbooking .box_apply input[type="button"].btnApply:hover {
+    background-color:#72AFB2;
+    border-color:#72AFB2;
+}
+.ce_quickbooking .controlbox input[type="text"] {
+    width:34px;
+    height:34px;
+    padding-right:0;
+    padding-left:0;
+    text-align:center;
+    border:0px solid;
+    line-height:34px;
+}
+.ce_quickbooking .controlButton {
+    width:28px;
+    height:28px;
+    margin-top:3px;
+    text-align:center;
+    border:1px solid #008489;
+    border-radius:50%;
+    font-size:20px;
+    line-height:25px;
+    color:#008489;
+    cursor:pointer;
+}
+.ce_quickbooking .controlButton.disabled {
+    border-color:#B5D5D6;
+    color:#B5D5D6;
+    cursor:default;
+}
+.ce_quickbooking .text.arrival {
+    width:49%;
+    float:left;
+    margin-right:2%;
+}
+.ce_quickbooking .text.departure {
+    width:49%;
+    float:left;
+}
+.ce_quickbooking .person_widget {
+    position:relative;
+    float:none;
+    clear:both;
+    padding-top:10px;
+    padding-bottom:15px;
+}
+.ce_quickbooking .person_widget_window {
+    left:0;
+    right:0;
+    top:85px;
+    position:absolute;
+    padding:20px;
+    background-color:#fff;
+    -webkit-box-shadow:0 2px 6px 0 rgba(0,0,0,.15);
+    box-shadow:0 2px 6px 0 rgba(0,0,0,.15);
+    border:1px solid #e4e4e4;
+    border-radius:3px;
+}
+.ce_quickbooking .controlbox {
+    margin-bottom:10px;
+}
+.ce_quickbooking .controlbox:after {
+    float:none;
+    clear:both;
+    display:block;
+    content:"";
+}
+.ce_quickbooking .controlbox > span {
+    height:34px;
+    float:left;
+    line-height:34px;
+}
+.ce_quickbooking .controlbox > div {
+    float:right;
+}
+.ce_quickbooking .controlbox > div > * {
+    float:left;
+}
+.ce_quickbooking label {
+    display:block;
+    font-size:14px;
+}
+.fewo_gallerybutton a {
+    height:36px;
+    bottom:24px;
+    left:24px;
+    position:absolute;
+    display:block;
+    padding-right:15px;
+    padding-left:15px;
+    text-align:center;
+    white-space:nowrap;
+    background-color:#fff;
+    border:1px solid #DBDBDB;
+    border-radius:4px;
+    line-height:36px;
+    text-decoration:none;
+    color:#484848;
+    z-index:9;
+}
+.fewo_gallerybutton a:before {
+    float:left;
+    margin-right:10px;
+    font:18px/34px fontAwesome;
+    content:"\f03e";
+}
+.socialLinkBox a {
+    height:36px;
+    right:160px;
+    top:94px;
+    position:absolute;
+    display:block;
+    padding-right:15px;
+    padding-left:15px;
+    text-align:center;
+    white-space:nowrap;
+    background-color:#fff;
+    border:1px solid #DBDBDB;
+    border-radius:4px;
+    line-height:36px;
+    text-decoration:none;
+    color:#484848;
+    z-index:9;
+}
+.socialLinkBox a:before {
+    float:left;
+    margin-right:10px;
+    font:18px/34px fontAwesome;
+    content:"\f1e0";
+}
+.dtlOwner .fewo_contact_image {
+    right:0;
+    top:0;
+    position:absolute;
+}
+.mod_fewo_similar {
+    margin-top:50px;
+    padding-top:50px;
+    border-top:1px solid #e4e4e4;
+}
+.foldText {
+    position:relative;
+    padding-bottom:54px;
+}
+.foldText .over {
+    bottom:0;
+    left:0;
+    right:0;
+    position:absolute;
+    display:block;
+    background-color:#fff;
+    line-height:80px;
+    height:54px !Important;
+}
+.foldText .over span {
+    font-weight:bold;
+    color:#008489;
+    cursor:pointer;
+}
+.foldText .over span:hover {
+    text-decoration:underline;
+}
+.foldText .over span:after {
+    display:inline-block;
+    margin-left:10px;
+    font-family:fontAwesome;
+    text-decoration:none;
+    content:"\f107";
+}
+.foldText.expanded .over span:after {
+    content:"\f106";
+}
+.detailWrap .fewo_map {
+    margin-bottom:20px;
+}
+.ce_fewo_details .bigmap {
+    display:none;
+}
+.topOwner .fewo_contact_description {
+    font-size:12px;
+    line-height:1;
+}
+.topOwner {
+    right:0;
+    top:0;
+    position:absolute;
+    text-align:center;
+}
+.fewo_contact_image .image_container {
+    overflow:hidden;
+    display:inline-block;
+    border:1px solid #e4e4e4;
+    border-radius:50%;
+}
+.fewo_contact_info img {
+    display:block;
+}
+.dtlFacts {
+    margin-bottom:30px;
+    padding-bottom:30px;
+    border-bottom:1px solid #e4e4e4;
+}
+.priceDivider {
+    width:100%;
+    height:1px;
+    display:block;
+    margin-top:15px;
+    margin-bottom:15px;
+    background-color:#e4e4e4;
+    content:"";
+}
+.dtlFacts > div {
+    float:left;
+    margin-right:15px;
+}
+.dtlFacts > div:last-child {
+    margin-right:0;
+}
+.dtlMainSub {
+    margin-bottom:35px;
+    font-size:18px;
+    color:#666;
+    font-weight: normal;
+}
+.detail h1 {
+    margin-bottom:12px;
+}
+#lnk_vote img {
+    width:11px;
+    height:11px;
+    margin-right:1px;
+}
+#lnk_vote {
+    font-size:15px;
+    text-decoration:none;
+}
+#lnk_vote span:last-of-type {
+    margin-right:10px;
+}
+.dtlFacts .fewo_attributes,
+.attribute_boxset ul,
+.detailAttributSome ul,
+.fewo_saisons ul {
+    margin:0;
+    padding:0;
+    list-style-type:none;
+}
+.ce_fewo_details .fewo_person:before,
+.ce_fewo_details .fewo_badezimmer:before,
+.ce_fewo_details .fewo_schlafzimmer:before,
+.ce_fewo_details .fewo_size:before,
+.dtlFacts .fewo_attributes span:before {
+    float:left;
+    margin-right:10px;
+    font-family:fontAwesome;
+}
+.dtlFacts .fewo_attributes span:before {
+    font-family:fruitMedia-Font;
+}
+.ce_fewo_details .fewo_person:before {
+    content:"\f007";
+}
+.ce_fewo_details .fewo_badezimmer:before {
+    content:"\f2cd";
+}
+.ce_fewo_details .fewo_schlafzimmer:before {
+    content:"\f236";
+}
+.ce_fewo_details .fewo_size:before {
+    content:"\f247";
+}
+.dtlFacts .fewo_attributes span.wlan:before {
+    content:"\e609";
+}
+.dtlFacts .fewo_attributes span.rauchen:before {
+    content:"\e610";
+}
+.dtlFacts .fewo_attributes span.haustiere:before {
+    content:"\e614";
+}
+.dtlFacts .fewo_attributes span.terrasse:before {
+    content:"\e61c";
+}
+.dtlFacts .fewo_attributes span.nopet:before {
+    content:"\e613";
+}
+.dtlFacts .fewo_attributes span.nosmoke:before {
+    content:"\e60f";
+}
+.fewo_saisons .saison_label {
+    font-weight:500;
+}
+.fewo_saisons ul {
+    margin-bottom:10px;
+}
+.fewo_saisons ul:after {
+    float:none;
+    clear:both;
+    display:block;
+    content:"";
+}
+.fewo_saisons li {
+    width:25%;
+    float:left;
+    display:block;
+    line-height:24px;
+}
+.fewo_saisons li.saison_period {
+    width:30%;
+}
+.fewo_saisons li.saison_mindays {
+    width:15%;
+}
+.fewo_saisons li.saison_price {
+    width:30%;
+}
+.fewo_saisons li.saison_title {
+    display:none;
+}
+.detailAttributSome {
+    margin-bottom:20px;
+}
+.detailAttributSome ul {
+    float:none;
+    clear:both;
+    display:block;
+    content:"";
+}
+.detailAttributSome li {
+    width:50%;
+    position:relative;
+    float:left;
+    line-height:22px;
+}
+.detailAttributSome li.is_unavailable {
+    text-decoration:line-through;
+    color:#767676;
+}
+.detailAttributSome li.is_unavailable span:before {
+    width:20px;
+    float:left;
+    display:block;
+    font:13px/22px fontAwesome;
+    content:"\f00d";
+}
+.detailAttributSome li.is_available span:before {
+    width:20px;
+    float:left;
+    display:block;
+    font:13px/22px fontAwesome;
+    color:#008489;
+    content:"\f00c";
+}
+.attribute_boxset .attribute_group {
+    margin-bottom:20px;
+}
+.attribute_boxset .attribute_group:after {
+    float:none;
+    clear:both;
+    display:block;
+    content:"";
+}
+.attribute_boxset .attribute_group li {
+    width:50%;
+    float:left;
+    line-height:22px;
+}
+.attribute_boxset .attribute_group_title {
+    font-weight:500;
+}
+.detailWrap {
+    position:relative;
+    margin-bottom:40px;
+    padding-bottom:40px;
+    border-bottom:1px solid #e4e4e4;
+}
+.detailWrap:last-of-type {
+    padding-bottom:0;
+    border-bottom:0 solid;
+}
+.requestButton a {
+    width:100%;
+    height:36px;
+    display:block;
+    text-align:center;
+    background-color:#fff;
+    border:1px solid #008489;
+    border-radius:4px;
+    font-size:19px;
+    line-height:36px;
+    text-decoration:none;
+    font-weight:500;
+}
+.requestButton a:hover {
+    background-color:#008489;
+    color:#fff;
+}
+#lnk_booking,
+.sideWrap .fewo_booking a {
+    width:100%;
+    height:44px;
+    display:block;
+    margin-bottom:15px;
+    text-align:center;
+    background-color:#FF5A5F;
+    border-radius:4px;
+    font-size:21px;
+    line-height:44px;
+    text-decoration:none;
+    color:#fff;
+    font-weight:500;
+}
+#lnk_booking:hover,
+.sideWrap .fewo_booking a:hover {
+    background-color:#ff7e82;
+}
+#rightBookingWrap.scroll-to-fixed-fixed {
+    top:70px !Important;
+    z-index:999 !important;
+    width:346px !important;
+}
+#right #fewo_cheapest {
+    font-size:17px;
+    line-height:1;
+}
+#right #fewo_cheapest .fewo_min_days {
+    margin-left:5px;
+}
+#right #fewo_cheapest .currValue {
+    font-size:26px;
+    font-weight:500;
+}
+#j_menu:after {
+    float:none;
+    clear:both;
+    display:block;
+    content:"";
+}
+#j_menu a {
+    height:50px;
+    float:left;
+    display:block;
+    font-size:17px;
+    line-height:50px;
+    text-decoration:none;
+}
+#j_menu a:hover {
+    text-decoration:underline;
+}
+#j_menu a.active {
+    color:#484848;
+}
+#j_menu i {
+    height:50px;
+    float:left;
+    padding-right:8px;
+    padding-left:8px;
+    font-size:3px;
+    line-height:50px;
+}
+#dtlNavWrap {
+    margin-bottom:30px;
+    background-color:#fff;
+    border-bottom:1px solid #e4e4e4;
+}
+#dtlNavWrap.scroll-to-fixed-fixed {
+    position:fixed;
+    top:0 !important;
+    left:0 !important;
+    right:0 !important;
+    width:100% !important;
+    z-index:1000 !Important;
+}
+#dtlNavWrap.scroll-to-fixed-fixed #j_menu {
+    width:1080px;
+    margin:0 auto;
+    padding-right:24px;
+    padding-left:24px;
+}
+.detail.right #container {
+    padding-top:0;
+}
+.detail .fewo_leaflet a {
+    width:124px;
+    height:36px;
+    right:24px;
+    top:94px;
+    position:absolute;
+    display:block;
+    padding-right:15px;
+    padding-left:15px;
+    text-align:center;
+    background-color:#fff;
+    border:1px solid #DBDBDB;
+    border-radius:4px;
+    line-height:36px;
+    text-decoration:none;
+    color:#484848;
+    z-index:9;
+}
+.detail .fewo_leaflet a:before {
+    float:left;
+    margin-right:10px;
+    font:18px/34px fontAwesome;
+    content:"\f004";
+}
+.detail .fewo_leaflet a.onLeaflet:before {
+    margin-right:0;
+    content:"\f004";
+    font-weight:900;
+}
+.detail .fewo_images_image,
+header .fewo_houseimage,
+header .bm_image {
+    width:100%;
+    height:70vh;
+    max-height:700px;
+    position:relative;
+    overflow:hidden;
+}

@@ -1,0 +1,66 @@
+.price {
+    @include content-center;
+    display: grid;
+    align-items: center;
+    // justify-items: center;
+    grid-gap: $spacer-sm;
+    // margin-bottom: $spacer-md;
+
+    @include mq(600) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    &__card {
+        display: grid;
+        text-align: center;
+        // align-items: center;
+        // justify-items: center;
+        // grid-gap: $spacer-md;
+    }
+
+    &__season {
+        padding: $spacer-md;
+        background-color: $clr-primary;
+        @include txtStyle (1.8rem, $fw-b, 1.44, none, $white);
+
+    }
+
+    &__value {
+        padding: $spacer-md;
+        background-color: $clr-secondary;
+        @include txtStyle (5.4rem, $fw-b, 1.44, none, $white);
+    }
+
+    .btn {
+        grid-column: 1 / -1;
+        text-align: center;
+
+        a {
+            // @include btn-primary;
+        }
+    }
+
+    // @include mq(600) {
+    //     grid-gap: $spacer-lg;
+    //     margin-bottom: $spacer-lg;
+    //     grid-template-columns: 1fr 2fr;
+    // }
+
+    // @include mq(1200) {
+    //     grid-gap: $spacer-xl;
+    //     margin-bottom: $spacer-xl;
+    // }
+
+
+    // .heading-2 {
+    //     @include mq(600) {
+    //         text-align: right;
+    //     }
+    // }
+
+    // &__text {
+    //     &:not(:last-child) {
+    //         margin-bottom: $spacer-sm;
+    //     }
+    // }
+}
