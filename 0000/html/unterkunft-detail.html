@@ -67,7 +67,7 @@
         <section class="overview pt-lg" id="overview">
           <h1 class="mb-sm">Gerstreitlehen-Fewo 1</h1>
 
-          <ul class="overview__list">
+          <ul class="overview__items">
             <li class="overview__person">3 Personen</li>
             <li class="overview__bedroom">1 Schlafzimmer</li>
             <li class="overview__bathroom">1 Badezimmer</li>
@@ -243,7 +243,7 @@
 
           <div class="location__nearby">
             <h3>In der Umgebung</h3>
-            <table class="location__container">
+            <table class="location__items">
               <tbody>
                 <tr>
                   <td>Ortszentrum</td>
@@ -276,28 +276,28 @@
 
         <section class="price pt-xxl" id="price">
           <h2 class="mb-sm">Mietpreise</h2>
-          <div class="price__container">
+          <div class="price__items">
             <div class="price__item">
               <div class="price__period">
                 <h3>20.12.2022 - 07.01.2023</h3>
                 <p>Saison B</p>
               </div>
-              <div>
+              <div class="price__minstay">
                 <h3>Mindestübernachtungen</h3>
                 <p>7 Nächte</p>
               </div>
-              <div>
+              <div class="price__pernight">
                 <h3>Preis pro Nacht</h3>
                 <p>93,00 €</p>
               </div>
-              <div>
+              <div class="price__arrival">
                 <h3>Anreise nicht möglich:</h3>
                 <p>
                   Montag, Dienstag, Mittwoch, Donnerstag, Freitag, Samstag,
                   Sonntag
                 </p>
               </div>
-              <div>
+              <div class="price__departure">
                 <h3>Abreise nicht möglich:</h3>
                 <p>
                   Montag, Dienstag, Mittwoch, Donnerstag, Freitag, Samstag,
@@ -311,22 +311,22 @@
                 <h3>07.01.2023 - 01.05.2023</h3>
                 <p>Saison B</p>
               </div>
-              <div>
+              <div class="price__minstay">
                 <h3>Mindestübernachtungen</h3>
                 <p>7 Nächte</p>
               </div>
-              <div>
+              <div class="price__pernight">
                 <h3>Preis pro Nacht</h3>
                 <p>93,00 €</p>
               </div>
-              <div>
+              <div class="price__arrival">
                 <h3>Anreise nicht möglich:</h3>
                 <p>
                   Montag, Dienstag, Mittwoch, Donnerstag, Freitag, Samstag,
                   Sonntag
                 </p>
               </div>
-              <div>
+              <div class="price__departure">
                 <h3>Abreise nicht möglich:</h3>
                 <p>
                   Montag, Dienstag, Mittwoch, Donnerstag, Freitag, Samstag,
@@ -340,22 +340,22 @@
                 <h3>01.05.2023 - 01.09.2023</h3>
                 <p>Saison B</p>
               </div>
-              <div>
+              <div class="price__minstay">
                 <h3>Mindestübernachtungen</h3>
                 <p>7 Nächte</p>
               </div>
-              <div>
+              <div class="price__pernight">
                 <h3>Preis pro Nacht</h3>
                 <p>93,00 €</p>
               </div>
-              <div>
+              <div class="price__arrival">
                 <h3>Anreise nicht möglich:</h3>
                 <p>
                   Montag, Dienstag, Mittwoch, Donnerstag, Freitag, Samstag,
                   Sonntag
                 </p>
               </div>
-              <div>
+              <div class="price__departure">
                 <h3>Abreise nicht möglich:</h3>
                 <p>
                   Montag, Dienstag, Mittwoch, Donnerstag, Freitag, Samstag,
@@ -369,22 +369,22 @@
                 <h3>01.09.2023 - 20.12.2023</h3>
                 <p>Saison B</p>
               </div>
-              <div>
+              <div class="price__minstay">
                 <h3>Mindestübernachtungen</h3>
                 <p>7 Nächte</p>
               </div>
-              <div>
+              <div class="price__pernight">
                 <h3>Preis pro Nacht</h3>
                 <p>93,00 €</p>
               </div>
-              <div>
+              <div class="price__arrival">
                 <h3>Anreise nicht möglich:</h3>
                 <p>
                   Montag, Dienstag, Mittwoch, Donnerstag, Freitag, Samstag,
                   Sonntag
                 </p>
               </div>
-              <div>
+              <div class="price__departure">
                 <h3>Abreise nicht möglich:</h3>
                 <p>
                   Montag, Dienstag, Mittwoch, Donnerstag, Freitag, Samstag,
@@ -437,13 +437,17 @@
 
         <section class="cal1 pt-xxl" id="cal1">
           <h2 class="mb-sm">Kalender</h2>
-          <div class="cal1__container">
+          <div class="cal1__header">
+            <div class="cal1__previous cal1__previous--disabled"></div>
+            <div class="cal1__message"></div>
+            <div class="cal1__next"></div>
+          </div>
+          <div class="cal1__items">
+
             <table class="cal1__item">
               <thead class="cal1__head">
                 <tr class="cal1__title">
-                  <th class="cal1__previous"></th>
                   <th>Januar 2023</th>
-                  <th class="cal1__next cal1__next--hidden"></th>
                 </tr>
                 <tr class="cal1__daylist">
                   <th>Mo</th>
@@ -463,14 +467,14 @@
                   <td class="cal1__empty"></td>
                   <td class="cal1__empty"></td>
                   <td class="cal1__empty"></td>
-                  <td class="cal1__available">1</td>
+                  <td class="cal1__past">1</td>
                 </tr>
 
                 <tr class="cal1__status">
-                  <td class="cal1__available">2</td>
-                  <td class="cal1__available">3</td>
-                  <td class="cal1__available">4</td>
-                  <td class="cal1__available">5</td>
+                  <td class="cal1__past">2</td>
+                  <td class="cal1__past">3</td>
+                  <td class="cal1__past">4</td>
+                  <td class="cal1__past">5</td>
                   <td class="cal1__available">6</td>
                   <td class="cal1__available">7</td>
                   <td class="cal1__available">8</td>
@@ -478,27 +482,27 @@
 
                 <tr class="cal1__status">
                   <td class="cal1__available">9</td>
-                  <td class="cal1__available">10</td>
-                  <td class="cal1__available">11</td>
-                  <td class="cal1__available">12</td>
-                  <td class="cal1__available">13</td>
-                  <td class="cal1__available">14</td>
-                  <td class="cal1__available">15</td>
+                  <td class="cal1__arrival">10</td>
+                  <td class="cal1__occupied">11</td>
+                  <td class="cal1__occupied">12</td>
+                  <td class="cal1__occupied">13</td>
+                  <td class="cal1__occupied">14</td>
+                  <td class="cal1__departure">15</td>
                 </tr>
 
                 <tr class="cal1__status">
                   <td class="cal1__available">16</td>
-                  <td class="cal1__available">17</td>
-                  <td class="cal1__available">18</td>
-                  <td class="cal1__occupied cal1__occupied--start">19</td>
+                  <td class="cal1__arrival">17</td>
+                  <td class="cal1__occupied">18</td>
+                  <td class="cal1__change">19</td>
                   <td class="cal1__occupied">20</td>
                   <td class="cal1__occupied">21</td>
-                  <td class="cal1__occupied cal1__occupied--change">22</td>
+                  <td class="cal1__departure">22</td>
                 </tr>
 
                 <tr class="cal1__status">
-                  <td class="cal1__occupied">23</td>
-                  <td class="cal1__occupied cal1__occupied--end">24</td>
+                  <td class="cal1__available">23</td>
+                  <td class="cal1__available">24</td>
                   <td class="cal1__available">25</td>
                   <td class="cal1__available">26</td>
                   <td class="cal1__available">27</td>
@@ -520,9 +524,7 @@
             <table class="cal1__item">
               <thead class="cal1__head">
                 <tr class="cal1__title">
-                  <th class="cal1__previous cal1__previous--hidden"></th>
                   <th>Februar 2023</th>
-                  <th class="cal1__next"></th>
                 </tr>
                 <tr class="cal1__daylist">
                   <th>Mo</th>
@@ -538,53 +540,50 @@
                 <tr class="cal1__status">
                   <td class="cal1__empty"></td>
                   <td class="cal1__empty"></td>
-                  <td class="cal1__empty"></td>
-                  <td class="cal1__empty"></td>
-                  <td class="cal1__empty"></td>
-                  <td class="cal1__empty"></td>
                   <td class="cal1__available">1</td>
-                </tr>
-
-                <tr class="cal1__status">
                   <td class="cal1__available">2</td>
                   <td class="cal1__available">3</td>
                   <td class="cal1__available">4</td>
                   <td class="cal1__available">5</td>
+                </tr>
+
+                <tr class="cal1__status">
                   <td class="cal1__available">6</td>
                   <td class="cal1__available">7</td>
                   <td class="cal1__available">8</td>
-                </tr>
-
-                <tr class="cal1__status">
                   <td class="cal1__available">9</td>
-                  <td class="cal1__available">10</td>
-                  <td class="cal1__available">11</td>
-                  <td class="cal1__available">12</td>
-                  <td class="cal1__available">13</td>
-                  <td class="cal1__available">14</td>
-                  <td class="cal1__available">15</td>
+                  <td class="cal1__arrival">10</td>
+                  <td class="cal1__occupied">11</td>
+                  <td class="cal1__occupied">12</td>
                 </tr>
 
                 <tr class="cal1__status">
+                  <td class="cal1__occupied">13</td>
+                  <td class="cal1__occupied">14</td>
+                  <td class="cal1__departure">15</td>
                   <td class="cal1__available">16</td>
-                  <td class="cal1__available">17</td>
-                  <td class="cal1__available">18</td>
-                  <td class="cal1__occupied cal1__occupied--start">19</td>
+                  <td class="cal1__arrival">17</td>
+                  <td class="cal1__occupied">18</td>
+                  <td class="cal1__occupied cal1__occupied--change">19</td>
+                </tr>
+
+                <tr class="cal1__status">
                   <td class="cal1__occupied">20</td>
                   <td class="cal1__occupied">21</td>
-                  <td class="cal1__occupied cal1__occupied--change">22</td>
+                  <td class="cal1__occupied cal1__occupied--end">22</td>
+                  <td class="cal1__available">23</td>
+                  <td class="cal1__available">24</td>
+                  <td class="cal1__available">25</td>
+                  <td class="cal1__available">26</td>
                 </tr>
 
                 <tr class="cal1__status">
-                  <td class="cal1__occupied">23</td>
-                  <td class="cal1__occupied cal1__occupied--end">24</td>
-                  <td class="cal1__available">25</td>
-                  <td class="cal1__available">26</td>
                   <td class="cal1__available">27</td>
                   <td class="cal1__available">28</td>
                 </tr>
               </tbody>
             </table>
+
           </div>
         </section>
       </div>
@@ -599,20 +598,24 @@
               <span class="book__price">93,00 €</span>
               <p class="book__details">pro ÜN / 2 Personen</p>
             </div>
+
             <form action="#" class="form form--book">
               <div class="form__group">
                 <input id="arrival" class="form__input" type="datepicker" name="arrival" placeholder="&nbsp;"
                   value="01.01.2023" />
-                <label class="form__label" for="arrival">Früheste Anreise</label>
+                <label class="form__label" for="arrival">Anreise</label>
 
                 <div class="cal1 cal1--modal-off" id="cal1">
-                  <div class="cal1__container">
+                  <div class="cal1__header">
+                    <div class="cal1__previous cal1__previous--disabled"></div>
+                    <div class="cal1__message">Anreisetag</div>
+                    <div class="cal1__next"></div>
+                  </div>
+                  <div class="cal1__items cal1__items--hover">
                     <table class="cal1__item">
                       <thead class="cal1__head">
                         <tr class="cal1__title">
-                          <th class="cal1__previous"></th>
                           <th>Januar 2023</th>
-                          <th class="cal1__next"></th>
                         </tr>
                         <tr class="cal1__daylist">
                           <th>Mo</th>
@@ -632,14 +635,14 @@
                           <td class="cal1__empty"></td>
                           <td class="cal1__empty"></td>
                           <td class="cal1__empty"></td>
-                          <td class="cal1__available">1</td>
+                          <td class="cal1__past">1</td>
                         </tr>
 
                         <tr class="cal1__status">
-                          <td class="cal1__available">2</td>
-                          <td class="cal1__available">3</td>
-                          <td class="cal1__available">4</td>
-                          <td class="cal1__available">5</td>
+                          <td class="cal1__past">2</td>
+                          <td class="cal1__past">3</td>
+                          <td class="cal1__past">4</td>
+                          <td class="cal1__past">5</td>
                           <td class="cal1__available">6</td>
                           <td class="cal1__available">7</td>
                           <td class="cal1__available">8</td>
@@ -647,22 +650,22 @@
 
                         <tr class="cal1__status">
                           <td class="cal1__available">9</td>
-                          <td class="cal1__available">10</td>
-                          <td class="cal1__available">11</td>
-                          <td class="cal1__available">12</td>
-                          <td class="cal1__available">13</td>
-                          <td class="cal1__available">14</td>
-                          <td class="cal1__available">15</td>
+                          <td class="cal1__arrival">10</td>
+                          <td class="cal1__occupied">11</td>
+                          <td class="cal1__occupied">12</td>
+                          <td class="cal1__occupied">13</td>
+                          <td class="cal1__occupied">14</td>
+                          <td class="cal1__departure">15</td>
                         </tr>
 
                         <tr class="cal1__status">
                           <td class="cal1__available">16</td>
-                          <td class="cal1__available">17</td>
-                          <td class="cal1__available">18</td>
-                          <td class="cal1__available">19</td>
-                          <td class="cal1__available">20</td>
-                          <td class="cal1__available">21</td>
-                          <td class="cal1__available">22</td>
+                          <td class="cal1__arrival">17</td>
+                          <td class="cal1__occupied">18</td>
+                          <td class="cal1__occupied">19</td>
+                          <td class="cal1__occupied">20</td>
+                          <td class="cal1__occupied">21</td>
+                          <td class="cal1__departure">22</td>
                         </tr>
 
                         <tr class="cal1__status">
@@ -692,16 +695,19 @@
               <div class="form__group">
                 <input id="departure" class="form__input" type="datepicker" name="departure" placeholder="&nbsp;"
                   value="10.01.2023" />
-                <label class="form__label" for="departure">Späteste Abreise</label>
+                <label class="form__label" for="departure">Abreise</label>
 
-                <section class="cal1 cal1--modal-off" id="cal1">
-                  <div class="cal1__container">
+                <div class="cal1 cal1--modal-on" id="cal1">
+                  <div class="cal1__header">
+                    <div class="cal1__previous cal1__previous--disabled"></div>
+                    <div class="cal1__message">Abreisetag</div>
+                    <div class="cal1__next"></div>
+                  </div>
+                  <div class="cal1__items cal1__items--hover">
                     <table class="cal1__item">
                       <thead class="cal1__head">
                         <tr class="cal1__title">
-                          <th class="cal1__previous"></th>
                           <th>Januar 2023</th>
-                          <th class="cal1__next"></th>
                         </tr>
                         <tr class="cal1__daylist">
                           <th>Mo</th>
@@ -721,14 +727,14 @@
                           <td class="cal1__empty"></td>
                           <td class="cal1__empty"></td>
                           <td class="cal1__empty"></td>
-                          <td class="cal1__available">1</td>
+                          <td class="cal1__past">1</td>
                         </tr>
 
                         <tr class="cal1__status">
-                          <td class="cal1__available">2</td>
-                          <td class="cal1__available">3</td>
-                          <td class="cal1__available">4</td>
-                          <td class="cal1__available">5</td>
+                          <td class="cal1__past">2</td>
+                          <td class="cal1__past">3</td>
+                          <td class="cal1__past">4</td>
+                          <td class="cal1__past">5</td>
                           <td class="cal1__available">6</td>
                           <td class="cal1__available">7</td>
                           <td class="cal1__available">8</td>
@@ -736,32 +742,32 @@
 
                         <tr class="cal1__status">
                           <td class="cal1__available">9</td>
-                          <td class="cal1__available">10</td>
-                          <td class="cal1__available">11</td>
-                          <td class="cal1__available">12</td>
-                          <td class="cal1__available">13</td>
-                          <td class="cal1__available">14</td>
-                          <td class="cal1__available">15</td>
+                          <td class="cal1__arrival">10</td>
+                          <td class="cal1__occupied">11</td>
+                          <td class="cal1__occupied">12</td>
+                          <td class="cal1__occupied">13</td>
+                          <td class="cal1__occupied">14</td>
+                          <td class="cal1__departure">15</td>
                         </tr>
 
                         <tr class="cal1__status">
                           <td class="cal1__available">16</td>
-                          <td class="cal1__available">17</td>
-                          <td class="cal1__available">18</td>
-                          <td class="cal1__available">19</td>
-                          <td class="cal1__available">20</td>
-                          <td class="cal1__available">21</td>
-                          <td class="cal1__available">22</td>
+                          <td class="cal1__arrival">17</td>
+                          <td class="cal1__occupied">18</td>
+                          <td class="cal1__occupied">19</td>
+                          <td class="cal1__occupied">20</td>
+                          <td class="cal1__occupied">21</td>
+                          <td class="cal1__departure">22</td>
                         </tr>
 
                         <tr class="cal1__status">
                           <td class="cal1__available">23</td>
-                          <td class="cal1__available">24</td>
-                          <td class="cal1__available">25</td>
-                          <td class="cal1__available">26</td>
-                          <td class="cal1__available">27</td>
-                          <td class="cal1__available">28</td>
-                          <td class="cal1__available">29</td>
+                          <td class="cal1__marked">24</td>
+                          <td class="cal1__marked">25</td>
+                          <td class="cal1__marked">26</td>
+                          <td class="cal1__marked-disabled">27</td>
+                          <td class="cal1__available-disabled">28</td>
+                          <td class="cal1__available-disabled">29</td>
                         </tr>
 
                         <tr class="cal1__status">
@@ -775,7 +781,7 @@
                       </tbody>
                     </table>
                   </div>
-                </section>
+                </div>
               </div>
 
               <div class="form__group form__group--person">
@@ -786,8 +792,8 @@
                 <div class="person person--modal-off">
                   <div class="person__group">
                     <label for="adults">Erwachsene</label>
-                    <a class="person__decrease" href="#">-</a>
-                    <input class="person__quantity" id="adults" type="text" value="2" name="adults" />
+                    <a class="person__decrease person__decrease--disabled" href="#">-</a>
+                    <input class="person__quantity" id="adults" type="text" value="1" name="adults" />
                     <a class="person__increase" href="#">+</a>
                   </div>
 
@@ -849,75 +855,58 @@
                   <a href="#" class="btn">Anwenden</a>
                 </div>
               </div>
-
-              <div class="calc">
-                <div class="calc__title">
-                  Gesamtmiete
-                </div>
-                <table class="calc__table">
-                  <tbody class="calc__items">
-                    <tr class="calc__item">
-                      <td class="calc__designation">Objektmiete
-                        <span class="calc__description">
-                          7 Nächte
-                        </span>
-                      </td>
-                      <td class="calc__price">231,00 €</td>
-                    </tr>
-                    <tr class="calc__item">
-                      <td class="calc__designation">Extras
-                      </td>
-                      <td class="calc__price">24,00 €</td>
-                    </tr>
-                    <tr class="calc__item">
-                      <td class="calc__designation">Gebühren
-                      </td>
-                      <td class="calc__price">8,00 €</td>
-                    </tr>
-                    <tr class="calc__item">
-                      <td class="calc__designation">Endreinigung
-                      </td>
-                      <td class="calc__price">56,00 €</td>
-                    </tr>
-                    <tr class="calc__item">
-                      <td class="calc__designation calc__designation--total">Endpreis
-                        <span class="calc__description">(inkl. MwSt)</span>
-                      </td>
-                      <td class="calc__price calc__price--total">319,00 €</td>
-                    </tr>
-                    <tr class="calc__item">
-                      <td class="calc__designation">Kaution
-                        <span class="calc__description">Nicht im Endpreis enthalten, Erstattbar</span>
-                      </td>
-                      <td class="calc__price">500,00 €</td>
-                    </tr>
-                  </tbody>
-                </table>
-
-              </div>
-
-              <a href="book-1.html" class="form__submit btn">Weiter zur Buchung</a>
-
-              <!-- <select id="type" class="search__select" name="type" placeholder="&nbsp;">
-          <option value="type">Unterkunftsart</option>
-          <option value="house">Ferienhaus</option>
-          <option value="apartment">Ferienwohnung</option>
-          <option value="room">Zimmer</option>
-        </select>
-  
-        <select id="bedroom" class="search__select" name="bedroom" placeholder="Schlafzimmer">
-          <option value="bedroom">Schlafzimmer</option>
-          <option value="1">1 Schlafzimmer</option>
-          <option value="2">2 Schlafzimmer</option>
-        </select>
-        
-        <div class="search__filter">
-          <label class="search__label" for="filter">Mehr Filter</label>
-          <input id="filter" class="search__input" name="filter" placeholder="&nbsp;" />
-        </div> 
-  
-        <a href="/unterkuenfte.html" class="search__submit">Suchen</a> -->
             </form>
+
+            <div class="calc">
+              <div class="calc__title">
+                Gesamtmiete
+              </div>
+              <table class="calc__table">
+                <tbody class="calc__items">
+                  <tr class="calc__item">
+                    <td class="calc__designation">Objektmiete
+                      <span class="calc__description">
+                        7 Nächte
+                      </span>
+                    </td>
+                    <td class="calc__price">231,00 €</td>
+                  </tr>
+                  <tr class="calc__item">
+                    <td class="calc__designation">Extras
+                    </td>
+                    <td class="calc__price">24,00 €</td>
+                  </tr>
+                  <tr class="calc__item">
+                    <td class="calc__designation">Gebühren
+                    </td>
+                    <td class="calc__price">8,00 €</td>
+                  </tr>
+                  <tr class="calc__item">
+                    <td class="calc__designation">Endreinigung
+                    </td>
+                    <td class="calc__price">56,00 €</td>
+                  </tr>
+                  <tr class="calc__item">
+                    <td class="calc__designation calc__designation--total">Endpreis
+                      <span class="calc__description">(inkl. MwSt)</span>
+                    </td>
+                    <td class="calc__price calc__price--total">319,00 €</td>
+                  </tr>
+                  <tr class="calc__item">
+                    <td class="calc__designation">Kaution
+                      <span class="calc__description">Nicht im Endpreis enthalten, Erstattbar</span>
+                    </td>
+                    <td class="calc__price">500,00 €</td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="calc__tax">
+                (Gem. § 19 (1) UStG enthält der ausgewiesene Betrag keine Umsatzsteuer.)
+              </div>
+            </div>
+
+            <a href="book-1.html" class="form__submit btn">Weiter zur Buchung</a>
+
           </div>
         </section>
       </div>

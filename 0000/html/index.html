@@ -52,19 +52,23 @@
         <span class="hero__title--sub"> Ferienwohnungen & Zimmer </span>
       </h1>
       <form action="#" class="hero__form form">
-        <div class="form__group form--arrival">
+
+        <div class="form__group">
           <input id="arrival" class="form__input" type="datepicker" name="arrival"
             placeholder="&nbsp;" value="01.01.2023"/>
           <label class="form__label" for="arrival">Früheste Anreise</label>
   
-          <div class="cal1 cal1--modal-off" id="cal1">
-            <div class="cal1__container">
+          <div class="cal1 cal1--modal-on" id="cal1">
+            <div class="cal1__header">
+              <div class="cal1__previous cal1__previous--disabled"></div>
+              <div class="cal1__message"></div>
+              <div class="cal1__next"></div>
+            </div>
+            <div class="cal1__items cal1__items--hover">
               <table class="cal1__item">
                 <thead class="cal1__head">
                   <tr class="cal1__title">
-                    <th class="cal1__previous"></th>
                     <th>Januar 2023</th>
-                    <th class="cal1__next"></th>
                   </tr>
                   <tr class="cal1__daylist">
                     <th>Mo</th>
@@ -84,19 +88,19 @@
                     <td class="cal1__empty"></td>
                     <td class="cal1__empty"></td>
                     <td class="cal1__empty"></td>
-                    <td class="cal1__available">1</td>
+                    <td class="cal1__past">1</td>
                   </tr>
-    
+  
                   <tr class="cal1__status">
-                    <td class="cal1__available">2</td>
-                    <td class="cal1__available">3</td>
-                    <td class="cal1__available">4</td>
-                    <td class="cal1__available">5</td>
+                    <td class="cal1__past">2</td>
+                    <td class="cal1__past">3</td>
+                    <td class="cal1__past">4</td>
+                    <td class="cal1__past">5</td>
                     <td class="cal1__available">6</td>
                     <td class="cal1__available">7</td>
                     <td class="cal1__available">8</td>
                   </tr>
-    
+  
                   <tr class="cal1__status">
                     <td class="cal1__available">9</td>
                     <td class="cal1__available">10</td>
@@ -106,7 +110,7 @@
                     <td class="cal1__available">14</td>
                     <td class="cal1__available">15</td>
                   </tr>
-    
+  
                   <tr class="cal1__status">
                     <td class="cal1__available">16</td>
                     <td class="cal1__available">17</td>
@@ -116,7 +120,7 @@
                     <td class="cal1__available">21</td>
                     <td class="cal1__available">22</td>
                   </tr>
-    
+  
                   <tr class="cal1__status">
                     <td class="cal1__available">23</td>
                     <td class="cal1__available">24</td>
@@ -126,7 +130,7 @@
                     <td class="cal1__available">28</td>
                     <td class="cal1__available">29</td>
                   </tr>
-    
+  
                   <tr class="cal1__status">
                     <td class="cal1__available">30</td>
                     <td class="cal1__available">31</td>
@@ -136,23 +140,26 @@
                     <td class="cal1__empty"></td>
                   </tr>
                 </tbody>
-              </table>
+              </table>        
             </div>
           </div>
-        </div>
+  </div>
   
         <div class="form__group">
           <input id="departure" class="form__input" type="datepicker" name="departure" placeholder="&nbsp;" value="10.01.2023" />
           <label class="form__label" for="departure">Späteste Abreise</label>
          
-          <section class="cal1 cal1--modal-off" id="cal1">
-            <div class="cal1__container">
+          <div class="cal1 cal1--modal-off" id="cal1">
+            <div class="cal1__header">
+              <div class="cal1__previous cal1__previous--disabled"></div>
+              <div class="cal1__message"></div>
+              <div class="cal1__next"></div>
+            </div>
+            <div class="cal1__items cal1__items--hover">
               <table class="cal1__item">
                 <thead class="cal1__head">
                   <tr class="cal1__title">
-                    <th class="cal1__previous"></th>
                     <th>Januar 2023</th>
-                    <th class="cal1__next"></th>
                   </tr>
                   <tr class="cal1__daylist">
                     <th>Mo</th>
@@ -172,19 +179,19 @@
                     <td class="cal1__empty"></td>
                     <td class="cal1__empty"></td>
                     <td class="cal1__empty"></td>
-                    <td class="cal1__available">1</td>
+                    <td class="cal1__past">1</td>
                   </tr>
-    
+  
                   <tr class="cal1__status">
-                    <td class="cal1__available">2</td>
-                    <td class="cal1__available">3</td>
-                    <td class="cal1__available">4</td>
-                    <td class="cal1__available">5</td>
+                    <td class="cal1__past">2</td>
+                    <td class="cal1__past">3</td>
+                    <td class="cal1__past">4</td>
+                    <td class="cal1__past">5</td>
                     <td class="cal1__available">6</td>
                     <td class="cal1__available">7</td>
                     <td class="cal1__available">8</td>
                   </tr>
-    
+  
                   <tr class="cal1__status">
                     <td class="cal1__available">9</td>
                     <td class="cal1__available">10</td>
@@ -194,7 +201,7 @@
                     <td class="cal1__available">14</td>
                     <td class="cal1__available">15</td>
                   </tr>
-    
+  
                   <tr class="cal1__status">
                     <td class="cal1__available">16</td>
                     <td class="cal1__available">17</td>
@@ -204,7 +211,7 @@
                     <td class="cal1__available">21</td>
                     <td class="cal1__available">22</td>
                   </tr>
-    
+  
                   <tr class="cal1__status">
                     <td class="cal1__available">23</td>
                     <td class="cal1__available">24</td>
@@ -214,7 +221,7 @@
                     <td class="cal1__available">28</td>
                     <td class="cal1__available">29</td>
                   </tr>
-    
+  
                   <tr class="cal1__status">
                     <td class="cal1__available">30</td>
                     <td class="cal1__available">31</td>
@@ -224,9 +231,9 @@
                     <td class="cal1__empty"></td>
                   </tr>
                 </tbody>
-              </table>
+              </table>        
             </div>
-          </section>
+          </div>
         </div>
   
         <div class="form__group">
@@ -348,7 +355,7 @@
 
       <h2 class="h2 h2--price">Bestpreisgarantie</h2>
       <div class="usp__text">
-        <ul class="usp__list">
+        <ul class="usp__items">
           <li class="usp__item">Keine Vermittlungsprovision</li>
           <li class="usp__item">Mietvertrag direkt mit dem Gastgeber</li>
           <li class="usp__item">Aktuelle Belegungspläne</li>
@@ -395,7 +402,7 @@
       </figure>
       <div class="intro__overview">
         <h3 class="mb-sm">Verschaffen Sie sich einen Überblick</h3>
-        <p class="intro__text">
+        <p class="intro__text mb-sm">
           Das Berchtesgadener Land braucht in Bayern gewiss keinen Vergleich
           zu scheuen. Wie schön ist es da, dass Sie sich mit einem
           Pa­no­ra­ma­flug die Urlaubsvorfreude versüßen können! So
@@ -410,7 +417,7 @@
 
     <section class="gallery cc">
       <h3 class="mb-sm">Eine kleine Vorauswahl unserer Gastgeber</h3>
-      <div class="gallery__list">
+      <div class="gallery__items">
         <figure class="gallery__item">
           <span class="gallery__like"></span>
           <a class="gallery__img-link" href="gastgeber-detail.html" target="_self">
