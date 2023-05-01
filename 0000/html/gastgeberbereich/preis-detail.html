@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../../css/main.css" />
+</head>
+
+<body>
+  <header class="header" id="header">
+    <div class="header__logo-box">
+      <a class="header__logo-link" href="willkommen.html" title="Willkommen">
+        <img src="../../img/berchtesgaden360.png" alt="Berchtesgaden360" class="header__logo" />
+      </a>
+    </div>
+    <div class="header__navigation">
+      <input class="header__toggle" type="checkbox" id="header__toggle" />
+      <label for="header__toggle" class="header__label">
+        <span class="header__span"></span>
+      </label>
+      <nav class="header__nav">
+        <ul class="header__items">
+          <li class="header__item">
+            <a href="belegung-liste.html"><span>Belegung</span></a>
+          </li>
+          <li class="header__item">
+            <a href="preis-liste.html"><span>Preis</span></a>
+          </li>
+          <li class="header__item">
+            <a href="unterkunft-liste.html"><span>Unterkunft</span></a>
+          </li>
+          <li class="header__item">
+            <a href="hilfe-liste.html"><span>Hilfe</span></a>
+          </li>
+          <li class="header__item">
+            <a href="../anmelden.html"><span>Abmelden</span></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="cc mt">
+      <h1 class="mb">Preis</h1>
+      <form action="#" class="form--multicolumn">
+
+        <div class="form__group--fullwidth">
+          <input class="form__input" id="accommodation" type="text" name="accommodation" placeholder=" "
+            value="Fewo Scheifler-Fewo 1" disabled />
+          <label class="form__label" for="accommodation">Unterkunft</label>
+        </div>
+
+        <div class="form__group">
+          <input class="form__input" id="season" type="text" name="season" placeholder=" " value="Nebensaison" />
+          <label class="form__label" for="season">Saison</label>
+        </div>
+
+        <div class="form__group">
+          <input class="form__input" id="price" type="text" name="price" placeholder=" " value="100,00" />
+          <label class="form__label" for="price">Preis</label>
+        </div>
+
+        <div class="form__group">
+          <input id="start" class="form__input" type="datepicker" name="start" placeholder="&nbsp;"
+            value="10.01.2023" />
+          <label class="form__label" for="start">Anfang</label>
+
+          <div class="cal1--modal-off">
+            <div class="cal1__container">
+              <div class="cal1__header">
+                <div class="btn--previous btn--disabled"></div>
+                <div class="cal1__message">Anfang</div>
+                <div class="btn--next"></div>
+              </div>
+              <div class="cal1__items">
+                <table class="cal1__item">
+                  <thead class="cal1__head">
+                    <tr class="cal1__title">
+                      <th>Januar 2023</th>
+                    </tr>
+                    <tr class="cal1__daylist">
+                      <th>Mo</th>
+                      <th>Di</th>
+                      <th>Mi</th>
+                      <th>Do</th>
+                      <th>Fr</th>
+                      <th>Sa</th>
+                      <th>So</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="cal1__status">
+                      <td class="cal1__empty"></td>
+                      <td class="cal1__empty"></td>
+                      <td class="cal1__empty"></td>
+                      <td class="cal1__empty"></td>
+                      <td class="cal1__empty"></td>
+                      <td class="cal1__empty"></td>
+                      <td class="cal1__available">1</td>
+                    </tr>
+
+                    <tr class="cal1__status">
+                      <td class="cal1__available">2</td>
+                      <td class="cal1__available">3</td>
+                      <td class="cal1__available">4</td>
+                      <td class="cal1__available">5</td>
+                      <td class="cal1__available">6</td>
+                      <td class="cal1__available">7</td>
+                      <td class="cal1__available">8</td>
+                    </tr>
+
+                    <tr class="cal1__status">
+                      <td class="cal1__available">9</td>
+                      <td class="cal1__available">10</td>
+                      <td class="cal1__available">11</td>
+                      <td class="cal1__available">12</td>
+                      <td class="cal1__available">13</td>
+                      <td class="cal1__available">14</td>
+                      <td class="cal1__available">15</td>
+                    </tr>
+
+                    <tr class="cal1__status">
+                      <td class="cal1__available">16</td>
+                      <td class="cal1__available">17</td>
+                      <td class="cal1__available">18</td>
+                      <td class="cal1__available">19</td>
+                      <td class="cal1__available">20</td>
+                      <td class="cal1__available">21</td>
+                      <td class="cal1__available">22</td>
+                    </tr>
+
+                    <tr class="cal1__status">
+                      <td class="cal1__available">23</td>
+                      <td class="cal1__available">24</td>
+                      <td class="cal1__available">25</td>
+                      <td class="cal1__available">26</td>
+                      <td class="cal1__available">27</td>
+                      <td class="cal1__available">28</td>
+                      <td class="cal1__available">29</td>
+                    </tr>
+
+                    <tr class="cal1__status">
+                      <td class="cal1__available">30</td>
+                      <td class="cal1__available">31</td>
+                      <td class="cal1__empty"></td>
+                      <td class="cal1__empty"></td>
+                      <td class="cal1__empty"></td>
+                      <td class="cal1__empty"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="form__group">
+          <input id="end" class="form__input" type="datepicker" name="end" placeholder="&nbsp;" value="10.05.2023" />
+          <label class="form__label" for="end">Ende</label>
+
+          <div class="cal1--modal-off">
+            <div class="cal1__container">
+              <div class="cal1__header">
+                <div class="btn--previous btn--disabled"></div>
+                <div class="cal1__message">Ende</div>
+                <div class="btn--next"></div>
+              </div>
+              <div class="cal1__items">
+                <table class="cal1__item">
+                  <thead class="cal1__head">
+                    <tr class="cal1__title">
+                      <th>Januar 2023</th>
+                    </tr>
+                    <tr class="cal1__daylist">
+                      <th>Mo</th>
+                      <th>Di</th>
+                      <th>Mi</th>
+                      <th>Do</th>
+                      <th>Fr</th>
+                      <th>Sa</th>
+                      <th>So</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="cal1__status">
+                      <td class="cal1__empty"></td>
+                      <td class="cal1__empty"></td>
+                      <td class="cal1__empty"></td>
+                      <td class="cal1__empty"></td>
+                      <td class="cal1__empty"></td>
+                      <td class="cal1__empty"></td>
+                      <td class="cal1__available">1</td>
+                    </tr>
+
+                    <tr class="cal1__status">
+                      <td class="cal1__available">2</td>
+                      <td class="cal1__available">3</td>
+                      <td class="cal1__available">4</td>
+                      <td class="cal1__available">5</td>
+                      <td class="cal1__available">6</td>
+                      <td class="cal1__available">7</td>
+                      <td class="cal1__available">8</td>
+                    </tr>
+
+                    <tr class="cal1__status">
+                      <td class="cal1__available">9</td>
+                      <td class="cal1__available">10</td>
+                      <td class="cal1__available">11</td>
+                      <td class="cal1__available">12</td>
+                      <td class="cal1__available">13</td>
+                      <td class="cal1__available">14</td>
+                      <td class="cal1__available">15</td>
+                    </tr>
+
+                    <tr class="cal1__status">
+                      <td class="cal1__available">16</td>
+                      <td class="cal1__available">17</td>
+                      <td class="cal1__available">18</td>
+                      <td class="cal1__available">19</td>
+                      <td class="cal1__available">20</td>
+                      <td class="cal1__available">21</td>
+                      <td class="cal1__available">22</td>
+                    </tr>
+
+                    <tr class="cal1__status">
+                      <td class="cal1__available">23</td>
+                      <td class="cal1__available">24</td>
+                      <td class="cal1__available">25</td>
+                      <td class="cal1__available">26</td>
+                      <td class="cal1__available">27</td>
+                      <td class="cal1__available">28</td>
+                      <td class="cal1__available">29</td>
+                    </tr>
+
+                    <tr class="cal1__status">
+                      <td class="cal1__available">30</td>
+                      <td class="cal1__available">31</td>
+                      <td class="cal1__empty"></td>
+                      <td class="cal1__empty"></td>
+                      <td class="cal1__empty"></td>
+                      <td class="cal1__empty"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="form__group">
+          <input class="form__input" id="min-stay" type="number" name="min-stay" placeholder=" " value="4" />
+          <label class="form__label" for="min-stay">Aufenthalt</label>
+        </div>
+
+        <div class="form__group">
+          <input class="form__input" id="booking-gap" type="number" name="booking-gap" placeholder=" " value="3" />
+          <label class="form__label" for="booking-gap">Lücke</label>
+        </div>
+
+        <div class="form__group">
+          <input class="form__input" id="persons" type="number" name="persons" placeholder=" " value="2" />
+          <label class="form__label" for="persons">Personen</label>
+        </div>
+
+        <div class="form__group">
+          <input class="form__input" id="surcharge" type="number" name="surcharge" placeholder=" " value="10" />
+          <label class="form__label" for="surcharge">Person</label>
+        </div>
+
+        <div class="checkbox mb">
+          <h2 class="checkbox__title">Anreise gesperrt</h2>
+          <div class="checkbox__items">
+
+            <div class="checkbox__item">
+              <input id="ar-mo" class="checkbox__input" type="checkbox" name="ar-mo" checked>
+              <label class="checkbox__label" for="ar-mo">Mo</label>
+            </div>
+
+            <div class="checkbox__item">
+              <input id="ar-di" class="checkbox__input" type="checkbox" name="ar-di" checked>
+              <label class="checkbox__label" for="ar-di">Di</label>
+            </div>
+
+            <div class="checkbox__item">
+              <input id="ar-mi" class="checkbox__input" type="checkbox" name="ar-mi" checked>
+              <label class="checkbox__label" for="ar-mi">Mi</label>
+            </div>
+
+            <div class="checkbox__item">
+              <input id="ar-do" class="checkbox__input" type="checkbox" name="ar-do" checked>
+              <label class="checkbox__label" for="ar-do">Do</label>
+            </div>
+
+            <div class="checkbox__item">
+              <input id="ar-fr" class="checkbox__input" type="checkbox" name="ar-fr" checked>
+              <label class="checkbox__label" for="ar-fr">Fr</label>
+            </div>
+
+            <div class="checkbox__item">
+              <input id="ar-sa" class="checkbox__input" type="checkbox" name="ar-sa">
+              <label class="checkbox__label" for="ar-sa">Sa</label>
+            </div>
+
+            <div class="checkbox__item">
+              <input id="ar-so" class="checkbox__input" type="checkbox" name="ar-so" checked>
+              <label class="checkbox__label" for="ar-so">So</label>
+            </div>
+
+          </div>
+
+          <div class="checkbox">
+            <h2 class="checkbox__title">Abreise gesperrt</h2>
+            <div class="checkbox__items">
+              <div class="checkbox__item">
+                <input id="de-mo" class="checkbox__input" type="checkbox" name="de-mo" checked>
+                <label class="checkbox__label" for="de-mo">Mo</label>
+              </div>
+              <div class="checkbox__item">
+                <input id="de-di" class="checkbox__input" type="checkbox" name="de-di" checked>
+                <label class="checkbox__label" for="de-di">Di</label>
+              </div>
+              <div class="checkbox__item">
+                <input id="de-mi" class="checkbox__input" type="checkbox" name="de-mi" checked>
+                <label class="checkbox__label" for="de-mi">Mi</label>
+              </div>
+              <div class="checkbox__item">
+                <input id="de-do" class="checkbox__input" type="checkbox" name="de-do" checked>
+                <label class="checkbox__label" for="de-do">Do</label>
+              </div>
+              <div class="checkbox__item">
+                <input id="de-fr" class="checkbox__input" type="checkbox" name="de-fr" checked>
+                <label class="checkbox__label" for="de-fr">Fr</label>
+              </div>
+              <div class="checkbox__item">
+                <input id="de-sa" class="checkbox__input" type="checkbox" name="de-sa">
+                <label class="checkbox__label" for="de-sa">Sa</label>
+              </div>
+              <div class="checkbox__item">
+                <input id="de-so" class="checkbox__input" type="checkbox" name="de-so" checked>
+                <label class="checkbox__label" for="de-so">So</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <section class="grid--multicolumn-fw">
+          <a href="preis-liste.html" class="btn">Speichern</a>
+          <a href="preis-liste.html" class="btn">Abbrechen</a>
+        </section>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__navigation">
+      <h5 class="footer__title">Für Urlauber</h5>
+
+      <nav class="footer__nav">
+        <ul class="footer__items">
+          <li class="footer__item">
+            <a class="footer__link" href="../gastgeber-liste.html" title="Gastgeber">Gastgeberliste</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="https://pano.berchtesgaden360.de/" title="Panoramatour"
+              target="_blank">Panoramatour</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="../faq-liste.html" title="FAQ">FAQ</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="../kontakt.html" title="Kontakt">Kontakt</a>
+          </li>
+        </ul>
+      </nav>
+
+      <h5 class="footer__title">Für Gastgeber</h5>
+
+      <nav class="footer__nav">
+        <ul class="footer__items">
+          <li class="footer__item">
+            <a class="footer__link" href="../anmelden.html" title="Abmelden">Abmelden</a>
+          </li>
+        </ul>
+      </nav>
+
+      <h5 class="footer__title">Unternehmen</h5>
+
+      <nav class="footer__items">
+        <ul class="footer__items">
+          <li class="footer__item">
+            <a class="footer__link" href="../agb.html" title="AGB">AGB</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="../impressum.html" title="Impressum">Impressum</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="../datenschutz.html" title="Datenschutz">Datenschutz</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="../ueber-uns.html" title="Über uns">Über uns</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <a class="footer__partner" href="../index.html" title="Berchtesgaden"></a>
+  </footer>
+</body>
+
+</html>

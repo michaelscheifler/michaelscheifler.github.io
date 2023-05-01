@@ -8,7 +8,7 @@
 </head>
 
 <body>
-  <header class="header">
+  <header class="header" id="header">
     <div class="header__logo-box">
       <a class="header__logo-link" href="index.html" title="Berchtesgaden">
         <img src="../img/berchtesgaden360.png" alt="Berchtesgaden360" class="header__logo" />
@@ -39,80 +39,21 @@
   </header>
 
   <main>
-    <section class="gallery cf">
-      <h1 class="ct mt mb">Almen in Berchtesgaden</h1>
+    <section class="ct mt mb">
+      <h1 class="mb-sm">Gastgeberbereich</h1>
 
-      <nav class="form ct mt mb">
-        <div class="form__group--select">
-          <select name="poi" id="poi" class="form__input">
-            <option value="alm1">Alm 1</option>
-            <option value="alm2">Alm 2</option>
-            <option value="alm3">Alm 3</option>
-          </select>
-          <label for="poi" class="form__label">Kategorie</label>
+      <form action="#" class="form">
+        <div class="form__group">
+          <input class="form__input" id="name" type="text" name="name" placeholder="&nbsp;" value="" disabled />
+          <label class="form__label" for="name">Benutzername</label>
         </div>
-      </nav>
+        <div class="form__group">
+          <input class="form__input" id="password" type="text" name="password" placeholder="&nbsp;" value="" disabled />
+          <label class="form__label" for="password">Passwort</label>
+        </div>
 
-      <div class="gallery__items">
-
-        <figure class="gallery__item">
-          <span class="gallery__like"></span>
-          <a class="gallery__img--link" href="ausflugsziel-detail.html" target="_self">
-            <picture>
-              <img src="../img/00011613-b.jpg" alt="Kneifelspitze" />
-            </picture>
-          </a>
-          <figcaption class="gallery__title">Kneifelspitze</figcaption>
-        </figure>
-
-        <figure class="gallery__item">
-          <span class="gallery__like--active"></span>
-          <a class="gallery__img--link" href="ausflugsziel-detail.html" target="_self">
-            <picture>
-              <img src="../img/00011613-b.jpg" alt="Kneifelspitze" />
-            </picture>
-          </a>
-          <figcaption class="gallery__title">Kneifelspitze</figcaption>
-        </figure>
-        <figure class="gallery__item">
-          <span class="gallery__like"></span>
-          <a class="gallery__img--link" href="ausflugsziel-detail.html" target="_self">
-            <picture>
-              <img src="../img/00011613-b.jpg" alt="Kneifelspitze" />
-            </picture>
-          </a>
-          <figcaption class="gallery__title">Kneifelspitze</figcaption>
-        </figure>
-
-        <figure class="gallery__item">
-          <span class="gallery__like--active"></span>
-          <a class="gallery__img--link" href="ausflugsziel-detail.html" target="_self">
-            <picture>
-              <img src="../img/00011613-b.jpg" alt="Kneifelspitze" />
-            </picture>
-          </a>
-          <figcaption class="gallery__title">Kneifelspitze</figcaption>
-        </figure>
-        <figure class="gallery__item">
-          <span class="gallery__like"></span>
-          <a class="gallery__img--link" href="ausflugsziel-detail.html" target="_self">
-            <picture>
-              <img src="../img/00011613-b.jpg" alt="Kneifelspitze" />
-            </picture>
-          </a>
-          <figcaption class="gallery__title">Kneifelspitze</figcaption>
-        </figure>
-
-        <figure class="gallery__item">
-          <span class="gallery__like--active"></span>
-          <a class="gallery__img--link" href="ausflugsziel-detail.html" target="_self">
-            <picture>
-              <img src="../img/00011613-b.jpg" alt="Kneifelspitze" />
-            </picture>
-          </a>
-          <figcaption class="gallery__title">Kneifelspitze</figcaption>
-        </figure>
-      </div>
+        <a href="gastgeberbereich/willkommen.html" class="btn">Anmelden</a>
+      </form>
     </section>
   </main>
 

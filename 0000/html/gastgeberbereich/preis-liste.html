@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../../css/main.css" />
+</head>
+
+<body>
+  <header class="header" id="header">
+    <div class="header__logo-box">
+      <a class="header__logo-link" href="willkommen.html" title="Willkommen">
+        <img src="../../img/berchtesgaden360.png" alt="Berchtesgaden360" class="header__logo" />
+      </a>
+    </div>
+    <div class="header__navigation">
+      <input class="header__toggle" type="checkbox" id="header__toggle" />
+      <label for="header__toggle" class="header__label">
+        <span class="header__span"></span>
+      </label>
+      <nav class="header__nav">
+        <ul class="header__items">
+          <li class="header__item">
+            <a href="belegung-liste.html"><span>Belegung</span></a>
+          </li>
+          <li class="header__item">
+            <a href="preis-liste.html"><span>Preis</span></a>
+          </li>
+          <li class="header__item">
+            <a href="unterkunft-liste.html"><span>Unterkunft</span></a>
+          </li>
+          <li class="header__item">
+            <a href="hilfe-liste.html"><span>Hilfe</span></a>
+          </li>
+          <li class="header__item">
+            <a href="../anmelden.html"><span>Abmelden</span></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="pricelist cc mt mb">
+      <h1 class="mb">Preis</h1>
+      <form action="#" class="form--multicolumn mb">
+
+        <div class="form__group--select">
+          <select class="form__input" id="accommodation" name="accommodation">
+            <option value="0781-00">Alle Unterkünfte</option>
+            <option value="0781-01">Fewo Scheifler-Fewo 1 [0781-01]</option>
+            <option value="0781-02">Fewo Scheifler-Fewo 2 [0781-02]</option>
+            <option value="0781-03">Fewo Scheifler-Fewo 3 [0781-03]</option>
+          </select>
+          <label class="form__label" for="accommodation">Unterkunft</label>
+        </div>
+
+        <div class="form__group--select">
+          <select class="form__input" id="period" name="period">
+            <option value="0781-00">Bevorstehend</option>
+            <option value="0781-01">2022</option>
+            <option value="0781-01">2021</option>
+            <option value="0781-02">2020</option>
+            <option value="0781-03">2019</option>
+          </select>
+          <label class="form__label" for="period">Zeitraum</label>
+        </div>
+
+        <div class="form__group--select">
+          <select class="form__input" id="sort" name="sort">
+            <option value="2">Anfang</option>
+            <option value="3">Aufenthalt</option>
+            <option value="3">Lücke</option>
+            <option value="3">Personen</option>
+            <option value="3">Person</option>
+            <option value="3">Preis</option>
+            <option value="3">Saison</option>
+            <option value="3">Unterkunft</option>
+          </select>
+          <label class="form__label" for="sort">Sortierung</label>
+        </div>
+
+        <div class="form__group">
+          <input class="form__input" type="text" name="search" placeholder=" ">
+          <label class="form__label" for="search">Suchbegriff</label>
+        </div>
+
+        <a class="btn" href="preis-detail.html">Saison anlegen</a>
+      </form>
+
+      <table class="pricelist__table">
+        <thead class="pricelist__head">
+          <tr class="pricelist__headitems">
+            <th class="pricelist__th-season">Saison</th>
+            <th class="pricelist__th-price">Preis</th>
+            <th class="pricelist__th-start">Anfang</th>
+            <th class="pricelist__th-end">Ende</th>
+            <th class="pricelist__th-min-stay">Aufenthalt</th>
+            <th class="pricelist__th-booking-gap">Lücke</th>
+            <th class="pricelist__th-persons">Personen</th>
+            <th class="pricelist__th-surcharge">Person</th>
+            <th class="pricelist__th-accommodation">Unterkunft</th>
+            <th class="pricelist__th-arrival-blocked">Keine Anreise</th>
+            <th class="pricelist__th-departure-blocked">Keine Abreise</th>
+          </tr>
+        </thead>
+        <tbody class="pricelist__items">
+          <tr class="pricelist__item">
+            <td class="pricelist__season">
+              <a href="preis-detail.html" title="Saison bearbeiten">Nebensaison</a>
+            </td>
+            <td class="pricelist__price">100,00 €</td>
+            <td class="pricelist__start">15.01.2023</td>
+            <td class="pricelist__end">15.05.2023</td>
+            <td class="pricelist__min-stay">4</td>
+            <td class="pricelist__booking-gap">3</td>
+            <td class="pricelist__persons">2</td>
+            <td class="pricelist__surcharge">10,00 €</td>
+            <td class="pricelist__accommodation">Fewo Scheifler-Fewo 1</td>
+            <td class="pricelist__arrival-blocked">So</td>
+            <td class="pricelist__departure-blocked">So</td>
+            </td>
+          </tr>
+          <tr class="pricelist__item">
+            <td class="pricelist__season">
+              <a href="preis-detail.html" title="Saison bearbeiten">Hauptsaison</a>
+            </td>
+            <td class="pricelist__price">150,00 €</td>
+            <td class="pricelist__start">15.05.2023</td>
+            <td class="pricelist__end">15.09.2023</td>
+            <td class="pricelist__min-stay">7</td>
+            <td class="pricelist__booking-gap">4</td>
+            <td class="pricelist__persons">2</td>
+            <td class="pricelist__surcharge">15,00 €</td>
+            <td class="pricelist__accommodation">Fewo Scheifler-Fewo 1</td>
+            <td class="pricelist__arrival-blocked">Mo, Di, Mi, Do, Fr, So</td>
+            <td class="pricelist__departure-blocked">Mo, Di, Mi, Do, Fr, So</td>
+            </td>
+          </tr>
+          <tr class="pricelist__item">
+            <td class="pricelist__season">
+              <a href="preis-detail.html" title="Saison bearbeiten">Nebensaison</a>
+            </td>
+            <td class="pricelist__price">100,00 €</td>
+            <td class="pricelist__start">15.09.2023</td>
+            <td class="pricelist__end">15.12.2023</td>
+            <td class="pricelist__min-stay">4</td>
+            <td class="pricelist__booking-gap">3</td>
+            <td class="pricelist__persons">2</td>
+            <td class="pricelist__surcharge">10,00 €</td>
+            <td class="pricelist__accommodation">Fewo Scheifler-Fewo 1</td>
+            <td class="pricelist__arrival-blocked">So</td>
+            <td class="pricelist__departure-blocked">So</td>
+            </td>
+          </tr>
+          <tr class="pricelist__item">
+            <td class="pricelist__season">
+              <a href="preis-detail.html" title="Saison bearbeiten">Hauptsaison</a>
+            </td>
+            <td class="pricelist__price">150,00 €</td>
+            <td class="pricelist__start">15.12.2023</td>
+            <td class="pricelist__end">15.01.2024</td>
+            <td class="pricelist__min-stay">7</td>
+            <td class="pricelist__booking-gap">4</td>
+            <td class="pricelist__persons">2</td>
+            <td class="pricelist__surcharge">10,00 €</td>
+            <td class="pricelist__accommodation">Fewo Scheifler-Fewo 1</td>
+            <td class="pricelist__arrival-blocked">So</td>
+            <td class="pricelist__departure-blocked">So</td>
+            </td>
+          </tr>
+
+          <tr class="pricelist__item">
+            <td class="pricelist__season">
+              <a href="preis-detail.html" title="Saison bearbeiten">Nebensaison</a>
+            </td>
+            <td class="pricelist__price">100,00 €</td>
+            <td class="pricelist__start">15.01.2024</td>
+            <td class="pricelist__end">15.05.2024</td>
+            <td class="pricelist__min-stay">4</td>
+            <td class="pricelist__booking-gap">3</td>
+            <td class="pricelist__persons">2</td>
+            <td class="pricelist__surcharge">10,00 €</td>
+            <td class="pricelist__accommodation">Fewo Scheifler-Fewo 1</td>
+            <td class="pricelist__arrival-blocked">So</td>
+            <td class="pricelist__departure-blocked">So</td>
+            </td>
+          </tr>
+          <tr class="pricelist__item">
+            <td class="pricelist__season">
+              <a href="preis-detail.html" title="Saison bearbeiten">Hauptsaison</a>
+            </td>
+            <td class="pricelist__price">150,00 €</td>
+            <td class="pricelist__start">15.05.2024</td>
+            <td class="pricelist__end">15.09.2024</td>
+            <td class="pricelist__min-stay">7</td>
+            <td class="pricelist__booking-gap">4</td>
+            <td class="pricelist__persons">2</td>
+            <td class="pricelist__surcharge">15,00 €</td>
+            <td class="pricelist__accommodation">Fewo Scheifler-Fewo 1</td>
+            <td class="pricelist__arrival-blocked">Mo, Di, Mi, Do, Fr, So</td>
+            <td class="pricelist__departure-blocked">Mo, Di, Mi, Do, Fr, So</td>
+            </td>
+          </tr>
+          <tr class="pricelist__item">
+            <td class="pricelist__season">
+              <a href="preis-detail.html" title="Saison bearbeiten">Nebensaison</a>
+            </td>
+            <td class="pricelist__price">100,00 €</td>
+            <td class="pricelist__start">15.09.2024</td>
+            <td class="pricelist__end">15.12.2024</td>
+            <td class="pricelist__min-stay">4</td>
+            <td class="pricelist__booking-gap">3</td>
+            <td class="pricelist__persons">2</td>
+            <td class="pricelist__surcharge">10,00 €</td>
+            <td class="pricelist__accommodation">Fewo Scheifler-Fewo 1</td>
+            <td class="pricelist__arrival-blocked">So</td>
+            <td class="pricelist__departure-blocked">So</td>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__navigation">
+      <h5 class="footer__title">Für Urlauber</h5>
+
+      <nav class="footer__nav">
+        <ul class="footer__items">
+          <li class="footer__item">
+            <a class="footer__link" href="../gastgeber-liste.html" title="Gastgeber">Gastgeberliste</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="https://pano.berchtesgaden360.de/" title="Panoramatour"
+              target="_blank">Panoramatour</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="../faq-liste.html" title="FAQ">FAQ</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="../kontakt.html" title="Kontakt">Kontakt</a>
+          </li>
+        </ul>
+      </nav>
+
+      <h5 class="footer__title">Für Gastgeber</h5>
+
+      <nav class="footer__nav">
+        <ul class="footer__items">
+          <li class="footer__item">
+            <a class="footer__link" href="../anmelden.html" title="Abmelden">Abmelden</a>
+          </li>
+        </ul>
+      </nav>
+
+      <h5 class="footer__title">Unternehmen</h5>
+
+      <nav class="footer__items">
+        <ul class="footer__items">
+          <li class="footer__item">
+            <a class="footer__link" href="../agb.html" title="AGB">AGB</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="../impressum.html" title="Impressum">Impressum</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="../datenschutz.html" title="Datenschutz">Datenschutz</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="../ueber-uns.html" title="Über uns">Über uns</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <a class="footer__partner" href="../index.html" title="Berchtesgaden"></a>
+  </footer>
+</body>
+
+</html>

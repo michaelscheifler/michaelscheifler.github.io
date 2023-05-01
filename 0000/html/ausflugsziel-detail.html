@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="../css/main.css" />
 </head>
 
-<body class="body">
+<body>
   <header class="header" id="header">
     <div class="header__logo-box">
       <a class="header__logo-link" href="index.html" title="Berchtesgaden">
@@ -20,7 +20,7 @@
         <span class="header__span"></span>
       </label>
       <nav class="header__nav">
-        <ul class="header__list">
+        <ul class="header__items">
           <li class="header__item">
             <a href="gastgeber-liste.html"><span>Gastgeber</span></a>
           </li>
@@ -38,8 +38,8 @@
     </div>
   </header>
 
-  <main class="main">
-    <div class="image image--poi">
+  <main>
+    <div class="image--poi">
       <figure>
         <picture>
           <img src="../img/00011613-b.jpg" alt="Kneifelspitze" />
@@ -73,42 +73,44 @@
       </p>
       <h2>Rund um die Kneifelspitze</h2>
       <p>Sie möchten ein weiteres Highlight in Form eines herrlichen Ausblick erleben? Dann zweigen Sie direkt am Gipfel der Kneifelspitze einige Meter in östlicher Richtung ab, von dem Aussichtspunkt eröffnet sich Ihnen ein zauberhaftes Panorama zur Mozartstadt <a title="
-          Salzburg" href="ausflugsziel/salzburg/">Salzburg</a>. Überhaupt finden Sie auf dem Weg zur Kneifelspitze
+          Salzburg" href="#">Salzburg</a>. Überhaupt finden Sie auf dem Weg zur Kneifelspitze
         mehrere
         Möglichkeiten, das atemberaubende Bild der Alpenwelt zu betrachten. Sitzbänke laden zum Verweilen, Träumen und
         Seele baumeln lassen ein. So sehen Sie beispielsweise auf das Hochplateau des <a title="Ettenberg"
-          href="ausflugsziel/ettenberg/">Ettenberg</a>, wenn Sie kurz vor dem Gipfel der Kneifelspitze eine kleine Rast
+          href="#">Ettenberg</a>, wenn Sie kurz vor dem Gipfel der Kneifelspitze eine kleine Rast
         einlegen.
       </p>
     </section>
 
-    <section class="grid ct pt-xxl" id="location">
-      <a href="#" class="btn btn--pano">Vogelperspektive anzeigen</a>
-      <a href="" class="btn btn--googlemaps">Kontaktdaten & Bewertungen</a>
+    <section class="grid--multicolumn ct pt-xxl" id="location">
+      <a href="#" class="btn">Vogelperspektive anzeigen</a>
+      <a href="" class="btn">Kontaktdaten & Bewertungen</a>
     </section>
 
-    <section class="comments ct pt-xxl text" id="comments">
-      <div class="comments__list">
+    <section class="comments ct pt-xxl mb" id="comments">
+      <div class="comments__items">
         <div class="comments__item">
-          <h3 class="comments__info">
-            Kommentar von Marion | <time datetime="2022-07-08T13:36:38+02:00" class="comments__date">08.07.2022</time>
-          </h3>
-          <div class="comments__comment">
-            <p>
-              Kommentar Kommentar Kommentar Kommentar Kommentar Kommentar Kommentar Kommentar Kommentar Kommentar
-              Kommentar Kommentar Kommentar Kommentar Kommentar Kommentar Kommentar Kommentar Kommentar Kommentar
-              Kommentar Kommentar Kommentar Kommentar Kommentar Kommentar Kommentar Kommentar Kommentar
-            </p>
+          <div class="comment__sent">
+            <h3 class="comments__author">
+              Kommentar von Marion | <time datetime="2022-07-08T13:36:38+02:00" class="comments__date">08.07.2022</time>
+            </h3>
+            <div class="comments__comment">
+              <p>
+                Kommentar Kommentar Kommentar Kommentar Kommentar Kommentar Kommentar Kommentar Kommentar Kommentar
+                Kommentar Kommentar Kommentar Kommentar Kommentar Kommentar Kommentar Kommentar Kommentar Kommentar
+                Kommentar Kommentar Kommentar Kommentar Kommentar Kommentar Kommentar Kommentar Kommentar
+              </p>
+            </div>  
           </div>
           <div class="comments__reply">
             <h3 class="comments__author">
               Antwort von Martin
             </h3>
-            <div class="comments__text">
+            <div class="comments__comment">
               <p>Antwort Antwort Antwort Antwort Antwort Antwort Antwort Antwort Antwort Antwort Antwort Antwort Antwort
                 Antwort Antwort Antwort Antwort Antwort Antwort Antwort Antwort Antwort Antwort Antwort Antwort Antwort
                 Antwort Antwort</p>
-            </div>
+            </div>  
           </div>
         </div>
       </div>
@@ -126,8 +128,7 @@
           <label for="email" class="form__label">E-Mail</label>
         </div>
         <div class="form__group">
-          <textarea class="form__input form__input--textarea" id="textarea" placeholder="&nbsp;" rows="4"
-            cols="40"></textarea>
+          <textarea class="form__input--textarea" id="textarea" placeholder="&nbsp;" rows="4" cols="40"></textarea>
           <label for="textarea" class="form__label">Kommentar</label>
         </div>
         <div class="form__group">
@@ -141,52 +142,57 @@
 
   <footer class="footer">
     <div class="footer__navigation">
-      <h5 class="heading-5">Für Urlauber</h5>
-      <nav class="footer__list">
-        <ul>
-          <li>
-            <a href="gastgeber-liste.html" title="Gastgeber">Gastgeberliste</a>
+      <h5 class="footer__title">Für Urlauber</h5>
+
+      <nav class="footer__nav">
+        <ul class="footer__items">
+          <li class="footer__item">
+            <a class="footer__link" href="gastgeber-liste.html" title="Gastgeber">Gastgeberliste</a>
           </li>
-          <li>
-            <a href="#" title="Panoramatour">Panoramatour</a>
+          <li class="footer__item">
+            <a class="footer__link" href="https://pano.berchtesgaden360.de/" title="Panoramatour"
+              target="_blank">Panoramatour</a>
           </li>
-          <li>
-            <a href="#" title="FAQ">FAQ</a>
+          <li class="footer__item">
+            <a class="footer__link" href="faq-liste.html" title="FAQ">FAQ</a>
           </li>
-          <li>
-            <a href="#" title="Kontakt">Kontakt</a>
+          <li class="footer__item">
+            <a class="footer__link" href="kontakt.html" title="Kontakt">Kontakt</a>
           </li>
         </ul>
       </nav>
 
-      <h5 class="heading-5">Für Gastgeber</h5>
-      <nav class="footer__list">
-        <ul>
-          <li>
-            <a href="#" title="Anmelden">Anmelden</a>
+      <h5 class="footer__title">Für Gastgeber</h5>
+
+      <nav class="footer__nav">
+        <ul class="footer__items">
+          <li class="footer__item">
+            <a class="footer__link" href="anmelden.html" title="Anmelden">Anmelden</a>
           </li>
         </ul>
       </nav>
 
-      <h5 class="heading-5">Unternehmen</h5>
-      <nav class="footer__list">
-        <ul>
-          <li>
-            <a href="#" title="AGB">AGB</a>
+      <h5 class="footer__title">Unternehmen</h5>
+
+      <nav class="footer__items">
+        <ul class="footer__items">
+          <li class="footer__item">
+            <a class="footer__link" href="agb.html" title="AGB">AGB</a>
           </li>
-          <li>
-            <a href="#" title="Impressum">Impressum</a>
+          <li class="footer__item">
+            <a class="footer__link" href="impressum.html" title="Impressum">Impressum</a>
           </li>
-          <li>
-            <a href="#" title="Datenschutz">Datenschutz</a>
+          <li class="footer__item">
+            <a class="footer__link" href="datenschutz.html" title="Datenschutz">Datenschutz</a>
           </li>
-          <li>
-            <a href="#" title="Über uns">Über uns</a>
+          <li class="footer__item">
+            <a class="footer__link" href="ueber-uns.html" title="Über uns">Über uns</a>
           </li>
         </ul>
       </nav>
     </div>
-    <a href="index.html" class="footer__partner" title="Berchtesgaden">Berchtesgaden</a>
+    
+    <a class="footer__partner" href="index.html" title="Berchtesgaden"></a>
   </footer>
 </body>
 

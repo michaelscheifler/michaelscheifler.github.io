@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/main.css" />
+</head>
+
+<body>
+  <header class="header" id="header">
+    <div class="header__logo-box">
+      <a class="header__logo-link" href="index.html" title="Berchtesgaden">
+        <img src="../img/berchtesgaden360.png" alt="Berchtesgaden360" class="header__logo" />
+      </a>
+    </div>
+    <div class="header__navigation">
+      <input class="header__toggle" type="checkbox" id="header__toggle" />
+      <label for="header__toggle" class="header__label">
+        <span class="header__span"></span>
+      </label>
+      <nav class="header__nav">
+        <ul class="header__items">
+          <li class="header__item">
+            <a href="gastgeber-liste.html"><span>Gastgeber</span></a>
+          </li>
+          <li class="header__item">
+            <a href="unterkunft-liste.html"><span>Unterkünfte</span></a>
+          </li>
+          <li class="header__item">
+            <a href="wunschliste.html"><span>Wunschliste</span></a>
+          </li>
+          <li class="header__item">
+            <a href="ausflugsziel-liste.html"><span>Ausflugsziele</span></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="ct mt mb text">
+      <h1>Lieber Gast,</h1>
+      <p>
+        wenn Sie Fragen zu einer Unterkunft oder einer Buchung haben,
+        kontaktieren Sie bitte den Gastgeber. In der
+        <a title="Gastgeberliste" href="gastgeberliste/">Gastgeberliste</a>
+        werden alle auf unserem Portal gelisteten Häuser aufgeführt.
+      </p>
+      <p>
+        Telefonisch sind wir während unserer Geschäftszeiten erreichbar:<br />Montag
+        bis Freitag von 14 – 18 Uhr<br />Telefon 08652 4033397<br /><a
+          href="mailto:kontakt@berchtesgaden360.de">kontakt@berchtesgaden360.de</a>
+      </p>
+    </section>
+
+    <section class="ct mt mb text">
+      <h2>Häufige Fragen unserer Urlauber</h2>
+      <ul>
+        <li>
+          <a href="faq-detail.html">Kann mir Berchtesgaden360 eine Ferienunterkunft anbieten?</a>
+        </li>
+        <li>
+          <a href="faq-detail.html">Mit wem schließe ich den Mietvertrag ab?</a>
+        </li>
+        <li>
+          <a href="faq-detail.html">Wie kann ich eine Buchung stornieren?</a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="ct mt mb">
+      <h2 class="mb-md">Kontaktformular</h2>
+      <form action="#" class="form--multicolumn">
+        <div class="form__group--select">
+          <select id="salutation" class="form__input" name="salutation">
+            <option value="0">Keine Angaben</option>
+            <option value="1">Frau</option>
+            <option value="2">Herr</option>
+            <option value="3">Familie</option>
+          </select>
+          <label class="form__label" for="salutation">Anrede</label>
+        </div>
+
+        <div class="form__group">
+          <input class="form__input" id="firstname" type="text" name="firstname" placeholder="&nbsp;" />
+          <label class="form__label" for="firstname">Vorname</label>
+        </div>
+
+        <div class="form__group">
+          <input class="form__input" id="lastname" type="text" name="lastname" placeholder="&nbsp;" />
+          <label class="form__label" for="lastname">Nachname</label>
+        </div>
+
+        <div class="form__group">
+          <input class="form__input" id="phone" type="text" name="phone" placeholder="&nbsp;" />
+          <label class="form__label" for="phone">Telefon</label>
+        </div>
+
+        <div class="form__group">
+          <input class="form__input" id="email" type="email" name="email" placeholder="&nbsp;" />
+          <label class="form__label" for="email">E-Mail</label>
+        </div>
+
+        <div class="form__group--fullwidth">
+          <textarea class="form__input--textarea" id="comment" name="comment" placeholder="&nbsp;"></textarea>
+          <label class="form__label" for="comment">Bemerkung</label>
+        </div>
+      </form>
+    </section>
+
+    <section class="ct mt mb text">
+      <form class="form" action="#">
+        <fieldset class="form__fieldset">
+          <legend class="form__legend">Datenschutz<span class="mandatory">*</span></legend>
+          <input class="form__checkbox" type="checkbox" id="data" name="data" value="1">
+          <label class="form__label-checkbox" for="data">Wenn Sie die im Formular eingegebenen Daten durch
+            Aktivieren der
+            Auswahlbox und Klick auf den nachfolgenden Button übersenden, erklären Sie sich damit einverstanden,
+            dass wir Ihre Angaben für die Beantwortung Ihrer Anfrage bzw. Kontaktaufnahme verwenden. Eine Weitergabe
+            an Dritte findet nicht statt. Weitere Informationen entnehmen Sie dem <a href="datenschutz.html"
+              title="Datenschutzhinweis" target="_blank">Datenschutzhinweis</a>.</label>
+        </fieldset>
+
+        <fieldset class="form__fieldset">
+          <legend class="form__legend">AGB<span class="mandatory">*</span></legend>
+          <input class="form__checkbox" type="checkbox" id="conditions" name="conditions" value="1">
+          <label class="form__label-checkbox" for="conditions">Ich akzeptiere die <a
+              title="Allgemeine Geschäftsbedingungen" href="agb.html" target="_blank">allgemeinen
+              Geschäftsbedingungen</a>.</label>
+        </fieldset>
+      </form>
+    </section>
+
+
+    <a href="kontakt-bestaetigung.html" class="ct mt mb btn">Nachricht senden</a>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__navigation">
+      <h5 class="footer__title">Für Urlauber</h5>
+
+      <nav class="footer__nav">
+        <ul class="footer__items">
+          <li class="footer__item">
+            <a class="footer__link" href="gastgeber-liste.html" title="Gastgeber">Gastgeberliste</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="https://pano.berchtesgaden360.de/" title="Panoramatour"
+              target="_blank">Panoramatour</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="faq-liste.html" title="FAQ">FAQ</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="kontakt.html" title="Kontakt">Kontakt</a>
+          </li>
+        </ul>
+      </nav>
+
+      <h5 class="footer__title">Für Gastgeber</h5>
+
+      <nav class="footer__nav">
+        <ul class="footer__items">
+          <li class="footer__item">
+            <a class="footer__link" href="anmelden.html" title="Anmelden">Anmelden</a>
+          </li>
+        </ul>
+      </nav>
+
+      <h5 class="footer__title">Unternehmen</h5>
+
+      <nav class="footer__items">
+        <ul class="footer__items">
+          <li class="footer__item">
+            <a class="footer__link" href="agb.html" title="AGB">AGB</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="impressum.html" title="Impressum">Impressum</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="datenschutz.html" title="Datenschutz">Datenschutz</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="ueber-uns.html" title="Über uns">Über uns</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    
+    <a class="footer__partner" href="index.html" title="Berchtesgaden"></a>
+  </footer>
+</body>
+
+</html>

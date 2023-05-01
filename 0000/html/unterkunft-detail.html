@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="../css/main.css" />
 </head>
 
-<body class="body">
+<body>
   <header class="header" id="header">
     <div class="header__logo-box">
       <a class="header__logo-link" href="index.html" title="Berchtesgaden">
@@ -20,7 +20,7 @@
         <span class="header__span"></span>
       </label>
       <nav class="header__nav">
-        <ul class="header__list">
+        <ul class="header__items">
           <li class="header__item">
             <a href="gastgeber-liste.html"><span>Gastgeber</span></a>
           </li>
@@ -38,12 +38,12 @@
     </div>
   </header>
 
-  <main class="main">
+  <main>
     <section class="slider">
       <div class="slider__list">
         <figure class="slider__item">
-          <span class="slider__prev"></span>
-          <span class="slider__next"></span>
+          <span class="btn--previous-slider"></span>
+          <span class="btn--next-slider"></span>
           <div class="slider__img">
             <picture>
               <img src="../img/02560405.jpg" alt="Gerstreitlehen" />
@@ -53,17 +53,17 @@
       </div>
     </section>
 
-    <section class="anchor anchor--2" id="anchor">
+    <section class="anchor" id="anchor">
       <a href="#header" class="anchor__slider" title="Fotos"><span>Fotos</span></a>
       <a href="#features" class="anchor__features" title="Ausstattung"><span>Ausstattung</span></a>
       <a href="#location" class="anchor__location" title="Lage"><span>Lage</span></a>
-      <a href="#price" class="anchor__price" title="Preis"><span>Preis</span></a>
+      <a href="#pricelist" class="anchor__pricelist" title="Preis"><span>Preis</span></a>
       <a href="#cal1" class="anchor__cal1" title="Kalender"><span>Kalender</span></a>
       <a href="#book" class="anchor__book" title="Buchen"><span>Buchen</span></a>
     </section>
 
-    <div class="grid grid--book cc">
-      <div class="grid__col1">
+    <div class="grid--multicolumn-book cc">
+      <div>
         <section class="overview pt-lg" id="overview">
           <h1 class="mb-sm">Gerstreitlehen-Fewo 1</h1>
 
@@ -198,14 +198,11 @@
                 <li>Kleiderschrank</li>
                 <li>Separates Schlafzimmer</li>
                 <li>Stockbetten</li>
-                <li>Wohn-/Schlafraum getrennt</li>
-                <li>Wohn-/Schlafraum kombiniert</li>
                 <li>Abholung vom Bahnhof</li>
                 <li>Man spricht Deutsch</li>
                 <li>Man spricht Englisch</li>
                 <li>Man spricht Spanisch</li>
                 <li>Persönliche Gästebetreuung</li>
-                <li>Reinigung während des Aufenthalts</li>
               </ul>
             </div>
 
@@ -238,34 +235,34 @@
           </div>
 
           <div class="location__route mb">
-            <a href="#" class="btn btn--route">Anfahrtsroute zeigen</a>
+            <a href="#" class="btn">Anfahrtsroute zeigen</a>
           </div>
 
           <div class="location__nearby">
-            <h3>In der Umgebung</h3>
-            <table class="location__items">
-              <tbody>
-                <tr>
+            <h3 class="mb-sm">In der Umgebung</h3>
+            <table class="location__table">
+              <tbody class="location__items">
+                <tr class="location__item">
                   <td>Ortszentrum</td>
                   <td>1,10 km</td>
                 </tr>
-                <tr>
+                <tr class="location__item">
                   <td>Bahnhof</td>
                   <td>1,10 km</td>
                 </tr>
-                <tr>
+                <tr class="location__item">
                   <td>Bäckerei</td>
                   <td>1,10 km</td>
                 </tr>
-                <tr>
+                <tr class="location__item">
                   <td>Bushaltestelle</td>
                   <td>1,10 km</td>
                 </tr>
-                <tr>
+                <tr class="location__item">
                   <td>Lebensmittelgeschäft</td>
                   <td>1,10 km</td>
                 </tr>
-                <tr>
+                <tr class="location__item">
                   <td>Restaurant</td>
                   <td>1,10 km</td>
                 </tr>
@@ -274,125 +271,126 @@
           </div>
         </section>
 
-        <section class="price pt-xxl" id="price">
+        <section class="pricelist pt-xxl" id="pricelist">
           <h2 class="mb-sm">Mietpreise</h2>
-          <div class="price__items">
-            <div class="price__item">
-              <div class="price__period">
-                <h3>20.12.2022 - 07.01.2023</h3>
-                <p>Saison B</p>
-              </div>
-              <div class="price__minstay">
-                <h3>Mindestübernachtungen</h3>
-                <p>7 Nächte</p>
-              </div>
-              <div class="price__pernight">
-                <h3>Preis pro Nacht</h3>
-                <p>93,00 €</p>
-              </div>
-              <div class="price__arrival">
-                <h3>Anreise nicht möglich:</h3>
-                <p>
-                  Montag, Dienstag, Mittwoch, Donnerstag, Freitag, Samstag,
-                  Sonntag
-                </p>
-              </div>
-              <div class="price__departure">
-                <h3>Abreise nicht möglich:</h3>
-                <p>
-                  Montag, Dienstag, Mittwoch, Donnerstag, Freitag, Samstag,
-                  Sonntag
-                </p>
-              </div>
-            </div>
+          <table class="pricelist__table">
+            <thead class="pricelist__head">
+              <tr class="pricelist__headitems--accommodation">
+                <th class="pricelist__th-season">Saison</th>
+                <th class="pricelist__th-price">Preis</th>
+                <th class="pricelist__th-start">Anfang</th>
+                <th class="pricelist__th-end">Ende</th>
+                <th class="pricelist__th-min-stay">Aufenthalt</th>
+                <th class="pricelist__th-booking-gap">Lücke</th>
+                <th class="pricelist__th-persons">Personen</th>
+                <th class="pricelist__th-surcharge">Person</th>
+                <!-- <th class="pricelist__th-accommodation">Unterkunft</th> -->
+                <th class="pricelist__th-arrival-blocked">Keine Anreise</th>
+                <th class="pricelist__th-departure-blocked">Keine Abreise</th>
+              </tr>
+            </thead>
+            <tbody class="pricelist__items">
+              <tr class="pricelist__item--accommodation">
+                <td class="pricelist__season">Nebensaison</td>
+                <td class="pricelist__price">100,00 €</td>
+                <td class="pricelist__start">15.01.2023</td>
+                <td class="pricelist__end">15.05.2023</td>
+                <td class="pricelist__min-stay">4</td>
+                <td class="pricelist__booking-gap">3</td>
+                <td class="pricelist__persons">2</td>
+                <td class="pricelist__surcharge">10,00 €</td>
+                <!-- <td class="pricelist__accommodation">Fewo Scheifler-Fewo 1</td> -->
+                <td class="pricelist__arrival-blocked">So</td>
+                <td class="pricelist__departure-blocked">So</td>
+                </td>
+              </tr>
+              <tr class="pricelist__item--accommodation">
+                <td class="pricelist__season">Hauptsaison</td>
+                <td class="pricelist__price">150,00 €</td>
+                <td class="pricelist__start">15.05.2023</td>
+                <td class="pricelist__end">15.09.2023</td>
+                <td class="pricelist__min-stay">7</td>
+                <td class="pricelist__booking-gap">4</td>
+                <td class="pricelist__persons">2</td>
+                <td class="pricelist__surcharge">15,00 €</td>
+                <!-- <td class="pricelist__accommodation">Fewo Scheifler-Fewo 1</td> -->
+                <td class="pricelist__arrival-blocked">Mo, Di, Mi, Do, Fr, So</td>
+                <td class="pricelist__departure-blocked">Mo, Di, Mi, Do, Fr, So</td>
+                </td>
+              </tr>
+              <tr class="pricelist__item--accommodation">
+                <td class="pricelist__season">Nebensaison</td>
+                <td class="pricelist__price">100,00 €</td>
+                <td class="pricelist__start">15.09.2023</td>
+                <td class="pricelist__end">15.12.2023</td>
+                <td class="pricelist__min-stay">4</td>
+                <td class="pricelist__booking-gap">3</td>
+                <td class="pricelist__persons">2</td>
+                <td class="pricelist__surcharge">10,00 €</td>
+                <!-- <td class="pricelist__accommodation">Fewo Scheifler-Fewo 1</td> -->
+                <td class="pricelist__arrival-blocked">So</td>
+                <td class="pricelist__departure-blocked">So</td>
+                </td>
+              </tr>
+              <tr class="pricelist__item--accommodation">
+                <td class="pricelist__season">Hauptsaison</td>
+                <td class="pricelist__price">150,00 €</td>
+                <td class="pricelist__start">15.12.2023</td>
+                <td class="pricelist__end">15.01.2024</td>
+                <td class="pricelist__min-stay">7</td>
+                <td class="pricelist__booking-gap">4</td>
+                <td class="pricelist__persons">2</td>
+                <td class="pricelist__surcharge">10,00 €</td>
+                <!-- <td class="pricelist__accommodation">Fewo Scheifler-Fewo 1</td> -->
+                <td class="pricelist__arrival-blocked">So</td>
+                <td class="pricelist__departure-blocked">So</td>
+                </td>
+              </tr>
 
-            <div class="price__item">
-              <div class="price__period">
-                <h3>07.01.2023 - 01.05.2023</h3>
-                <p>Saison B</p>
-              </div>
-              <div class="price__minstay">
-                <h3>Mindestübernachtungen</h3>
-                <p>7 Nächte</p>
-              </div>
-              <div class="price__pernight">
-                <h3>Preis pro Nacht</h3>
-                <p>93,00 €</p>
-              </div>
-              <div class="price__arrival">
-                <h3>Anreise nicht möglich:</h3>
-                <p>
-                  Montag, Dienstag, Mittwoch, Donnerstag, Freitag, Samstag,
-                  Sonntag
-                </p>
-              </div>
-              <div class="price__departure">
-                <h3>Abreise nicht möglich:</h3>
-                <p>
-                  Montag, Dienstag, Mittwoch, Donnerstag, Freitag, Samstag,
-                  Sonntag
-                </p>
-              </div>
-            </div>
-
-            <div class="price__item">
-              <div class="price__period">
-                <h3>01.05.2023 - 01.09.2023</h3>
-                <p>Saison B</p>
-              </div>
-              <div class="price__minstay">
-                <h3>Mindestübernachtungen</h3>
-                <p>7 Nächte</p>
-              </div>
-              <div class="price__pernight">
-                <h3>Preis pro Nacht</h3>
-                <p>93,00 €</p>
-              </div>
-              <div class="price__arrival">
-                <h3>Anreise nicht möglich:</h3>
-                <p>
-                  Montag, Dienstag, Mittwoch, Donnerstag, Freitag, Samstag,
-                  Sonntag
-                </p>
-              </div>
-              <div class="price__departure">
-                <h3>Abreise nicht möglich:</h3>
-                <p>
-                  Montag, Dienstag, Mittwoch, Donnerstag, Freitag, Samstag,
-                  Sonntag
-                </p>
-              </div>
-            </div>
-
-            <div class="price__item">
-              <div class="price__period">
-                <h3>01.09.2023 - 20.12.2023</h3>
-                <p>Saison B</p>
-              </div>
-              <div class="price__minstay">
-                <h3>Mindestübernachtungen</h3>
-                <p>7 Nächte</p>
-              </div>
-              <div class="price__pernight">
-                <h3>Preis pro Nacht</h3>
-                <p>93,00 €</p>
-              </div>
-              <div class="price__arrival">
-                <h3>Anreise nicht möglich:</h3>
-                <p>
-                  Montag, Dienstag, Mittwoch, Donnerstag, Freitag, Samstag,
-                  Sonntag
-                </p>
-              </div>
-              <div class="price__departure">
-                <h3>Abreise nicht möglich:</h3>
-                <p>
-                  Montag, Dienstag, Mittwoch, Donnerstag, Freitag, Samstag,
-                  Sonntag
-                </p>
-              </div>
-            </div>
-          </div>
+              <tr class="pricelist__item--accommodation">
+                <td class="pricelist__season">Nebensaison</td>
+                <td class="pricelist__price">100,00 €</td>
+                <td class="pricelist__start">15.01.2024</td>
+                <td class="pricelist__end">15.05.2024</td>
+                <td class="pricelist__min-stay">4</td>
+                <td class="pricelist__booking-gap">3</td>
+                <td class="pricelist__persons">2</td>
+                <td class="pricelist__surcharge">10,00 €</td>
+                <!-- <td class="pricelist__accommodation">Fewo Scheifler-Fewo 1</td> -->
+                <td class="pricelist__arrival-blocked">So</td>
+                <td class="pricelist__departure-blocked">So</td>
+                </td>
+              </tr>
+              <tr class="pricelist__item--accommodation">
+                <td class="pricelist__season">Hauptsaison</td>
+                <td class="pricelist__price">150,00 €</td>
+                <td class="pricelist__start">15.05.2024</td>
+                <td class="pricelist__end">15.09.2024</td>
+                <td class="pricelist__min-stay">7</td>
+                <td class="pricelist__booking-gap">4</td>
+                <td class="pricelist__persons">2</td>
+                <td class="pricelist__surcharge">15,00 €</td>
+                <!-- <td class="pricelist__accommodation">Fewo Scheifler-Fewo 1</td> -->
+                <td class="pricelist__arrival-blocked">Mo, Di, Mi, Do, Fr, So</td>
+                <td class="pricelist__departure-blocked">Mo, Di, Mi, Do, Fr, So</td>
+                </td>
+              </tr>
+              <tr class="pricelist__item--accommodation">
+                <td class="pricelist__season">Nebensaison</td>
+                <td class="pricelist__price">100,00 €</td>
+                <td class="pricelist__start">15.09.2024</td>
+                <td class="pricelist__end">15.12.2024</td>
+                <td class="pricelist__min-stay">4</td>
+                <td class="pricelist__booking-gap">3</td>
+                <td class="pricelist__persons">2</td>
+                <td class="pricelist__surcharge">10,00 €</td>
+                <!-- <td class="pricelist__accommodation">Fewo Scheifler-Fewo 1</td> -->
+                <td class="pricelist__arrival-blocked">So</td>
+                <td class="pricelist__departure-blocked">So</td>
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </section>
 
         <section class="service pt-xxl" id="service">
@@ -438,9 +436,9 @@
         <section class="cal1 pt-xxl" id="cal1">
           <h2 class="mb-sm">Kalender</h2>
           <div class="cal1__header">
-            <div class="cal1__previous cal1__previous--disabled"></div>
+            <div class="btn--previous btn--disabled"></div>
             <div class="cal1__message"></div>
-            <div class="cal1__next"></div>
+            <div class="btn--next"></div>
           </div>
           <div class="cal1__items">
 
@@ -564,13 +562,13 @@
                   <td class="cal1__available">16</td>
                   <td class="cal1__arrival">17</td>
                   <td class="cal1__occupied">18</td>
-                  <td class="cal1__occupied cal1__occupied--change">19</td>
+                  <td class="cal1__change">19</td>
                 </tr>
 
                 <tr class="cal1__status">
                   <td class="cal1__occupied">20</td>
                   <td class="cal1__occupied">21</td>
-                  <td class="cal1__occupied cal1__occupied--end">22</td>
+                  <td class="cal1__departure">22</td>
                   <td class="cal1__available">23</td>
                   <td class="cal1__available">24</td>
                   <td class="cal1__available">25</td>
@@ -588,7 +586,7 @@
         </section>
       </div>
 
-      <div class="grid__col2">
+      <div>
         <section class="book pt-xxl" id="book">
           <!-- Padding for jump mark -->
           <div class="book__container">
@@ -599,313 +597,325 @@
               <p class="book__details">pro ÜN / 2 Personen</p>
             </div>
 
-            <form action="#" class="form form--book">
-              <div class="form__group">
-                <input id="arrival" class="form__input" type="datepicker" name="arrival" placeholder="&nbsp;"
-                  value="01.01.2023" />
-                <label class="form__label" for="arrival">Anreise</label>
+            <form action="#" class="form">
+              <div class="form__period">
+                <div class="form__group">
+                  <input id="arrival" class="form__input" type="datepicker" name="arrival" placeholder="&nbsp;"
+                    value="01.01.2023" />
+                  <label class="form__label" for="arrival">Anreise</label>
 
-                <div class="cal1 cal1--modal-off" id="cal1">
-                  <div class="cal1__header">
-                    <div class="cal1__previous cal1__previous--disabled"></div>
-                    <div class="cal1__message">Anreisetag</div>
-                    <div class="cal1__next"></div>
+                  <div class="cal1--modal-off">
+                    <div class="cal1__container">
+                      <div class="cal1__header">
+                        <div class="btn--previous btn--disabled"></div>
+                        <div class="cal1__message">Anreise</div>
+                        <div class="btn--next"></div>
+                      </div>
+                      <div class="cal1__items">
+                        <table class="cal1__item">
+                          <thead class="cal1__head">
+                            <tr class="cal1__title">
+                              <th>Januar 2023</th>
+                            </tr>
+                            <tr class="cal1__daylist">
+                              <th>Mo</th>
+                              <th>Di</th>
+                              <th>Mi</th>
+                              <th>Do</th>
+                              <th>Fr</th>
+                              <th>Sa</th>
+                              <th>So</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr class="cal1__status">
+                              <td class="cal1__empty"></td>
+                              <td class="cal1__empty"></td>
+                              <td class="cal1__empty"></td>
+                              <td class="cal1__empty"></td>
+                              <td class="cal1__empty"></td>
+                              <td class="cal1__empty"></td>
+                              <td class="cal1__past">1</td>
+                            </tr>
+
+                            <tr class="cal1__status">
+                              <td class="cal1__past">2</td>
+                              <td class="cal1__past">3</td>
+                              <td class="cal1__past">4</td>
+                              <td class="cal1__past">5</td>
+                              <td class="cal1__available">6</td>
+                              <td class="cal1__available">7</td>
+                              <td class="cal1__available">8</td>
+                            </tr>
+
+                            <tr class="cal1__status">
+                              <td class="cal1__available">9</td>
+                              <td class="cal1__arrival">10</td>
+                              <td class="cal1__occupied">11</td>
+                              <td class="cal1__occupied">12</td>
+                              <td class="cal1__occupied">13</td>
+                              <td class="cal1__occupied">14</td>
+                              <td class="cal1__departure">15</td>
+                            </tr>
+
+                            <tr class="cal1__status">
+                              <td class="cal1__available">16</td>
+                              <td class="cal1__arrival">17</td>
+                              <td class="cal1__occupied">18</td>
+                              <td class="cal1__occupied">19</td>
+                              <td class="cal1__occupied">20</td>
+                              <td class="cal1__occupied">21</td>
+                              <td class="cal1__departure">22</td>
+                            </tr>
+
+                            <tr class="cal1__status">
+                              <td class="cal1__marked">23</td>
+                              <td class="cal1__marked">24</td>
+                              <td class="cal1__marked">25</td>
+                              <td class="cal1__marked">26</td>
+                              <td class="cal1__marked">27</td>
+                              <td class="cal1__available">28</td>
+                              <td class="cal1__available">29</td>
+                            </tr>
+
+                            <tr class="cal1__status">
+                              <td class="cal1__available">30</td>
+                              <td class="cal1__available">31</td>
+                              <td class="cal1__empty"></td>
+                              <td class="cal1__empty"></td>
+                              <td class="cal1__empty"></td>
+                              <td class="cal1__empty"></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
                   </div>
-                  <div class="cal1__items cal1__items--hover">
-                    <table class="cal1__item">
-                      <thead class="cal1__head">
-                        <tr class="cal1__title">
-                          <th>Januar 2023</th>
-                        </tr>
-                        <tr class="cal1__daylist">
-                          <th>Mo</th>
-                          <th>Di</th>
-                          <th>Mi</th>
-                          <th>Do</th>
-                          <th>Fr</th>
-                          <th>Sa</th>
-                          <th>So</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr class="cal1__status">
-                          <td class="cal1__empty"></td>
-                          <td class="cal1__empty"></td>
-                          <td class="cal1__empty"></td>
-                          <td class="cal1__empty"></td>
-                          <td class="cal1__empty"></td>
-                          <td class="cal1__empty"></td>
-                          <td class="cal1__past">1</td>
-                        </tr>
+                </div>
 
-                        <tr class="cal1__status">
-                          <td class="cal1__past">2</td>
-                          <td class="cal1__past">3</td>
-                          <td class="cal1__past">4</td>
-                          <td class="cal1__past">5</td>
-                          <td class="cal1__available">6</td>
-                          <td class="cal1__available">7</td>
-                          <td class="cal1__available">8</td>
-                        </tr>
+                <div class="form__group">
+                  <input id="departure" class="form__input" type="datepicker" name="departure" placeholder="&nbsp;"
+                    value="10.01.2023" />
+                  <label class="form__label" for="departure">Abreise</label>
 
-                        <tr class="cal1__status">
-                          <td class="cal1__available">9</td>
-                          <td class="cal1__arrival">10</td>
-                          <td class="cal1__occupied">11</td>
-                          <td class="cal1__occupied">12</td>
-                          <td class="cal1__occupied">13</td>
-                          <td class="cal1__occupied">14</td>
-                          <td class="cal1__departure">15</td>
-                        </tr>
+                  <div class="cal1--modal-off">
+                    <div class="cal1__container">
+                      <div class="cal1__header">
+                        <div class="btn--previous btn--disabled"></div>
+                        <div class="cal1__message">Abreise</div>
+                        <div class="btn--next"></div>
+                      </div>
+                      <div class="cal1__items">
+                        <table class="cal1__item">
+                          <thead class="cal1__head">
+                            <tr class="cal1__title">
+                              <th>Januar 2023</th>
+                            </tr>
+                            <tr class="cal1__daylist">
+                              <th>Mo</th>
+                              <th>Di</th>
+                              <th>Mi</th>
+                              <th>Do</th>
+                              <th>Fr</th>
+                              <th>Sa</th>
+                              <th>So</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr class="cal1__status">
+                              <td class="cal1__empty"></td>
+                              <td class="cal1__empty"></td>
+                              <td class="cal1__empty"></td>
+                              <td class="cal1__empty"></td>
+                              <td class="cal1__empty"></td>
+                              <td class="cal1__empty"></td>
+                              <td class="cal1__past">1</td>
+                            </tr>
 
-                        <tr class="cal1__status">
-                          <td class="cal1__available">16</td>
-                          <td class="cal1__arrival">17</td>
-                          <td class="cal1__occupied">18</td>
-                          <td class="cal1__occupied">19</td>
-                          <td class="cal1__occupied">20</td>
-                          <td class="cal1__occupied">21</td>
-                          <td class="cal1__departure">22</td>
-                        </tr>
+                            <tr class="cal1__status">
+                              <td class="cal1__past">2</td>
+                              <td class="cal1__past">3</td>
+                              <td class="cal1__past">4</td>
+                              <td class="cal1__past">5</td>
+                              <td class="cal1__available">6</td>
+                              <td class="cal1__available">7</td>
+                              <td class="cal1__available">8</td>
+                            </tr>
 
-                        <tr class="cal1__status">
-                          <td class="cal1__available">23</td>
-                          <td class="cal1__available">24</td>
-                          <td class="cal1__available">25</td>
-                          <td class="cal1__available">26</td>
-                          <td class="cal1__available">27</td>
-                          <td class="cal1__available">28</td>
-                          <td class="cal1__available">29</td>
-                        </tr>
+                            <tr class="cal1__status">
+                              <td class="cal1__available">9</td>
+                              <td class="cal1__arrival">10</td>
+                              <td class="cal1__occupied">11</td>
+                              <td class="cal1__occupied">12</td>
+                              <td class="cal1__occupied">13</td>
+                              <td class="cal1__occupied">14</td>
+                              <td class="cal1__departure">15</td>
+                            </tr>
 
-                        <tr class="cal1__status">
-                          <td class="cal1__available">30</td>
-                          <td class="cal1__available">31</td>
-                          <td class="cal1__empty"></td>
-                          <td class="cal1__empty"></td>
-                          <td class="cal1__empty"></td>
-                          <td class="cal1__empty"></td>
-                        </tr>
-                      </tbody>
-                    </table>
+                            <tr class="cal1__status">
+                              <td class="cal1__available">16</td>
+                              <td class="cal1__arrival">17</td>
+                              <td class="cal1__occupied">18</td>
+                              <td class="cal1__occupied">19</td>
+                              <td class="cal1__occupied">20</td>
+                              <td class="cal1__occupied">21</td>
+                              <td class="cal1__departure">22</td>
+                            </tr>
+
+                            <tr class="cal1__status">
+                              <td class="cal1__available">23</td>
+                              <td class="cal1__available">24</td>
+                              <td class="cal1__available">25</td>
+                              <td class="cal1__available">26</td>
+                              <td class="cal1__available">27</td>
+                              <td class="cal1__available">28</td>
+                              <td class="cal1__available">29</td>
+                            </tr>
+
+                            <tr class="cal1__status">
+                              <td class="cal1__available">30</td>
+                              <td class="cal1__available">31</td>
+                              <td class="cal1__empty"></td>
+                              <td class="cal1__empty"></td>
+                              <td class="cal1__empty"></td>
+                              <td class="cal1__empty"></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
 
-              <div class="form__group">
-                <input id="departure" class="form__input" type="datepicker" name="departure" placeholder="&nbsp;"
-                  value="10.01.2023" />
-                <label class="form__label" for="departure">Abreise</label>
-
-                <div class="cal1 cal1--modal-on" id="cal1">
-                  <div class="cal1__header">
-                    <div class="cal1__previous cal1__previous--disabled"></div>
-                    <div class="cal1__message">Abreisetag</div>
-                    <div class="cal1__next"></div>
-                  </div>
-                  <div class="cal1__items cal1__items--hover">
-                    <table class="cal1__item">
-                      <thead class="cal1__head">
-                        <tr class="cal1__title">
-                          <th>Januar 2023</th>
-                        </tr>
-                        <tr class="cal1__daylist">
-                          <th>Mo</th>
-                          <th>Di</th>
-                          <th>Mi</th>
-                          <th>Do</th>
-                          <th>Fr</th>
-                          <th>Sa</th>
-                          <th>So</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr class="cal1__status">
-                          <td class="cal1__empty"></td>
-                          <td class="cal1__empty"></td>
-                          <td class="cal1__empty"></td>
-                          <td class="cal1__empty"></td>
-                          <td class="cal1__empty"></td>
-                          <td class="cal1__empty"></td>
-                          <td class="cal1__past">1</td>
-                        </tr>
-
-                        <tr class="cal1__status">
-                          <td class="cal1__past">2</td>
-                          <td class="cal1__past">3</td>
-                          <td class="cal1__past">4</td>
-                          <td class="cal1__past">5</td>
-                          <td class="cal1__available">6</td>
-                          <td class="cal1__available">7</td>
-                          <td class="cal1__available">8</td>
-                        </tr>
-
-                        <tr class="cal1__status">
-                          <td class="cal1__available">9</td>
-                          <td class="cal1__arrival">10</td>
-                          <td class="cal1__occupied">11</td>
-                          <td class="cal1__occupied">12</td>
-                          <td class="cal1__occupied">13</td>
-                          <td class="cal1__occupied">14</td>
-                          <td class="cal1__departure">15</td>
-                        </tr>
-
-                        <tr class="cal1__status">
-                          <td class="cal1__available">16</td>
-                          <td class="cal1__arrival">17</td>
-                          <td class="cal1__occupied">18</td>
-                          <td class="cal1__occupied">19</td>
-                          <td class="cal1__occupied">20</td>
-                          <td class="cal1__occupied">21</td>
-                          <td class="cal1__departure">22</td>
-                        </tr>
-
-                        <tr class="cal1__status">
-                          <td class="cal1__available">23</td>
-                          <td class="cal1__marked">24</td>
-                          <td class="cal1__marked">25</td>
-                          <td class="cal1__marked">26</td>
-                          <td class="cal1__marked-disabled">27</td>
-                          <td class="cal1__available-disabled">28</td>
-                          <td class="cal1__available-disabled">29</td>
-                        </tr>
-
-                        <tr class="cal1__status">
-                          <td class="cal1__available">30</td>
-                          <td class="cal1__available">31</td>
-                          <td class="cal1__empty"></td>
-                          <td class="cal1__empty"></td>
-                          <td class="cal1__empty"></td>
-                          <td class="cal1__empty"></td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-              </div>
-
-              <div class="form__group form__group--person">
+              <div class="form__group--person">
                 <input id="person" class="form__input" name="person" placeholder="&nbsp;"
                   value="1 Erwachsener · 2 Kinder" />
                 <label class="form__label" for="person">Personen</label>
 
-                <div class="person person--modal-off">
-                  <div class="person__group">
-                    <label for="adults">Erwachsene</label>
-                    <a class="person__decrease person__decrease--disabled" href="#">-</a>
-                    <input class="person__quantity" id="adults" type="text" value="1" name="adults" />
-                    <a class="person__increase" href="#">+</a>
-                  </div>
+                <div class="person--modal-off">
+                  <div class="person__container">
 
-                  <div class="person__group">
-                    <label for="children">Kinder</label>
-                    <a class="person__decrease" href="#">-</a>
-                    <input class="person__quantity" id="children" type="text" value="2" name="children" />
-                    <a class="person__increase" href="#">+</a>
-                  </div>
-
-                  <div class="person__age">
-                    <div class="form__group">
-                      <select id="age" class="form__input" name="age">
-                        <option value="0">0 Jahre alt</option>
-                        <option value="1">1 Jahr alt</option>
-                        <option value="2">2 Jahre alt</option>
-                        <option value="3">3 Jahre alt</option>
-                        <option value="4">4 Jahre alt</option>
-                        <option value="5">5 Jahre alt</option>
-                        <option value="6">6 Jahre alt</option>
-                        <option value="7">7 Jahre alt</option>
-                        <option value="8">8 Jahre alt</option>
-                        <option value="9">9 Jahre alt</option>
-                        <option value="10">10 Jahre alt</option>
-                        <option value="11">11 Jahre alt</option>
-                        <option value="12">12 Jahre alt</option>
-                        <option value="13">13 Jahre alt</option>
-                        <option value="14">14 Jahre alt</option>
-                        <option value="15">15 Jahre alt</option>
-                        <option value="16">16 Jahre alt</option>
-                        <option value="17">17 Jahre alt</option>
-                      </select>
+                    <div class="person__group">
+                      <label for="adults">Erwachsene</label>
+                      <a class="btn--disabled" href="#">-</a>
+                      <input class="person__quantity" id="adults" type="text" value="1" name="adults" />
+                      <a class="btn" href="#">+</a>
                     </div>
 
-                    <div class="form__group">
-                      <select id="age" class="form__input" name="age">
-                        <option value="0">0 Jahre alt</option>
-                        <option value="1">1 Jahr alt</option>
-                        <option value="2">2 Jahre alt</option>
-                        <option value="3">3 Jahre alt</option>
-                        <option value="4">4 Jahre alt</option>
-                        <option value="5">5 Jahre alt</option>
-                        <option value="6">6 Jahre alt</option>
-                        <option value="7">7 Jahre alt</option>
-                        <option value="8">8 Jahre alt</option>
-                        <option value="9">9 Jahre alt</option>
-                        <option value="10">10 Jahre alt</option>
-                        <option value="11">11 Jahre alt</option>
-                        <option value="12">12 Jahre alt</option>
-                        <option value="13">13 Jahre alt</option>
-                        <option value="14">14 Jahre alt</option>
-                        <option value="15">15 Jahre alt</option>
-                        <option value="16">16 Jahre alt</option>
-                        <option value="17">17 Jahre alt</option>
-                      </select>
+                    <div class="person__group">
+                      <label for="children">Kinder</label>
+                      <a class="btn" href="#">-</a>
+                      <input class="person__quantity" id="children" type="text" value="2" name="children" />
+                      <a class="btn" href="#">+</a>
                     </div>
-                  </div>
 
-                  <a href="#" class="btn">Anwenden</a>
+                    <div class="person__age">
+                      <div class="form__group--select">
+                        <select id="age" class="form__input" name="age">
+                          <option value="0">0 Jahre alt</option>
+                          <option value="1">1 Jahr alt</option>
+                          <option value="2">2 Jahre alt</option>
+                          <option value="3">3 Jahre alt</option>
+                          <option value="4">4 Jahre alt</option>
+                          <option value="5" selected>5 Jahre alt</option>
+                          <option value="6">6 Jahre alt</option>
+                          <option value="7">7 Jahre alt</option>
+                          <option value="8">8 Jahre alt</option>
+                          <option value="9">9 Jahre alt</option>
+                          <option value="10">10 Jahre alt</option>
+                          <option value="11">11 Jahre alt</option>
+                          <option value="12">12 Jahre alt</option>
+                          <option value="13">13 Jahre alt</option>
+                          <option value="14">14 Jahre alt</option>
+                          <option value="15">15 Jahre alt</option>
+                          <option value="16">16 Jahre alt</option>
+                          <option value="17">17 Jahre alt</option>
+                        </select>
+                      </div>
+
+                      <div class="form__group--select">
+                        <select id="age" class="form__input" name="age">
+                          <option value="0">0 Jahre alt</option>
+                          <option value="1">1 Jahr alt</option>
+                          <option value="2">2 Jahre alt</option>
+                          <option value="3">3 Jahre alt</option>
+                          <option value="4">4 Jahre alt</option>
+                          <option value="5">5 Jahre alt</option>
+                          <option value="6">6 Jahre alt</option>
+                          <option value="7">7 Jahre alt</option>
+                          <option value="8">8 Jahre alt</option>
+                          <option value="9">9 Jahre alt</option>
+                          <option value="10">10 Jahre alt</option>
+                          <option value="11">11 Jahre alt</option>
+                          <option value="12">12 Jahre alt</option>
+                          <option value="13">13 Jahre alt</option>
+                          <option value="14" selected>14 Jahre alt</option>
+                          <option value="15">15 Jahre alt</option>
+                          <option value="16">16 Jahre alt</option>
+                          <option value="17">17 Jahre alt</option>
+                        </select>
+                      </div>
+
+                    </div>
+
+                    <a href="#" class="btn">Anwenden</a>
+                  </div>
                 </div>
               </div>
             </form>
 
-            <div class="calc">
-              <div class="calc__title">
+            <div class="calc--on">
+              <!-- <div class="calc__title">
                 Gesamtmiete
-              </div>
+              </div> -->
               <table class="calc__table">
                 <tbody class="calc__items">
                   <tr class="calc__item">
-                    <td class="calc__designation">Objektmiete
-                      <span class="calc__description">
-                        7 Nächte
-                      </span>
-                    </td>
+                    <td class="calc__designation">Saison B</td>
+                    <td class="calc__qty">7</td>
                     <td class="calc__price">231,00 €</td>
                   </tr>
                   <tr class="calc__item">
-                    <td class="calc__designation">Extras
+                    <td class="calc__designation">Aufbettung für 1 Person
+                      <span class="calc__description">
+                        Kinder bis 17 Jahre
+                      </span>
                     </td>
-                    <td class="calc__price">24,00 €</td>
+                    <td class="calc__qty">7</td>
+                    <td class="calc__price">50,00 €</td>
                   </tr>
-                  <tr class="calc__item">
-                    <td class="calc__designation">Gebühren
-                    </td>
-                    <td class="calc__price">8,00 €</td>
+
+                  <tr class="calc__item--total">
+                    <td class="calc__designation">Gesamtbetrag</td>
+                    <td class="calc__price">281,00 €</td>
                   </tr>
-                  <tr class="calc__item">
-                    <td class="calc__designation">Endreinigung
-                    </td>
-                    <td class="calc__price">56,00 €</td>
-                  </tr>
-                  <tr class="calc__item">
-                    <td class="calc__designation calc__designation--total">Endpreis
-                      <span class="calc__description">(inkl. MwSt)</span>
-                    </td>
-                    <td class="calc__price calc__price--total">319,00 €</td>
-                  </tr>
+
                   <tr class="calc__item">
                     <td class="calc__designation">Kaution
-                      <span class="calc__description">Nicht im Endpreis enthalten, Erstattbar</span>
+                      <span class="calc__description">Nicht im Preis enthalten, Erstattbar</span>
                     </td>
-                    <td class="calc__price">500,00 €</td>
+                    <td class="calc__qty">1</td>
+                    <td class="calc__price">100,00 €</td>
                   </tr>
                 </tbody>
               </table>
               <div class="calc__tax">
-                (Gem. § 19 (1) UStG enthält der ausgewiesene Betrag keine Umsatzsteuer.)
+                Gem. § 19 (1) UStG enthält der ausgewiesene Betrag keine Umsatzsteuer.
+              </div>
+              <div class="calc__message--on">
+                <ul>
+                  <li>Die Anreise ist am Montag nicht möglich. Mögliche Anreisetage für die Saisonzeit <strong>Saison
+                      C</strong> sind: <strong>Samstag</strong></li>
+                  <li>Die Abreise ist am Montag nicht möglich. Mögliche Abreisetage für die Saisonzeit <strong>Saison
+                      C</strong> sind: <strong>Samstag</strong></li>
+                </ul>
               </div>
             </div>
-
-            <a href="book-1.html" class="form__submit btn">Weiter zur Buchung</a>
+            <div class="grid--multicolumn">
+              <a href="book-1.html" class="btn">Weiter zur Buchung</a>
+              <a href="request-1.html" class="btn">Buchungsanfrage stellen</a>
+            </div>
 
           </div>
         </section>
@@ -915,52 +925,57 @@
 
   <footer class="footer">
     <div class="footer__navigation">
-      <h5 class="heading-5">Für Urlauber</h5>
-      <nav class="footer__list">
-        <ul>
-          <li>
-            <a href="gastgeber-liste.html" title="Gastgeber">Gastgeberliste</a>
+      <h5 class="footer__title">Für Urlauber</h5>
+
+      <nav class="footer__nav">
+        <ul class="footer__items">
+          <li class="footer__item">
+            <a class="footer__link" href="gastgeber-liste.html" title="Gastgeber">Gastgeberliste</a>
           </li>
-          <li>
-            <a href="#" title="Panoramatour">Panoramatour</a>
+          <li class="footer__item">
+            <a class="footer__link" href="https://pano.berchtesgaden360.de/" title="Panoramatour"
+              target="_blank">Panoramatour</a>
           </li>
-          <li>
-            <a href="#" title="FAQ">FAQ</a>
+          <li class="footer__item">
+            <a class="footer__link" href="faq-liste.html" title="FAQ">FAQ</a>
           </li>
-          <li>
-            <a href="#" title="Kontakt">Kontakt</a>
+          <li class="footer__item">
+            <a class="footer__link" href="kontakt.html" title="Kontakt">Kontakt</a>
           </li>
         </ul>
       </nav>
 
-      <h5 class="heading-5">Für Gastgeber</h5>
-      <nav class="footer__list">
-        <ul>
-          <li>
-            <a href="#" title="Anmelden">Anmelden</a>
+      <h5 class="footer__title">Für Gastgeber</h5>
+
+      <nav class="footer__nav">
+        <ul class="footer__items">
+          <li class="footer__item">
+            <a class="footer__link" href="anmelden.html" title="Anmelden">Anmelden</a>
           </li>
         </ul>
       </nav>
 
-      <h5 class="heading-5">Unternehmen</h5>
-      <nav class="footer__list">
-        <ul>
-          <li>
-            <a href="#" title="AGB">AGB</a>
+      <h5 class="footer__title">Unternehmen</h5>
+
+      <nav class="footer__items">
+        <ul class="footer__items">
+          <li class="footer__item">
+            <a class="footer__link" href="agb.html" title="AGB">AGB</a>
           </li>
-          <li>
-            <a href="#" title="Impressum">Impressum</a>
+          <li class="footer__item">
+            <a class="footer__link" href="impressum.html" title="Impressum">Impressum</a>
           </li>
-          <li>
-            <a href="#" title="Datenschutz">Datenschutz</a>
+          <li class="footer__item">
+            <a class="footer__link" href="datenschutz.html" title="Datenschutz">Datenschutz</a>
           </li>
-          <li>
-            <a href="#" title="Über uns">Über uns</a>
+          <li class="footer__item">
+            <a class="footer__link" href="ueber-uns.html" title="Über uns">Über uns</a>
           </li>
         </ul>
       </nav>
     </div>
-    <a href="index.html" class="footer__partner" title="Berchtesgaden">Berchtesgaden</a>
+    
+    <a class="footer__partner" href="index.html" title="Berchtesgaden"></a>
   </footer>
 </body>
 

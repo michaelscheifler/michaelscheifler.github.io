@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../../css/main.css" />
+</head>
+
+<body>
+  <header class="header" id="header">
+    <div class="header__logo-box">
+      <a class="header__logo-link" href="willkommen.html" title="Willkommen">
+        <img src="../../img/berchtesgaden360.png" alt="Berchtesgaden360" class="header__logo" />
+      </a>
+    </div>
+    <div class="header__navigation">
+      <input class="header__toggle" type="checkbox" id="header__toggle" />
+      <label for="header__toggle" class="header__label">
+        <span class="header__span"></span>
+      </label>
+      <nav class="header__nav">
+        <ul class="header__items">
+          <li class="header__item">
+            <a href="belegung-liste.html"><span>Belegung</span></a>
+          </li>
+          <li class="header__item">
+            <a href="preis-liste.html"><span>Preis</span></a>
+          </li>
+          <li class="header__item">
+            <a href="unterkunft-liste.html"><span>Unterkunft</span></a>
+          </li>
+          <li class="header__item">
+            <a href="hilfe-liste.html"><span>Hilfe</span></a>
+          </li>
+          <li class="header__item">
+            <a href="../anmelden.html"><span>Abmelden</span></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="occupancy cc mt mb">
+      <h1 class="mb">Belegung</h1>
+
+      <section class="cal mb" id="cal">
+        <div class="cal__container">
+          <div class="cal__legend">
+            <div class="cal__descriptions">
+              <div class="cal__description">
+                <div class="cal__box-available"></div>
+                <div class="cal__status">Frei</div>
+              </div>
+              <div class="cal__description">
+                <div class="cal__box-occupied"></div>
+                <div class="cal__status">Belegt</div>
+              </div>
+            </div>
+  
+            <div class="cal__accomodations">
+              <a class="cal__accommodation" href="unterkunft-detail.html">Fewo 1</a>
+              <a class="cal__accommodation" href="unterkunft-detail.html">Fewo 2</a>
+              <a class="cal__accommodation" href="unterkunft-detail.html">Fewo 3</a>
+              <a class="cal__accommodation" href="unterkunft-detail.html">Fewo 4</a>
+            </div>
+          </div>
+          <div class="cal__items">
+            <table class="cal__item">
+              <thead>
+                <tr class="cal__month">
+                  <th class="cal__title">Januar 2023</th>
+                </tr>
+                <tr class="cal__days">
+                  <th>Sa 24</th>
+                  <th>So 25</th>
+                  <th>Mo 26</th>
+                  <th>Di 27</th>
+                  <th>Mi 28</th>
+                  <th>Do 29</th>
+                  <th>Fr 30</th>
+                  <th>Sa 31</th>
+                </tr>
+              </thead>
+  
+              <tbody>
+                <tr class="cal__status">
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__arrival"></td>
+                  <td class="cal__occupied"></td>
+                  <td class="cal__occupied"></td>
+                  <td class="cal__departure"></td>
+                </tr>
+                <tr class="cal__status">
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                </tr>
+                <tr class="cal__status">
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                </tr>
+                <tr class="cal__status">
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                </tr>
+              </tbody>
+            </table>
+  
+            <table class="cal__item">
+              <thead>
+                <tr class="cal__month">
+                  <th class="cal__title">Februar 2023</th>
+                </tr>
+                <tr class="cal__days">
+                  <th>So 01</th>
+                  <th>Mo 02</th>
+                  <th>Di 03</th>
+                  <th>Mi 04</th>
+                  <th>Do 05</th>
+                  <th>Fr 06</th>
+                  <th>Sa 07</th>
+                  <th>So 08</th>
+                  <th>Mo 09</th>
+                  <th>Di 10</th>
+                  <th>Mi 11</th>
+                  <th>Do 12</th>
+                  <th>Fr 13</th>
+                  <th>Sa 14</th>
+                  <th>So 15</th>
+                  <th>Mo 16</th>
+                  <th>Di 17</th>
+                  <th>Mi 18</th>
+                  <th>Do 19</th>
+                  <th>Fr 20</th>
+                  <th>Sa 21</th>
+                  <th>So 22</th>
+                  <th>Mo 23</th>
+                  <th>Di 24</th>
+                  <th>Mi 25</th>
+                  <th>Do 26</th>
+                  <th>Fr 27</th>
+                  <th>Sa 28</th>
+                </tr>
+              </thead>
+  
+              <tbody>
+                <tr class="cal__status">
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__arrival"></td>
+                  <td class="cal__occupied"></td>
+                  <td class="cal__occupied"></td>
+                  <td class="cal__occupied"></td>
+                  <td class="cal__occupied"></td>
+                  <td class="cal__change"></td>
+                  <td class="cal__occupied"></td>
+                  <td class="cal__occupied"></td>
+                  <td class="cal__occupied"></td>
+                  <td class="cal__occupied"></td>
+                  <td class="cal__occupied"></td>
+                  <td class="cal__departure"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                </tr>
+  
+                <tr class="cal__status">
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                </tr>
+  
+                <tr class="cal__status">
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                </tr>
+                <tr class="cal__status">
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                </tr>
+              </tbody>
+            </table>
+  
+            <table class="cal__item">
+              <thead>
+                <tr class="cal__month">
+                  <th class="cal__title">März 2023</th>
+                </tr>
+                <tr class="cal__days">
+                  <th>So 01</th>
+                  <th>Mo 02</th>
+                  <th>Di 03</th>
+                  <th>Mi 04</th>
+                  <th>Do 05</th>
+                  <th>Fr 06</th>
+                  <th>Sa 07</th>
+                  <th>So 08</th>
+                  <th>Mo 09</th>
+                  <th>Di 10</th>
+                  <th>Mi 11</th>
+                  <th>Do 12</th>
+                  <th>Fr 13</th>
+                  <th>Sa 14</th>
+                  <th>So 15</th>
+                  <th>Mo 16</th>
+                  <th>Di 17</th>
+                  <th>Mi 18</th>
+                  <th>Do 19</th>
+                  <th>Fr 20</th>
+                  <th>Sa 21</th>
+                  <th>So 22</th>
+                  <th>Mo 23</th>
+                  <th>Di 24</th>
+                  <th>Mi 25</th>
+                  <th>Do 26</th>
+                  <th>Fr 27</th>
+                  <th>Sa 28</th>
+                  <th>Sa 29</th>
+                  <th>Sa 30</th>
+                  <th>Sa 31</th>
+                </tr>
+              </thead>
+  
+              <tbody>
+                <tr class="cal__status">
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__arrival"></td>
+                  <td class="cal__occupied"></td>
+                  <td class="cal__occupied"></td>
+                  <td class="cal__occupied"></td>
+                  <td class="cal__occupied"></td>
+                  <td class="cal__change"></td>
+                  <td class="cal__occupied"></td>
+                  <td class="cal__occupied"></td>
+                  <td class="cal__occupied"></td>
+                  <td class="cal__occupied"></td>
+                  <td class="cal__occupied"></td>
+                  <td class="cal__departure"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                </tr>
+  
+                <tr class="cal__status">
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                </tr>
+  
+                <tr class="cal__status">
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                </tr>
+                <tr class="cal__status">
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                  <td class="cal__available"></td>
+                </tr>
+              </tbody>
+            </table>
+  
+          </div>
+        </div>
+  
+      </section>
+  
+      <form action="#" class="form--multicolumn mb">
+
+        <div class="form__group--select">
+          <select class="form__input" id="accommodation" name="accommodation">
+            <option value="0781-00">Alle Unterkünfte</option>
+            <option value="0781-01">Fewo Scheifler-Fewo 1 [0781-01]</option>
+            <option value="0781-02">Fewo Scheifler-Fewo 2 [0781-02]</option>
+            <option value="0781-03">Fewo Scheifler-Fewo 3 [0781-03]</option>
+          </select>
+          <label class="form__label" for="accommodation">Unterkunft</label>
+        </div>
+
+        <div class="form__group--select">
+          <select class="form__input" id="occupancy" name="occupancy">
+            <option value="0781-00">Bevorstehend</option>
+            <option value="0781-01">2022</option>
+            <option value="0781-01">2021</option>
+            <option value="0781-02">2020</option>
+            <option value="0781-03">2019</option>
+          </select>
+          <label class="form__label" for="occupancy">Anreise</label>
+        </div>
+
+        <div class="form__group--select">
+          <select class="form__input" id="sort" name="sort">
+            <option value="1">Anreise</option>
+            <option value="2">Abreise</option>
+            <option value="3">Angelegt</option>
+            <option value="4">Gast</option>
+            <option value="5">Notiz</option>
+            <option value="6">Nummer</option>
+            <option value="7">Preis</option>
+            <option value="8">Quelle</option>
+            <option value="9">Status</option>
+            <option value="10">Unterkunft</option>
+          </select>
+          <label class="form__label" for="sort">Sortierung</label>
+        </div>
+
+        <div class="form__group">
+          <input class="form__input" type="text" name="search" placeholder=" ">
+          <label class="form__label" for="search">Suchbegriff</label>
+        </div>
+
+        <a class="btn" href="belegung-detail.html">Belegung anlegen</a>
+      </form>
+
+      <table class="occupancy__table">
+        <thead class="occupancy__head">
+          <tr class="occupancy__headitems">
+            <th class="occupancy__th-arrival">Anreise</th>
+            <th class="occupancy__th-departure">Abreise</th>
+            <th class="occupancy__th-accommodation">Unterkunft</th>
+            <th class="occupancy__th-status">Status</th>
+            <th class="occupancy__th-price">Preis</th>
+            <th class="occupancy__th-number">Nummer</th>
+            <th class="occupancy__th-created">Angelegt</th>
+            <th class="occupancy__th-source">Quelle</th>
+            <th class="occupancy__th-guest">Gast</th>
+            <th class="occupancy__th-note">Notiz</th>
+          </tr>
+        </thead>
+        <tbody class="occupancy__items">
+          <tr class="occupancy__item">
+            <td class="occupancy__arrival" data-name="Anreise">
+              <a href="belegung-detail.html" title="Belegung bearbeiten">01.05.2023</a>
+            </td>
+            <td class="occupancy__departure" data-name="Abreise">10.05.2023</td>
+            <td class="occupancy__accommodation" data-name="Unterkunft">Fewo Scheifler-Fewo 1</td>
+            <td class="occupancy__status" data-name="Status">Storniert</td>
+            <td class="occupancy__price" data-name="Preis">1.299,00 €</td>
+            <td class="occupancy__number" data-name="Nummer">74935</td>
+            <td class="occupancy__created" data-name="Angelegt">10.01.2022</td>
+            <td class="occupancy__source" data-name="Quelle">berchtesgaden360.de</td>
+            <td class="occupancy__guest" data-name="Gast">
+              Michael Riepe<br>
+              2 Erwachsene<br>
+              2 Kinder (9, 17)
+            </td>
+            <td class="occupancy__note" data-name="Notiz">Kinderbett</td>
+          </tr>
+
+          <tr class="occupancy__item">
+            <td class="occupancy__arrival" data-name="Anreise">
+              <a href="belegung-detail.html" title="Belegung bearbeiten">01.06.2023</a>
+            </td>
+            <td class="occupancy__departure">10.06.2023</td>
+            <td class="occupancy__accommodation">Fewo Scheifler-Fewo 1</td>
+            <td class="occupancy__status">Gebucht</td>
+            <td class="occupancy__price">899,00 €</td>
+            <td class="occupancy__number">74936</td>
+            <td class="occupancy__created">10.02.2022</td>
+            <td class="occupancy__source">fewo-scheifler.de</td>
+            <td class="occupancy__guest">
+              Markus Huber<br>
+              2 Erwachsene<br>
+              1 Kind (17)
+            </td>
+            <td class="occupancy__note" data-name="Notiz">2 Fahrräder</td>
+          </tr>
+
+          <tr class="occupancy__item">
+            <td class="occupancy__arrival" data-name="Anreise">
+              <a href="belegung-detail.html" title="Belegung bearbeiten">15.06.2023</a>
+            </td>
+            <td class="occupancy__departure">18.06.2023</td>
+            <td class="occupancy__accommodation">Fewo Scheifler-Fewo 2</td>
+            <td class="occupancy__status">Gebucht</td>
+            <td class="occupancy__price">-</td>
+            <td class="occupancy__number">-</td>
+            <td class="occupancy__created">-</td>
+            <td class="occupancy__source">booking.com</td>
+            <td class="occupancy__guest">
+              -<br>
+              -<br>
+              -
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__navigation">
+      <h5 class="footer__title">Für Urlauber</h5>
+
+      <nav class="footer__nav">
+        <ul class="footer__items">
+          <li class="footer__item">
+            <a class="footer__link" href="../gastgeber-liste.html" title="Gastgeber">Gastgeberliste</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="https://pano.berchtesgaden360.de/" title="Panoramatour"
+              target="_blank">Panoramatour</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="../faq-liste.html" title="FAQ">FAQ</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="../kontakt.html" title="Kontakt">Kontakt</a>
+          </li>
+        </ul>
+      </nav>
+
+      <h5 class="footer__title">Für Gastgeber</h5>
+
+      <nav class="footer__nav">
+        <ul class="footer__items">
+          <li class="footer__item">
+            <a class="footer__link" href="../anmelden.html" title="Abmelden">Abmelden</a>
+          </li>
+        </ul>
+      </nav>
+
+      <h5 class="footer__title">Unternehmen</h5>
+
+      <nav class="footer__items">
+        <ul class="footer__items">
+          <li class="footer__item">
+            <a class="footer__link" href="../agb.html" title="AGB">AGB</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="../impressum.html" title="Impressum">Impressum</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="../datenschutz.html" title="Datenschutz">Datenschutz</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="../ueber-uns.html" title="Über uns">Über uns</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <a class="footer__partner" href="../index.html" title="Berchtesgaden"></a>
+  </footer>
+</body>
+
+</html>

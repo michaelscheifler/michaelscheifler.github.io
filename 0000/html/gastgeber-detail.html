@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="../css/main.css" />
 </head>
 
-<body class="body">
+<body>
   <header class="header" id="header">
     <div class="header__logo-box">
       <a class="header__logo-link" href="index.html" title="Berchtesgaden">
@@ -20,7 +20,7 @@
         <span class="header__span"></span>
       </label>
       <nav class="header__nav">
-        <ul class="header__list">
+        <ul class="header__items">
           <li class="header__item">
             <a href="gastgeber-liste.html"><span>Gastgeber</span></a>
           </li>
@@ -38,13 +38,12 @@
     </div>
   </header>
 
-  <main class="main">
-
+  <main>
     <section class="slider">
       <div class="slider__list">
         <figure class="slider__item">
-          <span class="slider__prev"></span>
-          <span class="slider__next"></span>
+          <span class="btn--previous-slider"></span>
+          <span class="btn--next-slider"></span>
           <div class="slider__img">
             <picture>
               <img src="../img/01450405.jpg" alt="Gerstreitlehen" />
@@ -58,11 +57,12 @@
     <section class="anchor" id="anchor">
       <a href="#header" class="anchor__slider" title="Fotos"><span>Fotos</span></a>
       <a href="#description" class="anchor__description" title="Beschreibung"><span>Beschreibung</span></a>
+      <a href="#location" class="anchor__location" title="Kontakt"><span>Kontakt</span></a>
       <a href="#accomodation" class="anchor__accomodation" title="Unterkünfte"><span>Unterkünfte</span></a>
       <a href="#cal" class="anchor__cal" title="Kalender"><span>Kalender</span></a>
     </section>
 
-    <section class="description ct pt-xxl mb" id="description">
+    <section class="ct pt-xxl" id="description">
       <h1 class="mb-sm">Gerstreitlehen</h1>
       <p>
         Das Gerstreitlehen liegt in sonniger Höhenlage in der Nähe des
@@ -73,9 +73,9 @@
       </p>
     </section>
 
-    <section class="grid ct">
-      <a href="#" class="btn btn--pano">Vogelperspektive anzeigen</a>
-      <a href="#" class="btn btn--googlemaps">Kontaktdaten & Bewertungen</a>
+    <section class="grid--multicolumn ct pt-xxl" id="location">
+      <a href="#" class="btn">Vogelperspektive anzeigen</a>
+      <a href="#" class="btn">Kontaktdaten & Bewertungen</a>
     </section>
 
     <section class="gallery cf pt-xxl" id="accomodation">
@@ -84,58 +84,59 @@
         <div class="gallery__items">
           <figure class="gallery__item">
             <span class="gallery__like"></span>
-            <a class="gallery__img-link" href="unterkunft-detail.html" target="_self">
+            <a class="gallery__img--link" href="unterkunft-detail.html" target="_self">
               <picture>
                 <img src="../img/02560405.jpg" alt="Fewo 1" />
               </picture>
             </a>
-            <figcaption class="gallery__title">Fewo 1</figcaption>
+            <figcaption class="gallery__title">Gerstreitlehen-Fewo 1</figcaption>
           </figure>
 
           <figure class="gallery__item">
             <span class="gallery__like"></span>
-            <a class="gallery__img-link" href="unterkunft-detail.html" target="_self">
+            <a class="gallery__img--link" href="unterkunft-detail.html" target="_self">
               <picture>
                 <img src="../img/02560405.jpg" alt="Fewo 1" />
               </picture>
             </a>
-            <figcaption class="gallery__title">Fewo 2</figcaption>
+            <figcaption class="gallery__title">Gerstreitlehen-Fewo 2</figcaption>
           </figure>
 
           <figure class="gallery__item">
             <span class="gallery__like"></span>
-            <a class="gallery__img-link" href="unterkunft-detail.html" target="_self">
+            <a class="gallery__img--link" href="unterkunft-detail.html" target="_self">
               <picture>
                 <img src="../img/02560405.jpg" alt="Fewo 1" />
               </picture>
             </a>
-            <figcaption class="gallery__title">Fewo 3</figcaption>
+            <figcaption class="gallery__title">Gerstreitlehen-Fewo 3</figcaption>
           </figure>
 
           <figure class="gallery__item">
             <span class="gallery__like"></span>
-            <a class="gallery__img-link" href="unterkunft-detail.html" target="_self">
+            <a class="gallery__img--link" href="unterkunft-detail.html" target="_self">
               <picture>
                 <img src="../img/02560405.jpg" alt="Fewo 1" />
               </picture>
             </a>
-            <figcaption class="gallery__title">Fewo 4</figcaption>
+            <figcaption class="gallery__title">Gerstreitlehen-Fewo 4</figcaption>
           </figure>
         </div>
     </section>
 
-    <section class="cal pt-xxl" id="cal">
+    <section class="cal cf pt-xxl" id="cal">
       <h2 class="mb-sm" class="cf">Übersichtskalender</h2>
-      <div class="cal__wrapper">
+      <div class="cal__container">
         <div class="cal__legend">
-          <div class="cal__description">
-            <div class="cal__box-available"></div>
-            <div class="cal__status">Frei</div>
-          </div>
-
-          <div class="cal__description">
-            <div class="cal__box-occupied"></div>
-            <div class="cal__status">Belegt</div>
+          <div class="cal__descriptions">
+            <div class="cal__description">
+              <div class="cal__box-available"></div>
+              <div class="cal__status">Frei</div>
+            </div>
+            <div class="cal__description">
+              <div class="cal__box-occupied"></div>
+              <div class="cal__status">Belegt</div>
+            </div>
           </div>
 
           <div class="cal__accomodations">
@@ -145,13 +146,13 @@
             <a class="cal__accommodation" href="unterkunft-detail.html">Fewo 4</a>
           </div>
         </div>
-        <div class="cal__container">
+        <div class="cal__items">
           <table class="cal__item">
             <thead>
-              <tr>
+              <tr class="cal__month">
                 <th class="cal__title">Januar 2023</th>
               </tr>
-              <tr class="cal__daylist">
+              <tr class="cal__days">
                 <th>Sa 24</th>
                 <th>So 25</th>
                 <th>Mo 26</th>
@@ -169,10 +170,10 @@
                 <td class="cal__available"></td>
                 <td class="cal__available"></td>
                 <td class="cal__available"></td>
-                <td class="cal__occupied cal__occupied--start"></td>
+                <td class="cal__arrival"></td>
                 <td class="cal__occupied"></td>
                 <td class="cal__occupied"></td>
-                <td class="cal__occupied cal__occupied--end"></td>
+                <td class="cal__departure"></td>
               </tr>
               <tr class="cal__status">
                 <td class="cal__available"></td>
@@ -209,10 +210,10 @@
 
           <table class="cal__item">
             <thead>
-              <tr>
+              <tr class="cal__month">
                 <th class="cal__title">Februar 2023</th>
               </tr>
-              <tr class="cal__daylist">
+              <tr class="cal__days">
                 <th>So 01</th>
                 <th>Mo 02</th>
                 <th>Di 03</th>
@@ -250,18 +251,18 @@
                 <td class="cal__available"></td>
                 <td class="cal__available"></td>
                 <td class="cal__available"></td>
-                <td class="cal__occupied cal__occupied--start"></td>
+                <td class="cal__arrival"></td>
                 <td class="cal__occupied"></td>
                 <td class="cal__occupied"></td>
                 <td class="cal__occupied"></td>
                 <td class="cal__occupied"></td>
-                <td class="cal__occupied cal__occupied--change"></td>
+                <td class="cal__change"></td>
                 <td class="cal__occupied"></td>
                 <td class="cal__occupied"></td>
                 <td class="cal__occupied"></td>
                 <td class="cal__occupied"></td>
                 <td class="cal__occupied"></td>
-                <td class="cal__occupied cal__occupied--end"></td>
+                <td class="cal__departure"></td>
                 <td class="cal__available"></td>
                 <td class="cal__available"></td>
                 <td class="cal__available"></td>
@@ -372,10 +373,10 @@
 
           <table class="cal__item">
             <thead>
-              <tr>
+              <tr class="cal__month">
                 <th class="cal__title">März 2023</th>
               </tr>
-              <tr class="cal__daylist">
+              <tr class="cal__days">
                 <th>So 01</th>
                 <th>Mo 02</th>
                 <th>Di 03</th>
@@ -416,18 +417,18 @@
                 <td class="cal__available"></td>
                 <td class="cal__available"></td>
                 <td class="cal__available"></td>
-                <td class="cal__occupied cal__occupied--start"></td>
+                <td class="cal__arrival"></td>
                 <td class="cal__occupied"></td>
                 <td class="cal__occupied"></td>
                 <td class="cal__occupied"></td>
                 <td class="cal__occupied"></td>
-                <td class="cal__occupied cal__occupied--change"></td>
+                <td class="cal__change"></td>
                 <td class="cal__occupied"></td>
                 <td class="cal__occupied"></td>
                 <td class="cal__occupied"></td>
                 <td class="cal__occupied"></td>
                 <td class="cal__occupied"></td>
-                <td class="cal__occupied cal__occupied--end"></td>
+                <td class="cal__departure"></td>
                 <td class="cal__available"></td>
                 <td class="cal__available"></td>
                 <td class="cal__available"></td>
@@ -552,57 +553,61 @@
       </div>
 
     </section>
-
   </main>
 
   <footer class="footer">
     <div class="footer__navigation">
-      <h5 class="heading-5">Für Urlauber</h5>
-      <nav class="footer__list">
-        <ul>
-          <li>
-            <a href="gastgeber-liste.html" title="Gastgeber">Gastgeberliste</a>
+      <h5 class="footer__title">Für Urlauber</h5>
+
+      <nav class="footer__nav">
+        <ul class="footer__items">
+          <li class="footer__item">
+            <a class="footer__link" href="gastgeber-liste.html" title="Gastgeber">Gastgeberliste</a>
           </li>
-          <li>
-            <a href="#" title="Panoramatour">Panoramatour</a>
+          <li class="footer__item">
+            <a class="footer__link" href="https://pano.berchtesgaden360.de/" title="Panoramatour"
+              target="_blank">Panoramatour</a>
           </li>
-          <li>
-            <a href="#" title="FAQ">FAQ</a>
+          <li class="footer__item">
+            <a class="footer__link" href="faq-liste.html" title="FAQ">FAQ</a>
           </li>
-          <li>
-            <a href="#" title="Kontakt">Kontakt</a>
+          <li class="footer__item">
+            <a class="footer__link" href="kontakt.html" title="Kontakt">Kontakt</a>
           </li>
         </ul>
       </nav>
 
-      <h5 class="heading-5">Für Gastgeber</h5>
-      <nav class="footer__list">
-        <ul>
-          <li>
-            <a href="#" title="Anmelden">Anmelden</a>
+      <h5 class="footer__title">Für Gastgeber</h5>
+
+      <nav class="footer__nav">
+        <ul class="footer__items">
+          <li class="footer__item">
+            <a class="footer__link" href="anmelden.html" title="Anmelden">Anmelden</a>
           </li>
         </ul>
       </nav>
 
-      <h5 class="heading-5">Unternehmen</h5>
-      <nav class="footer__list">
-        <ul>
-          <li>
-            <a href="#" title="AGB">AGB</a>
+      <h5 class="footer__title">Unternehmen</h5>
+
+      <nav class="footer__items">
+        <ul class="footer__items">
+          <li class="footer__item">
+            <a class="footer__link" href="agb.html" title="AGB">AGB</a>
           </li>
-          <li>
-            <a href="#" title="Impressum">Impressum</a>
+          <li class="footer__item">
+            <a class="footer__link" href="impressum.html" title="Impressum">Impressum</a>
           </li>
-          <li>
-            <a href="#" title="Datenschutz">Datenschutz</a>
+          <li class="footer__item">
+            <a class="footer__link" href="datenschutz.html" title="Datenschutz">Datenschutz</a>
           </li>
-          <li>
-            <a href="#" title="Über uns">Über uns</a>
+          <li class="footer__item">
+            <a class="footer__link" href="ueber-uns.html" title="Über uns">Über uns</a>
           </li>
         </ul>
       </nav>
     </div>
-    <a href="index.html" class="footer__partner" title="Berchtesgaden">Berchtesgaden</a>
+    
+    <a class="footer__partner" href="index.html" title="Berchtesgaden"></a>
   </footer>
 </body>
 
