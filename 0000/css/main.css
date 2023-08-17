@@ -1032,212 +1032,6 @@ ul {
   place-self: center;
 }
 
-.cal__container {
-  display: grid;
-  grid-auto-flow: column;
-  grid-template-columns: auto 1fr;
-}
-.cal__legend {
-  display: grid;
-  grid-gap: 2.2rem;
-  align-content: start;
-  padding: 1rem 1rem 0;
-  text-transform: uppercase;
-  background-color: #aaaaaa;
-  font-family: "Nunito Sans", sans-serif;
-  font-size: 1.6rem;
-  font-weight: 700;
-  line-height: 1;
-  hyphens: inherit;
-  color: hsl(0, 0%, 28%);
-}
-.cal__descriptions {
-  display: grid;
-  grid-gap: 0.5rem;
-}
-.cal__description {
-  display: grid;
-  grid-template-columns: repeat(2, max-content);
-  align-items: center;
-  padding-right: 0.1rem;
-  grid-gap: 1rem;
-}
-.cal__box-available {
-  width: 1.5rem;
-  height: 2rem;
-  background: hsl(75, 62%, 37%);
-}
-.cal__box-occupied {
-  width: 1.5rem;
-  height: 2rem;
-  background: hsl(14, 95%, 42%);
-}
-.cal__accomodations {
-  display: grid;
-  grid-template-columns: max-content;
-}
-.cal__accommodation {
-  font-family: "Nunito Sans", sans-serif;
-  font-size: inherit;
-  font-weight: 600;
-  line-height: inherit;
-  hyphens: inherit;
-  color: hsl(209, 100%, 40%);
-  display: inline-block;
-  grid-template-columns: max-content auto;
-  justify-content: initial;
-  display: grid;
-  align-items: center;
-  justify-items: start;
-  grid-gap: 1rem;
-  padding: 0.8rem 0;
-}
-.cal__accommodation:link, .cal__accommodation:visited {
-  text-decoration: none;
-  transition: color 0.2s ease-in-out;
-}
-.cal__accommodation:hover, .cal__accommodation:focus {
-  cursor: pointer;
-  text-decoration-line: underline;
-}
-.cal__accommodation:active {
-  text-decoration: none;
-}
-.cal__accommodation::before {
-  content: "\f07a";
-  font-size: 1.6rem;
-  color: inherit;
-  display: inline-block;
-  font-family: "icomoon";
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  speak: none;
-  text-transform: none;
-  line-height: 1;
-  text-rendering: geometricPrecision;
-}
-.cal__accommodation:hover {
-  text-decoration: none;
-  font-weight: 800;
-}
-.cal__items {
-  display: grid;
-  grid-auto-flow: column;
-  grid-gap: 0.5rem;
-  place-content: start;
-  overflow-x: scroll;
-}
-.cal__item {
-  display: grid;
-  align-content: start;
-}
-.cal__month {
-  display: block;
-}
-.cal__title {
-  font-family: "Nunito Sans", sans-serif;
-  font-size: inherit;
-  font-weight: 700;
-  line-height: 1;
-  hyphens: inherit;
-  color: hsl(0, 0%, 28%);
-  background-color: #aaaaaa;
-  padding: 1rem;
-}
-.cal__title:not(:empty) {
-  grid-template-columns: max-content auto;
-  justify-content: initial;
-  display: grid;
-  align-items: center;
-  justify-items: start;
-  grid-gap: 1rem;
-  padding-left: 1rem;
-}
-.cal__title:not(:empty)::before {
-  content: "\f073";
-  font-size: 1.7rem;
-  color: inherit;
-  display: inline-block;
-  font-family: "icomoon";
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  speak: none;
-  text-transform: none;
-  line-height: 1;
-  text-rendering: geometricPrecision;
-}
-.cal__days {
-  display: grid;
-  grid-auto-flow: column;
-  grid-gap: 0.2rem;
-}
-.cal__days > th {
-  display: grid;
-  align-items: center;
-  text-align: center;
-  width: 3rem;
-  padding: 0.3rem;
-  font-family: "Nunito Sans", sans-serif;
-  font-size: 1.6rem;
-  font-weight: 700;
-  line-height: 1;
-  hyphens: inherit;
-  color: hsl(0, 0%, 100%);
-  background-color: hsl(0, 0%, 28%);
-}
-.cal__status {
-  display: grid;
-  grid-auto-flow: column;
-  grid-gap: 0.2rem;
-  margin-top: 0.2rem;
-}
-.cal__status td {
-  aspect-ratio: 1/1;
-  pointer-events: none;
-}
-.cal__past {
-  background-color: #989898;
-}
-.cal__available {
-  background-color: hsl(75, 62%, 37%);
-  transition: background-color 0.2s ease-in-out;
-}
-.cal__available:hover {
-  background: hsl(209, 100%, 40%);
-  cursor: pointer;
-}
-.cal__available-disabled {
-  background-color: rgba(124, 153, 36, 0.5);
-  transition: background-color 0.2s ease-in-out;
-}
-.cal__available-disabled:hover {
-  background-color: rgba(0, 105, 204, 0.5);
-}
-.cal__occupied {
-  background-color: hsl(14, 95%, 42%);
-}
-.cal__arrival {
-  background: linear-gradient(135deg, hsl(75, 62%, 37%) 50%, hsl(14, 95%, 42%) 50%);
-}
-.cal__departure {
-  background: linear-gradient(135deg, hsl(14, 95%, 42%) 50%, hsl(75, 62%, 37%) 50%);
-}
-.cal__departure:hover {
-  background: hsl(209, 100%, 40%);
-  cursor: pointer;
-}
-.cal__change {
-  background: linear-gradient(135deg, hsl(14, 95%, 42%) 48%, hsl(0, 0%, 100%) 48%, hsl(0, 0%, 100%) 52%, hsl(14, 95%, 42%) 52%);
-}
-.cal__marked {
-  background-color: hsl(209, 100%, 40%);
-}
-.cal__marked-disabled {
-  background-color: rgba(0, 105, 204, 0.5);
-}
-
 .cal1, .cal1--modal-on, .cal1--modal-off {
   pointer-events: none;
 }
@@ -1364,6 +1158,211 @@ ul {
   background-color: hsl(209, 100%, 40%);
 }
 .cal1__marked-disabled {
+  background-color: rgba(0, 105, 204, 0.5);
+}
+
+.cal2__container {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: auto 1fr;
+}
+.cal2__legend {
+  display: grid;
+  grid-gap: 2.2rem;
+  align-content: start;
+  padding: 1rem 1rem 0;
+  text-transform: uppercase;
+  background-color: #aaaaaa;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1;
+  hyphens: inherit;
+  color: hsl(0, 0%, 28%);
+}
+.cal2__descriptions {
+  display: grid;
+  grid-gap: 0.5rem;
+  padding-right: 0.1rem;
+}
+.cal2__description {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  align-items: center;
+  grid-gap: 1rem;
+}
+.cal2__box-available {
+  width: 1.5rem;
+  height: 2rem;
+  background: hsl(75, 62%, 37%);
+}
+.cal2__box-occupied {
+  width: 1.5rem;
+  height: 2rem;
+  background: hsl(14, 95%, 42%);
+}
+.cal2__accomodations {
+  display: grid;
+  grid-template-columns: max-content;
+}
+.cal2__accommodation {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: inherit;
+  font-weight: 600;
+  line-height: inherit;
+  hyphens: inherit;
+  color: hsl(209, 100%, 40%);
+  display: inline-block;
+  grid-template-columns: max-content auto;
+  justify-content: initial;
+  display: grid;
+  align-items: center;
+  justify-items: start;
+  grid-gap: 1rem;
+  padding: 0.8rem 0;
+}
+.cal2__accommodation:link, .cal2__accommodation:visited {
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+.cal2__accommodation:hover, .cal2__accommodation:focus {
+  cursor: pointer;
+  text-decoration-line: underline;
+}
+.cal2__accommodation:active {
+  text-decoration: none;
+}
+.cal2__accommodation::before {
+  content: "\f07a";
+  font-size: 1.6rem;
+  color: inherit;
+  display: inline-block;
+  font-family: "icomoon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  speak: none;
+  text-transform: none;
+  line-height: 1;
+  text-rendering: geometricPrecision;
+}
+.cal2__accommodation:hover {
+  text-decoration: none;
+  font-weight: 800;
+}
+.cal2__items {
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 0.5rem;
+  place-content: start;
+  overflow-x: scroll;
+}
+.cal2__item {
+  display: grid;
+  align-content: start;
+}
+.cal2__month {
+  display: block;
+}
+.cal2__title {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: inherit;
+  font-weight: 700;
+  line-height: 1;
+  hyphens: inherit;
+  color: hsl(0, 0%, 28%);
+  background-color: #aaaaaa;
+  padding: 1rem;
+}
+.cal2__title:not(:empty) {
+  grid-template-columns: max-content auto;
+  justify-content: initial;
+  display: grid;
+  align-items: center;
+  justify-items: start;
+  grid-gap: 1rem;
+  padding-left: 1rem;
+}
+.cal2__title:not(:empty)::before {
+  content: "\f073";
+  font-size: 1.7rem;
+  color: inherit;
+  display: inline-block;
+  font-family: "icomoon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  speak: none;
+  text-transform: none;
+  line-height: 1;
+  text-rendering: geometricPrecision;
+}
+.cal2__days {
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 0.2rem;
+}
+.cal2__days > th {
+  display: grid;
+  place-content: center;
+  width: 3rem;
+  padding: 0.3rem;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1;
+  hyphens: inherit;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(0, 0%, 28%);
+}
+.cal2__status {
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 0.2rem;
+  margin-top: 0.2rem;
+}
+.cal2__status td {
+  aspect-ratio: 1/1;
+  pointer-events: none;
+}
+.cal2__past {
+  background-color: #989898;
+}
+.cal2__available {
+  background-color: hsl(75, 62%, 37%);
+  transition: background-color 0.2s ease-in-out;
+}
+.cal2__available:hover {
+  background: hsl(209, 100%, 40%);
+  cursor: pointer;
+}
+.cal2__available-disabled {
+  background-color: rgba(124, 153, 36, 0.5);
+  transition: background-color 0.2s ease-in-out;
+}
+.cal2__available-disabled:hover {
+  background-color: rgba(0, 105, 204, 0.5);
+}
+.cal2__occupied {
+  background-color: hsl(14, 95%, 42%);
+}
+.cal2__arrival {
+  background: linear-gradient(135deg, hsl(75, 62%, 37%) 50%, hsl(14, 95%, 42%) 50%);
+}
+.cal2__departure {
+  background: linear-gradient(135deg, hsl(14, 95%, 42%) 50%, hsl(75, 62%, 37%) 50%);
+}
+.cal2__departure:hover {
+  background: hsl(209, 100%, 40%);
+  cursor: pointer;
+}
+.cal2__change {
+  background: linear-gradient(135deg, hsl(14, 95%, 42%) 48%, hsl(0, 0%, 100%) 48%, hsl(0, 0%, 100%) 52%, hsl(14, 95%, 42%) 52%);
+}
+.cal2__marked {
+  background-color: hsl(209, 100%, 40%);
+}
+.cal2__marked-disabled {
   background-color: rgba(0, 105, 204, 0.5);
 }
 
@@ -2788,7 +2787,7 @@ ul {
 .pricelist__accommodation {
   grid-area: accommodation;
   display: grid;
-  grid-template-columns: 30vw auto;
+  grid-template-columns: minmax(7rem, 30vw) auto;
   justify-content: initial;
   align-items: start;
   justify-items: start;
@@ -2803,7 +2802,7 @@ ul {
 .pricelist__season {
   grid-area: season;
   display: grid;
-  grid-template-columns: 30vw auto;
+  grid-template-columns: minmax(7rem, 30vw) auto;
   justify-content: initial;
   align-items: start;
   justify-items: start;
@@ -2838,7 +2837,7 @@ ul {
 .pricelist__start {
   grid-area: start;
   display: grid;
-  grid-template-columns: 30vw auto;
+  grid-template-columns: minmax(7rem, 30vw) auto;
   justify-content: initial;
   align-items: start;
   justify-items: start;
@@ -2853,7 +2852,7 @@ ul {
 .pricelist__end {
   grid-area: end;
   display: grid;
-  grid-template-columns: 30vw auto;
+  grid-template-columns: minmax(7rem, 30vw) auto;
   justify-content: initial;
   align-items: start;
   justify-items: start;
@@ -2868,7 +2867,7 @@ ul {
 .pricelist__min-stay {
   grid-area: min-stay;
   display: grid;
-  grid-template-columns: 30vw auto;
+  grid-template-columns: minmax(7rem, 30vw) auto;
   justify-content: initial;
   align-items: start;
   justify-items: start;
@@ -2883,7 +2882,7 @@ ul {
 .pricelist__booking-gap {
   grid-area: booking-gap;
   display: grid;
-  grid-template-columns: 30vw auto;
+  grid-template-columns: minmax(7rem, 30vw) auto;
   justify-content: initial;
   align-items: start;
   justify-items: start;
@@ -2898,7 +2897,7 @@ ul {
 .pricelist__persons {
   grid-area: persons;
   display: grid;
-  grid-template-columns: 30vw auto;
+  grid-template-columns: minmax(7rem, 30vw) auto;
   justify-content: initial;
   align-items: start;
   justify-items: start;
@@ -2913,7 +2912,7 @@ ul {
 .pricelist__price {
   grid-area: price;
   display: grid;
-  grid-template-columns: 30vw auto;
+  grid-template-columns: minmax(7rem, 30vw) auto;
   justify-content: initial;
   align-items: start;
   justify-items: start;
@@ -2928,7 +2927,7 @@ ul {
 .pricelist__surcharge {
   grid-area: surcharge;
   display: grid;
-  grid-template-columns: 30vw auto;
+  grid-template-columns: minmax(7rem, 30vw) auto;
   justify-content: initial;
   align-items: start;
   justify-items: start;
@@ -2943,7 +2942,7 @@ ul {
 .pricelist__arrival-blocked {
   grid-area: arrival-blocked;
   display: grid;
-  grid-template-columns: 30vw auto;
+  grid-template-columns: minmax(7rem, 30vw) auto;
   justify-content: initial;
   align-items: start;
   justify-items: start;
@@ -2958,7 +2957,7 @@ ul {
 .pricelist__departure-blocked {
   grid-area: departure-blocked;
   display: grid;
-  grid-template-columns: 30vw auto;
+  grid-template-columns: minmax(7rem, 30vw) auto;
   justify-content: initial;
   align-items: start;
   justify-items: start;
