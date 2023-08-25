@@ -1545,7 +1545,7 @@ ul {
   grid-column-gap: 1rem;
 }
 
-.form, .form--filter, .form--multicolumn {
+.form, .form--hero, .form--filter, .form--multicolumn {
   display: grid;
   grid-template-columns: auto;
   grid-gap: 2rem;
@@ -1563,6 +1563,24 @@ ul {
 @media only screen and (min-width: 68.75em) {
   .form--filter {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+.form--hero {
+  grid-column: center-start/center-end;
+  grid-row: 3;
+  background-color: hsl(0, 0%, 100%);
+  padding: 2rem;
+  border-radius: 0.5rem;
+  justify-self: center;
+}
+@media only screen and (min-width: 50em) {
+  .form--hero {
+    grid-template-columns: repeat(2, auto);
+  }
+}
+@media only screen and (min-width: 87.5em) {
+  .form--hero {
+    grid-template-columns: auto auto 14rem 27rem;
   }
 }
 .form__period {
@@ -1887,7 +1905,7 @@ ul {
   display: grid;
   height: calc(100vh - 14.5rem);
   grid-template-columns: [full-start] 1fr [center-start] auto [center-end] 1fr [full-end];
-  grid-template-rows: 2vh 1fr auto 1fr;
+  grid-template-rows: 2vh 1fr auto 2vh;
   grid-gap: 2rem;
   background-color: hsl(209, 100%, 40%);
   min-height: 47rem;
@@ -1957,24 +1975,6 @@ ul {
 @media only screen and (min-width: 37.5em) {
   .hero__title--sub {
     font-size: 3.24rem;
-  }
-}
-.hero__form {
-  grid-column: center-start/center-end;
-  grid-row: 3;
-  background-color: hsl(0, 0%, 100%);
-  padding: 2rem;
-  border-radius: 0.5rem;
-  justify-self: center;
-}
-@media only screen and (min-width: 50em) {
-  .hero__form {
-    grid-template-columns: repeat(2, auto);
-  }
-}
-@media only screen and (min-width: 87.5em) {
-  .hero__form {
-    grid-template-columns: auto auto 14rem 27rem;
   }
 }
 .hero__submit {

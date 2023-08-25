@@ -54,8 +54,8 @@
           <strong class="hero__title--main"> Berchtesgaden&nbsp;360 </strong>
           <span class="hero__title--sub"> Ferienwohnungen & Zimmer </span>
         </h1>
-        <form action="#" class="hero__form form">
-          <div class="form__group">
+        <form action="#" class="form--hero">
+          <div class="form__group" onclick="modalOn()">
             <input
               id="arrival"
               class="form__input"
@@ -66,7 +66,7 @@
             />
             <label class="form__label" for="arrival">Früheste Anreise</label>
 
-            <div class="cal1--modal-off">
+            <div id="cal1" class="cal1--modal-off" onclick="modalOff()">
               <div class="cal1__container">
                 <div class="cal1__header">
                   <div class="btn--previous btn--disabled"></div>
@@ -615,6 +615,18 @@
           </figure>
         </div>
       </section>
+
+      <script>
+        function modalOn() {
+          var x = document.getElementById("cal1");
+          x.classList.replace("cal1--modal-off", "cal1--modal-on");
+        }
+
+        function modalOff() {
+          var x = document.getElementById("cal1");
+          x.classList.replace("cal1--modal-on", "cal1--modal-off");
+        }
+      </script>
     </main>
 
     <footer class="footer">
