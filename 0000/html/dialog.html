@@ -1,0 +1,30 @@
+<head>
+  <style>
+    dialog::backdrop {
+      background-color: blue;
+    }
+  </style>
+</head>
+<body>
+  <button data-open-modal>Open</button>
+
+  <dialog data-modal>
+    <div>This is a modal</div>
+    <button data-close-modal>Close</button>
+  </dialog>
+
+  <script>
+    const openButton = document.querySelector("[data-open-modal]");
+    const closeButton = document.querySelector("[data-close-modal]");
+    const modal = document.querySelector("[data-modal]");
+
+    openButton.addEventListener("click", () => {
+      modal.showModal();
+    });
+
+    closeButton.addEventListener("click", () => {
+      modal.close();
+    });
+    
+  </script>
+</body>

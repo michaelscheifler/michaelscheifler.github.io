@@ -45,16 +45,10 @@
 
       <form action="#" class="form--filter mb">
         <div class="form__group">
-          <input
-            id="arrival"
-            class="form__input"
-            type="datepicker"
-            name="arrival"
-            placeholder="&nbsp;"
-            value="01.01.2023"
-          />
+          <input id="arrival" class="form__input" type="datepicker" name="arrival" placeholder="&nbsp;"
+            value="01.01.2023" />
           <label class="form__label" for="arrival">Früheste Anreise</label>
-  
+
           <div class="cal1--modal-off">
             <div class="cal1__container">
               <div class="cal1__header">
@@ -88,7 +82,7 @@
                       <td class="cal1__empty"></td>
                       <td class="cal1__past">1</td>
                     </tr>
-  
+
                     <tr class="cal1__status">
                       <td class="cal1__past">2</td>
                       <td class="cal1__past">3</td>
@@ -98,7 +92,7 @@
                       <td class="cal1__available">7</td>
                       <td class="cal1__available">8</td>
                     </tr>
-  
+
                     <tr class="cal1__status">
                       <td class="cal1__available">9</td>
                       <td class="cal1__available">10</td>
@@ -108,7 +102,7 @@
                       <td class="cal1__available">14</td>
                       <td class="cal1__available">15</td>
                     </tr>
-  
+
                     <tr class="cal1__status">
                       <td class="cal1__available">16</td>
                       <td class="cal1__available">17</td>
@@ -118,7 +112,7 @@
                       <td class="cal1__available">21</td>
                       <td class="cal1__available">22</td>
                     </tr>
-  
+
                     <tr class="cal1__status">
                       <td class="cal1__available">23</td>
                       <td class="cal1__available">24</td>
@@ -128,7 +122,7 @@
                       <td class="cal1__available">28</td>
                       <td class="cal1__available">29</td>
                     </tr>
-  
+
                     <tr class="cal1__status">
                       <td class="cal1__available">30</td>
                       <td class="cal1__available">31</td>
@@ -143,18 +137,12 @@
             </div>
           </div>
         </div>
-  
+
         <div class="form__group">
-          <input
-            id="departure"
-            class="form__input"
-            type="datepicker"
-            name="departure"
-            placeholder="&nbsp;"
-            value="10.01.2023"
-          />
+          <input id="departure" class="form__input" type="datepicker" name="departure" placeholder="&nbsp;"
+            value="10.01.2023" />
           <label class="form__label" for="departure">Späteste Abreise</label>
-  
+
           <div class="cal1--modal-off">
             <div class="cal1__container">
               <div class="cal1__header">
@@ -188,7 +176,7 @@
                       <td class="cal1__empty"></td>
                       <td class="cal1__past">1</td>
                     </tr>
-  
+
                     <tr class="cal1__status">
                       <td class="cal1__past">2</td>
                       <td class="cal1__past">3</td>
@@ -198,7 +186,7 @@
                       <td class="cal1__available">7</td>
                       <td class="cal1__available">8</td>
                     </tr>
-  
+
                     <tr class="cal1__status">
                       <td class="cal1__available">9</td>
                       <td class="cal1__available">10</td>
@@ -208,7 +196,7 @@
                       <td class="cal1__available">14</td>
                       <td class="cal1__available">15</td>
                     </tr>
-  
+
                     <tr class="cal1__status">
                       <td class="cal1__available">16</td>
                       <td class="cal1__available">17</td>
@@ -218,7 +206,7 @@
                       <td class="cal1__available">21</td>
                       <td class="cal1__available">22</td>
                     </tr>
-  
+
                     <tr class="cal1__status">
                       <td class="cal1__available">23</td>
                       <td class="cal1__available">24</td>
@@ -228,7 +216,7 @@
                       <td class="cal1__available">28</td>
                       <td class="cal1__available">29</td>
                     </tr>
-  
+
                     <tr class="cal1__status">
                       <td class="cal1__available">30</td>
                       <td class="cal1__available">31</td>
@@ -243,7 +231,7 @@
             </div>
           </div>
         </div>
-  
+
         <div class="form__group--select">
           <select id="duration" class="form__input" name="duration">
             <option value="1">1 Nacht</option>
@@ -258,45 +246,28 @@
           </select>
           <label class="form__label" for="duration">Aufenthaltsdauer</label>
         </div>
-  
+
         <div class="form__group">
-          <input
-            id="person"
-            class="form__input"
-            name="person"
-            placeholder="&nbsp;"
-            value="1 Erwachsener · 2 Kinder · 0 Hunde"
-          />
+          <input id="person" class="form__input" name="person" placeholder="&nbsp;"
+            value="1 Erwachsener · 2 Kinder · 0 Hunde" />
           <label class="form__label" for="person">Reisende</label>
-  
+
           <div class="person--modal-off">
             <div class="person__container">
               <div class="person__group">
                 <label for="adults">Erwachsene</label>
                 <a class="btn--disabled" href="#">-</a>
-                <input
-                  class="person__quantity"
-                  id="adults"
-                  type="text"
-                  value="1"
-                  name="adults"
-                />
+                <input class="person__quantity" id="adults" type="text" value="1" name="adults" />
                 <a class="btn" href="#">+</a>
               </div>
-  
+
               <div class="person__group">
                 <label for="children">Kinder</label>
                 <a class="btn" href="#">-</a>
-                <input
-                  class="person__quantity"
-                  id="children"
-                  type="text"
-                  value="2"
-                  name="children"
-                />
+                <input class="person__quantity" id="children" type="text" value="2" name="children" />
                 <a class="btn" href="#">+</a>
               </div>
-  
+
               <div class="person__age">
                 <div class="form__group--select">
                   <select class="form__input" name="age">
@@ -320,7 +291,7 @@
                     <option value="17">17 Jahre alt</option>
                   </select>
                 </div>
-  
+
                 <div class="form__group--select">
                   <select class="form__input" name="age">
                     <option value="0">0 Jahre alt</option>
@@ -348,17 +319,11 @@
               <div class="person__group">
                 <label for="dogs">Hunde</label>
                 <a class="btn--disabled" href="#">-</a>
-                <input
-                  class="person__quantity"
-                  id="dogs"
-                  type="text"
-                  value="0"
-                  name="dogs"
-                />
+                <input class="person__quantity" id="dogs" type="text" value="0" name="dogs" />
                 <a class="btn" href="#">+</a>
               </div>
 
-  
+
               <a href="#" class="btn">Anwenden</a>
             </div>
           </div>
@@ -385,13 +350,13 @@
         </div>
 
 
-  
+
         <button type="submit" id="submit" class="btn--submit">Suchen</button>
       </form>
-  
+
       <div class="gallery__items">
 
-        <figure class="gallery__item">
+        <figure class="gallery__item--price">
           <span class="gallery__like"></span>
           <a class="gallery__img--link" href="unterkunft-detail.html" target="_self">
             <picture>
@@ -405,7 +370,21 @@
           </div>
         </figure>
 
-        <figure class="gallery__item">
+        <figure class="gallery__item--price">
+          <span class="gallery__like"></span>
+          <a class="gallery__img--link" href="unterkunft-detail.html" target="_self">
+            <picture>
+              <img src="../img/02560405.jpg" alt="Gerstreitlehen" />
+            </picture>
+          </a>
+          <figcaption class="gallery__title">Lange Überschrift, die zwingend in mehr als einer Zeile steht</figcaption>
+          <div class="gallery__price">
+            <span class="gallery__pernight">100 € Nacht · </span>
+            <span class="gallery__total">Gesamt 700 €</span>
+          </div>
+        </figure>
+
+        <figure class="gallery__item--price">
           <span class="gallery__like"></span>
           <a class="gallery__img--link" href="unterkunft-detail.html" target="_self">
             <picture>
@@ -419,7 +398,7 @@
           </div>
         </figure>
 
-        <figure class="gallery__item">
+        <figure class="gallery__item--price">
           <span class="gallery__like"></span>
           <a class="gallery__img--link" href="unterkunft-detail.html" target="_self">
             <picture>
@@ -433,6 +412,33 @@
           </div>
         </figure>
 
+        <figure class="gallery__item--price">
+          <span class="gallery__like"></span>
+          <a class="gallery__img--link" href="unterkunft-detail.html" target="_self">
+            <picture>
+              <img src="../img/02560405.jpg" alt="Gerstreitlehen" />
+            </picture>
+          </a>
+          <figcaption class="gallery__title">Gerstreitlehen-Fewo1</figcaption>
+          <div class="gallery__price">
+            <span class="gallery__pernight">100 € Nacht · </span>
+            <span class="gallery__total">Gesamt 700 €</span>
+          </div>
+        </figure>
+
+        <figure class="gallery__item--price">
+          <span class="gallery__like"></span>
+          <a class="gallery__img--link" href="unterkunft-detail.html" target="_self">
+            <picture>
+              <img src="../img/02560405.jpg" alt="Gerstreitlehen" />
+            </picture>
+          </a>
+          <figcaption class="gallery__title">Gerstreitlehen-Fewo1</figcaption>
+          <div class="gallery__price">
+            <span class="gallery__pernight">100 € Nacht · </span>
+            <span class="gallery__total">Gesamt 700 €</span>
+          </div>
+        </figure>
 
       </div>
     </section>
@@ -489,7 +495,7 @@
         </ul>
       </nav>
     </div>
-    
+
     <a class="footer__partner" href="index.html" title="Berchtesgaden"></a>
   </footer>
 </body>

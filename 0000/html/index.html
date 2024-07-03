@@ -1,72 +1,64 @@
 <!DOCTYPE html>
 <html lang="de">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/main.css" />
-  </head>
 
-  <body>
-    <header class="header">
-      <div class="header__logo-box">
-        <a class="header__logo-link" href="index.html" title="Berchtesgaden">
-          <img
-            src="../img/berchtesgaden360.png"
-            alt="Berchtesgaden360"
-            class="header__logo"
-          />
-        </a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/main.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__logo-box">
+      <a class="header__logo-link" href="index.html" title="Berchtesgaden">
+        <img src="../img/berchtesgaden360.png" alt="Berchtesgaden360" class="header__logo" />
+      </a>
+    </div>
+    <div class="header__navigation">
+      <input class="header__toggle" type="checkbox" id="header__toggle" />
+      <label for="header__toggle" class="header__label">
+        <span class="header__span"></span>
+      </label>
+      <nav class="header__nav">
+        <ul class="header__items">
+          <li class="header__item">
+            <a href="gastgeber-liste.html"><span>Gastgeber</span></a>
+          </li>
+          <li class="header__item">
+            <a href="unterkunft-liste.html"><span>Unterkünfte</span></a>
+          </li>
+          <li class="header__item">
+            <a href="wunschliste.html"><span>Wunschliste</span></a>
+          </li>
+          <li class="header__item">
+            <a href="ausflugsziel-liste.html"><span>Ausflugsziele</span></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero__img">
+        <figure>
+          <picture>
+            <img src="../img/01391692.jpg" alt="Watzmann in Berchtesgaden" />
+          </picture>
+        </figure>
       </div>
-      <div class="header__navigation">
-        <input class="header__toggle" type="checkbox" id="header__toggle" />
-        <label for="header__toggle" class="header__label">
-          <span class="header__span"></span>
-        </label>
-        <nav class="header__nav">
-          <ul class="header__items">
-            <li class="header__item">
-              <a href="gastgeber-liste.html"><span>Gastgeber</span></a>
-            </li>
-            <li class="header__item">
-              <a href="unterkunft-liste.html"><span>Unterkünfte</span></a>
-            </li>
-            <li class="header__item">
-              <a href="wunschliste.html"><span>Wunschliste</span></a>
-            </li>
-            <li class="header__item">
-              <a href="ausflugsziel-liste.html"><span>Ausflugsziele</span></a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+      <h1 class="hero__title">
+        <strong class="hero__title--main"> Berchtesgaden&nbsp;360 </strong>
+        <span class="hero__title--sub"> Ferienwohnungen & Zimmer </span>
+      </h1>
+      <form action="#" class="form--hero">
+        <div class="form__group">
+          <input data-open-modal-arrival id="arrival" class="form__input" type="datepicker" name="arrival"
+            placeholder="&nbsp;" value="01.01.2023" />
+          <label class="form__label" for="arrival">Früheste Anreise</label>
 
-    <main>
-      <section class="hero">
-        <div class="hero__img">
-          <figure>
-            <picture>
-              <img src="../img/01391692.jpg" alt="Watzmann in Berchtesgaden" />
-            </picture>
-          </figure>
-        </div>
-        <h1 class="hero__title">
-          <strong class="hero__title--main"> Berchtesgaden&nbsp;360 </strong>
-          <span class="hero__title--sub"> Ferienwohnungen & Zimmer </span>
-        </h1>
-        <form action="#" class="form--hero">
-          <div class="form__group" onclick="modalOn()">
-            <input
-              id="arrival"
-              class="form__input"
-              type="datepicker"
-              name="arrival"
-              placeholder="&nbsp;"
-              value="01.01.2023"
-            />
-            <label class="form__label" for="arrival">Früheste Anreise</label>
-
-            <div id="cal1" class="cal1--modal-off" onclick="modalOff()">
+          <dialog data-modal-arrival>
+            <div id="cal1" class="cal1--modal-on">
               <div class="cal1__container">
                 <div class="cal1__header">
                   <div class="btn--previous btn--disabled"></div>
@@ -89,7 +81,7 @@
                         <th>So</th>
                       </tr>
                     </thead>
-                    <tbody>
+                    <tbody data-close-modal-arrival>
                       <tr class="cal1__status">
                         <td class="cal1__empty"></td>
                         <td class="cal1__empty"></td>
@@ -153,20 +145,16 @@
                 </div>
               </div>
             </div>
-          </div>
+          </dialog>
+        </div>
 
-          <div class="form__group">
-            <input
-              id="departure"
-              class="form__input"
-              type="datepicker"
-              name="departure"
-              placeholder="&nbsp;"
-              value="10.01.2023"
-            />
-            <label class="form__label" for="departure">Späteste Abreise</label>
+        <div class="form__group">
+          <input data-open-modal-departure id="departure" class="form__input" type="datepicker" name="departure"
+            placeholder="&nbsp;" value="10.01.2023" />
+          <label class="form__label" for="departure">Späteste Abreise</label>
 
-            <div class="cal1--modal-off">
+          <dialog data-modal-departure>
+            <div class="cal1--modal-on">
               <div class="cal1__container">
                 <div class="cal1__header">
                   <div class="btn--previous btn--disabled"></div>
@@ -189,7 +177,7 @@
                         <th>So</th>
                       </tr>
                     </thead>
-                    <tbody>
+                    <tbody data-close-modal-departure>
                       <tr class="cal1__status">
                         <td class="cal1__empty"></td>
                         <td class="cal1__empty"></td>
@@ -252,59 +240,43 @@
                   </table>
                 </div>
               </div>
-            </div>
-          </div>
+          </dialog>
+        </div>
 
-          <div class="form__group--select">
-            <select id="duration" class="form__input" name="duration">
-              <option value="1">1 Nacht</option>
-              <option value="2">2 Nächte</option>
-              <option value="3">3 Nächte</option>
-              <option value="3">4 Nächte</option>
-              <option value="3">5 Nächte</option>
-              <option value="3">6 Nächte</option>
-              <option value="3">7 Nächte</option>
-              <option value="3">8 Nächte</option>
-              <option value="3" selected>9 Nächte</option>
-            </select>
-            <label class="form__label" for="duration">Aufenthaltsdauer</label>
-          </div>
+        <div class="form__group--select">
+          <select id="duration" class="form__input" name="duration">
+            <option value="1">1 Nacht</option>
+            <option value="2">2 Nächte</option>
+            <option value="3">3 Nächte</option>
+            <option value="3">4 Nächte</option>
+            <option value="3">5 Nächte</option>
+            <option value="3">6 Nächte</option>
+            <option value="3">7 Nächte</option>
+            <option value="3">8 Nächte</option>
+            <option value="3" selected>9 Nächte</option>
+          </select>
+          <label class="form__label" for="duration">Aufenthaltsdauer</label>
+        </div>
 
-          <div class="form__group--large">
-            <input
-              id="person"
-              class="form__input"
-              name="person"
-              placeholder="&nbsp;"
-              value="1 Erwachsener · 2 Kinder"
-            />
-            <label class="form__label" for="person">Personen</label>
+        <div class="form__group--large">
+          <input data-open-modal-person id="person" class="form__input" name="person" placeholder="&nbsp;"
+            value="1 Erwachsener · 2 Kinder" />
+          <label class="form__label" for="person">Personen</label>
 
-            <div class="person--modal-off">
+          <dialog data-modal-person>
+            <div class="person--modal-on">
               <div class="person__container">
                 <div class="person__group">
                   <label for="adults">Erwachsene</label>
                   <a class="btn--disabled" href="#">-</a>
-                  <input
-                    class="person__quantity"
-                    id="adults"
-                    type="text"
-                    value="1"
-                    name="adults"
-                  />
+                  <input class="person__quantity" id="adults" type="text" value="1" name="adults" />
                   <a class="btn" href="#">+</a>
                 </div>
 
                 <div class="person__group">
                   <label for="children">Kinder</label>
                   <a class="btn" href="#">-</a>
-                  <input
-                    class="person__quantity"
-                    id="children"
-                    type="text"
-                    value="2"
-                    name="children"
-                  />
+                  <input class="person__quantity" id="children" type="text" value="2" name="children" />
                   <a class="btn" href="#">+</a>
                 </div>
 
@@ -356,355 +328,304 @@
                   </div>
                 </div>
 
-                <a href="#" class="btn">Anwenden</a>
+                <a href="#" data-close-modal-person class="btn">Anwenden</a>
               </div>
             </div>
-          </div>
-
-          <button type="submit" id="submit" class="btn--submit">Suchen</button>
-        </form>
-      </section>
-
-      <section class="usp cc mb-lg">
-        <h2 class="usp__title--host">Top Gastgeber</h2>
-        <p class="usp__text">
-          Nur 360 Gastgeber, die mit herrlicher Lage, malerischer Umgebung und
-          fantastischen Ausblick aufwarten können, werden in das Angebot
-          aufgenommen.
-        </p>
-
-        <h2 class="usp__title--price">Bestpreisgarantie</h2>
-        <div class="usp__text">
-          <ul class="usp__items">
-            <li class="usp__item">Keine Vermittlungsprovision</li>
-            <li class="usp__item">Mietvertrag direkt mit dem Gastgeber</li>
-            <li class="usp__item">Aktuelle Belegungspläne</li>
-            <li class="usp__item">Unterkunft komfortabel online buchen</li>
-          </ul>
+          </dialog>
         </div>
 
-        <h2 class="usp__title--pano">Panoramaflug</h2>
-        <p class="usp__text">
-          Entdecken Sie Berchtesgaden mit seinen Gastgebern und Ausflugszielen
-          aus einer völlig neuen Perspektive.
-        </p>
-      </section>
+        <button type="submit" id="submit" class="btn--submit">Suchen</button>
+      </form>
+    </section>
 
-      <section class="intro cc mb-lg">
-        <figure class="intro__img">
-          <picture>
-            <img src="../img/01770618.jpg" alt="Königssee" />
-          </picture>
-        </figure>
-        <div class="intro__communities">
-          <h3 class="mb-sm">Traumhafter Urlaub hoch 5</h3>
-          <p class="intro__text mb-sm text">
-            Zum Berchtesgadener Talkessel gehören fünf Gemeinden.
-            <a title="Ramsau" href="ausflugsziel/ramsau/">Ramsau</a>, das
-            eigenwillige und traditionsbewusste Dorf, ist ein landschaftliches
-            Sahnestück. Sonnig, sportlich und hochalpin geht es in
-            <a
-              title="Schönau am Königssee"
-              href="ausflugsziel/schoenau-am-koenigssee/"
-              >Schönau am Königssee</a
-            >
-            zu.
-            <a title="Bischofswiesen" href="ausflugsziel/bischofswiesen/"
-              >Bischofswiesen</a
-            >
-            erstreckt sich vom entlegenen Loipl bis zur wunderhübschen Stanggaß.
-            Auf halber Wegstrecke zwischen Berchtesgaden und Salzburg liegt
-            <a title="Marktschellenberg" href="ausflugsziel/marktschellenberg/"
-              >Marktschellenberg</a
-            >. Zwei hübsche Kirchen und der Untersberg dominieren das Dörfchen.
-            Nicht zuletzt sei Ihnen der Markt Berchtesgaden mitsamt Stiftskirche
-            ans Urlauber-Herz gelegt.
-          </p>
-        </div>
-        <figure class="intro__img">
-          <picture>
-            <img src="../img/00011613-b.jpg" alt="Watzmann" />
-          </picture>
-        </figure>
-        <div class="intro__overview">
-          <h3 class="mb-sm">Verschaffen Sie sich einen Überblick</h3>
-          <p class="intro__text mb-sm text">
-            Das Berchtesgadener Land braucht in Bayern gewiss keinen Vergleich
-            zu scheuen. Wie schön ist es da, dass Sie sich mit einem
-            Pa­no­ra­ma­flug die Urlaubsvorfreude versüßen können! So
-            realistisch als wären sie greifbar, schweben Sie über die Berge um
-            den Königssee. Entdecken Sie schon vor dem Reiseantritt die
-            Berchtesgadener Berge, bestaunen Sie via Mausklick den Nationalpark
-            und finden Sie die Ferienwohnung oder das Zimmer Ihrer Wahl.
-          </p>
-          <a href="https://pano.berchtesgaden360.de/" class="btn"
-            >Tour starten</a
-          >
-        </div>
-      </section>
+    <section class="usp cc mb-lg">
+      <h2 class="usp__title--host">Top Gastgeber</h2>
+      <p class="usp__text">
+        Nur 360 Gastgeber, die mit herrlicher Lage, malerischer Umgebung und
+        fantastischen Ausblick aufwarten können, werden in das Angebot
+        aufgenommen.
+      </p>
 
-      <section class="gallery cc">
-        <h3 class="mb-sm">Eine kleine Vorauswahl unserer Gastgeber</h3>
-        <div class="gallery__items">
-          <figure class="gallery__item">
-            <span class="gallery__like"></span>
-            <a
-              class="gallery__img--link"
-              href="gastgeber-detail.html"
-              target="_self"
-            >
-              <picture>
-                <img src="../img/01450405.jpg" alt="Gerstreitlehen" />
-              </picture>
-            </a>
-            <figcaption class="gallery__title">Gerstreitlehen</figcaption>
-          </figure>
-
-          <figure class="gallery__item">
-            <span class="gallery__like--active"></span>
-            <a
-              class="gallery__img--link"
-              href="gastgeber-detail.html"
-              target="_self"
-            >
-              <picture>
-                <img src="../img/01450405.jpg" alt="Gerstreitlehen" />
-              </picture>
-            </a>
-            <figcaption class="gallery__title">Gerstreitlehen</figcaption>
-          </figure>
-
-          <figure class="gallery__item">
-            <span class="gallery__like"></span>
-            <a
-              class="gallery__img--link"
-              href="gastgeber-detail.html"
-              target="_self"
-            >
-              <picture>
-                <img src="../img/01450405.jpg" alt="Gerstreitlehen" />
-              </picture>
-            </a>
-            <figcaption class="gallery__title">Gerstreitlehen</figcaption>
-          </figure>
-
-          <figure class="gallery__item">
-            <span class="gallery__like--active"></span>
-            <a
-              class="gallery__img--link"
-              href="gastgeber-detail.html"
-              target="_self"
-            >
-              <picture>
-                <img src="../img/01450405.jpg" alt="Gerstreitlehen" />
-              </picture>
-            </a>
-            <figcaption class="gallery__title">Gerstreitlehen</figcaption>
-          </figure>
-
-          <figure class="gallery__item">
-            <span class="gallery__like"></span>
-            <a
-              class="gallery__img--link"
-              href="gastgeber-detail.html"
-              target="_self"
-            >
-              <picture>
-                <img src="../img/01450405.jpg" alt="Gerstreitlehen" />
-              </picture>
-            </a>
-            <figcaption class="gallery__title">Gerstreitlehen</figcaption>
-          </figure>
-
-          <figure class="gallery__item">
-            <span class="gallery__like--active"></span>
-            <a
-              class="gallery__img--link"
-              href="gastgeber-detail.html"
-              target="_self"
-            >
-              <picture>
-                <img src="../img/01450405.jpg" alt="Gerstreitlehen" />
-              </picture>
-            </a>
-            <figcaption class="gallery__title">Gerstreitlehen</figcaption>
-          </figure>
-
-          <figure class="gallery__item">
-            <span class="gallery__like"></span>
-            <a
-              class="gallery__img--link"
-              href="gastgeber-detail.html"
-              target="_self"
-            >
-              <picture>
-                <img src="../img/01450405.jpg" alt="Gerstreitlehen" />
-              </picture>
-            </a>
-            <figcaption class="gallery__title">Gerstreitlehen</figcaption>
-          </figure>
-
-          <figure class="gallery__item">
-            <span class="gallery__like--active"></span>
-            <a
-              class="gallery__img--link"
-              href="gastgeber-detail.html"
-              target="_self"
-            >
-              <picture>
-                <img src="../img/01450405.jpg" alt="Gerstreitlehen" />
-              </picture>
-            </a>
-            <figcaption class="gallery__title">Gerstreitlehen</figcaption>
-          </figure>
-
-          <figure class="gallery__item">
-            <span class="gallery__like"></span>
-            <a
-              class="gallery__img--link"
-              href="gastgeber-detail.html"
-              target="_self"
-            >
-              <picture>
-                <img src="../img/01450405.jpg" alt="Gerstreitlehen" />
-              </picture>
-            </a>
-            <figcaption class="gallery__title">Gerstreitlehen</figcaption>
-          </figure>
-
-          <figure class="gallery__item">
-            <span class="gallery__like--active"></span>
-            <a
-              class="gallery__img--link"
-              href="gastgeber-detail.html"
-              target="_self"
-            >
-              <picture>
-                <img src="../img/01450405.jpg" alt="Gerstreitlehen" />
-              </picture>
-            </a>
-            <figcaption class="gallery__title">Gerstreitlehen</figcaption>
-          </figure>
-
-          <figure class="gallery__item">
-            <span class="gallery__like"></span>
-            <a
-              class="gallery__img--link"
-              href="gastgeber-detail.html"
-              target="_self"
-            >
-              <picture>
-                <img src="../img/01450405.jpg" alt="Gerstreitlehen" />
-              </picture>
-            </a>
-            <figcaption class="gallery__title">Gerstreitlehen</figcaption>
-          </figure>
-
-          <figure class="gallery__item">
-            <span class="gallery__like--active"></span>
-            <a
-              class="gallery__img--link"
-              href="gastgeber-detail.html"
-              target="_self"
-            >
-              <picture>
-                <img src="../img/01450405.jpg" alt="Gerstreitlehen" />
-              </picture>
-            </a>
-            <figcaption class="gallery__title">Gerstreitlehen</figcaption>
-          </figure>
-        </div>
-      </section>
-
-      <script>
-        function modalOn() {
-          var x = document.getElementById("cal1");
-          x.classList.replace("cal1--modal-off", "cal1--modal-on");
-        }
-
-        function modalOff() {
-          var x = document.getElementById("cal1");
-          x.classList.replace("cal1--modal-on", "cal1--modal-off");
-        }
-      </script>
-    </main>
-
-    <footer class="footer">
-      <div class="footer__navigation">
-        <h5 class="footer__title">Für Urlauber</h5>
-
-        <nav class="footer__nav">
-          <ul class="footer__items">
-            <li class="footer__item">
-              <a
-                class="footer__link"
-                href="gastgeber-liste.html"
-                title="Gastgeber"
-                >Gastgeberliste</a
-              >
-            </li>
-            <li class="footer__item">
-              <a
-                class="footer__link"
-                href="https://pano.berchtesgaden360.de/"
-                title="Panoramatour"
-                target="_blank"
-                >Panoramatour</a
-              >
-            </li>
-            <li class="footer__item">
-              <a class="footer__link" href="faq-liste.html" title="FAQ">FAQ</a>
-            </li>
-            <li class="footer__item">
-              <a class="footer__link" href="kontakt.html" title="Kontakt"
-                >Kontakt</a
-              >
-            </li>
-          </ul>
-        </nav>
-
-        <h5 class="footer__title">Für Gastgeber</h5>
-
-        <nav class="footer__nav">
-          <ul class="footer__items">
-            <li class="footer__item">
-              <a class="footer__link" href="anmelden.html" title="Anmelden"
-                >Anmelden</a
-              >
-            </li>
-          </ul>
-        </nav>
-
-        <h5 class="footer__title">Unternehmen</h5>
-
-        <nav class="footer__items">
-          <ul class="footer__items">
-            <li class="footer__item">
-              <a class="footer__link" href="agb.html" title="AGB">AGB</a>
-            </li>
-            <li class="footer__item">
-              <a class="footer__link" href="impressum.html" title="Impressum"
-                >Impressum</a
-              >
-            </li>
-            <li class="footer__item">
-              <a
-                class="footer__link"
-                href="datenschutz.html"
-                title="Datenschutz"
-                >Datenschutz</a
-              >
-            </li>
-            <li class="footer__item">
-              <a class="footer__link" href="ueber-uns.html" title="Über uns"
-                >Über uns</a
-              >
-            </li>
-          </ul>
-        </nav>
+      <h2 class="usp__title--price">Bestpreisgarantie</h2>
+      <div class="usp__text">
+        <ul class="usp__items">
+          <li class="usp__item">Keine Vermittlungsprovision</li>
+          <li class="usp__item">Mietvertrag direkt mit dem Gastgeber</li>
+          <li class="usp__item">Aktuelle Belegungspläne</li>
+          <li class="usp__item">Unterkunft komfortabel online buchen</li>
+        </ul>
       </div>
 
-      <a class="footer__partner" href="index.html" title="Berchtesgaden"></a>
-    </footer>
-  </body>
+      <h2 class="usp__title--pano">Panoramaflug</h2>
+      <p class="usp__text">
+        Entdecken Sie Berchtesgaden mit seinen Gastgebern und Ausflugszielen
+        aus einer völlig neuen Perspektive.
+      </p>
+    </section>
+
+    <section class="intro cc mb-lg">
+      <figure class="intro__img">
+        <picture>
+          <img src="../img/01770618.jpg" alt="Königssee" />
+        </picture>
+      </figure>
+      <div class="intro__communities">
+        <h3 class="mb-sm">Traumhafter Urlaub hoch 5</h3>
+        <p class="intro__text mb-sm text">
+          Zum Berchtesgadener Talkessel gehören fünf Gemeinden.
+          <a title="Ramsau" href="ausflugsziel/ramsau/">Ramsau</a>, das
+          eigenwillige und traditionsbewusste Dorf, ist ein landschaftliches
+          Sahnestück. Sonnig, sportlich und hochalpin geht es in
+          <a title="Schönau am Königssee" href="ausflugsziel/schoenau-am-koenigssee/">Schönau am Königssee</a>
+          zu.
+          <a title="Bischofswiesen" href="ausflugsziel/bischofswiesen/">Bischofswiesen</a>
+          erstreckt sich vom entlegenen Loipl bis zur wunderhübschen Stanggaß.
+          Auf halber Wegstrecke zwischen Berchtesgaden und Salzburg liegt
+          <a title="Marktschellenberg" href="ausflugsziel/marktschellenberg/">Marktschellenberg</a>. Zwei hübsche
+          Kirchen und der Untersberg dominieren das Dörfchen.
+          Nicht zuletzt sei Ihnen der Markt Berchtesgaden mitsamt Stiftskirche
+          ans Urlauber-Herz gelegt.
+        </p>
+      </div>
+      <figure class="intro__img">
+        <picture>
+          <img src="../img/00011613-b.jpg" alt="Watzmann" />
+        </picture>
+      </figure>
+      <div class="intro__overview">
+        <h3 class="mb-sm">Verschaffen Sie sich einen Überblick</h3>
+        <p class="intro__text mb-sm text">
+          Das Berchtesgadener Land braucht in Bayern gewiss keinen Vergleich
+          zu scheuen. Wie schön ist es da, dass Sie sich mit einem
+          Pa­no­ra­ma­flug die Urlaubsvorfreude versüßen können! So
+          realistisch als wären sie greifbar, schweben Sie über die Berge um
+          den Königssee. Entdecken Sie schon vor dem Reiseantritt die
+          Berchtesgadener Berge, bestaunen Sie via Mausklick den Nationalpark
+          und finden Sie die Ferienwohnung oder das Zimmer Ihrer Wahl.
+        </p>
+        <a href="https://pano.berchtesgaden360.de/" class="btn">Tour starten</a>
+      </div>
+    </section>
+
+    <section class="gallery cc">
+      <h3 class="mb-sm">Eine kleine Vorauswahl unserer Gastgeber</h3>
+      <div class="gallery__items">
+        <figure class="gallery__item">
+          <span class="gallery__like"></span>
+          <a class="gallery__img--link" href="gastgeber-detail.html" target="_self">
+            <picture>
+              <img src="../img/01450405.jpg" alt="Gerstreitlehen" />
+            </picture>
+          </a>
+          <figcaption class="gallery__title">Gerstreitlehen</figcaption>
+        </figure>
+
+        <figure class="gallery__item">
+          <span class="gallery__like--active"></span>
+          <a class="gallery__img--link" href="gastgeber-detail.html" target="_self">
+            <picture>
+              <img src="../img/01450405.jpg" alt="Gerstreitlehen" />
+            </picture>
+          </a>
+          <figcaption class="gallery__title">Lange Überschrift, die zwingend in mehr als einer Zeile steht</figcaption>
+        </figure>
+
+        <figure class="gallery__item">
+          <span class="gallery__like"></span>
+          <a class="gallery__img--link" href="gastgeber-detail.html" target="_self">
+            <picture>
+              <img src="../img/01450405.jpg" alt="Gerstreitlehen" />
+            </picture>
+          </a>
+          <figcaption class="gallery__title">Gerstreitlehen</figcaption>
+        </figure>
+
+        <figure class="gallery__item">
+          <span class="gallery__like--active"></span>
+          <a class="gallery__img--link" href="gastgeber-detail.html" target="_self">
+            <picture>
+              <img src="../img/01450405.jpg" alt="Gerstreitlehen" />
+            </picture>
+          </a>
+          <figcaption class="gallery__title">Gerstreitlehen</figcaption>
+        </figure>
+
+        <figure class="gallery__item">
+          <span class="gallery__like"></span>
+          <a class="gallery__img--link" href="gastgeber-detail.html" target="_self">
+            <picture>
+              <img src="../img/01450405.jpg" alt="Gerstreitlehen" />
+            </picture>
+          </a>
+          <figcaption class="gallery__title">Gerstreitlehen</figcaption>
+        </figure>
+
+        <figure class="gallery__item">
+          <span class="gallery__like--active"></span>
+          <a class="gallery__img--link" href="gastgeber-detail.html" target="_self">
+            <picture>
+              <img src="../img/01450405.jpg" alt="Gerstreitlehen" />
+            </picture>
+          </a>
+          <figcaption class="gallery__title">Gerstreitlehen</figcaption>
+        </figure>
+
+        <figure class="gallery__item">
+          <span class="gallery__like"></span>
+          <a class="gallery__img--link" href="gastgeber-detail.html" target="_self">
+            <picture>
+              <img src="../img/01450405.jpg" alt="Gerstreitlehen" />
+            </picture>
+          </a>
+          <figcaption class="gallery__title">Gerstreitlehen</figcaption>
+        </figure>
+
+        <figure class="gallery__item">
+          <span class="gallery__like--active"></span>
+          <a class="gallery__img--link" href="gastgeber-detail.html" target="_self">
+            <picture>
+              <img src="../img/01450405.jpg" alt="Gerstreitlehen" />
+            </picture>
+          </a>
+          <figcaption class="gallery__title">Gerstreitlehen</figcaption>
+        </figure>
+
+        <figure class="gallery__item">
+          <span class="gallery__like"></span>
+          <a class="gallery__img--link" href="gastgeber-detail.html" target="_self">
+            <picture>
+              <img src="../img/01450405.jpg" alt="Gerstreitlehen" />
+            </picture>
+          </a>
+          <figcaption class="gallery__title">Gerstreitlehen</figcaption>
+        </figure>
+
+        <figure class="gallery__item">
+          <span class="gallery__like--active"></span>
+          <a class="gallery__img--link" href="gastgeber-detail.html" target="_self">
+            <picture>
+              <img src="../img/01450405.jpg" alt="Gerstreitlehen" />
+            </picture>
+          </a>
+          <figcaption class="gallery__title">Gerstreitlehen</figcaption>
+        </figure>
+
+        <figure class="gallery__item">
+          <span class="gallery__like"></span>
+          <a class="gallery__img--link" href="gastgeber-detail.html" target="_self">
+            <picture>
+              <img src="../img/01450405.jpg" alt="Gerstreitlehen" />
+            </picture>
+          </a>
+          <figcaption class="gallery__title">Gerstreitlehen</figcaption>
+        </figure>
+
+        <figure class="gallery__item">
+          <span class="gallery__like--active"></span>
+          <a class="gallery__img--link" href="gastgeber-detail.html" target="_self">
+            <picture>
+              <img src="../img/01450405.jpg" alt="Gerstreitlehen" />
+            </picture>
+          </a>
+          <figcaption class="gallery__title">Gerstreitlehen</figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__navigation">
+      <h5 class="footer__title">Für Urlauber</h5>
+
+      <nav class="footer__nav">
+        <ul class="footer__items">
+          <li class="footer__item">
+            <a class="footer__link" href="gastgeber-liste.html" title="Gastgeber">Gastgeberliste</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="https://pano.berchtesgaden360.de/" title="Panoramatour"
+              target="_blank">Panoramatour</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="faq-liste.html" title="FAQ">FAQ</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="kontakt.html" title="Kontakt">Kontakt</a>
+          </li>
+        </ul>
+      </nav>
+
+      <h5 class="footer__title">Für Gastgeber</h5>
+
+      <nav class="footer__nav">
+        <ul class="footer__items">
+          <li class="footer__item">
+            <a class="footer__link" href="anmelden.html" title="Anmelden">Anmelden</a>
+          </li>
+        </ul>
+      </nav>
+
+      <h5 class="footer__title">Unternehmen</h5>
+
+      <nav class="footer__items">
+        <ul class="footer__items">
+          <li class="footer__item">
+            <a class="footer__link" href="agb.html" title="AGB">AGB</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="impressum.html" title="Impressum">Impressum</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="datenschutz.html" title="Datenschutz">Datenschutz</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="ueber-uns.html" title="Über uns">Über uns</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <a class="footer__partner" href="index.html" title="Berchtesgaden"></a>
+  </footer>
+</body>
+
+<script>
+  const openArrival = document.querySelector("[data-open-modal-arrival]");
+  const closeArrival = document.querySelector("[data-close-modal-arrival]");
+  const modalArrival = document.querySelector("[data-modal-arrival]");
+
+  openArrival.addEventListener("click", () => {
+    modalArrival.showModal();
+  });
+
+  closeArrival.addEventListener("click", () => {
+    modalArrival.close();
+  });
+
+  const openDeparture = document.querySelector("[data-open-modal-departure]");
+  const closeDeparture = document.querySelector("[data-close-modal-departure]");
+  const modalDeparture = document.querySelector("[data-modal-departure]");
+
+  openDeparture.addEventListener("click", () => {
+    modalDeparture.showModal();
+  });
+
+  closeDeparture.addEventListener("click", () => {
+    modalDeparture.close();
+  });
+
+  const openPerson = document.querySelector("[data-open-modal-person]");
+  const closePerson = document.querySelector("[data-close-modal-person]");
+  const modalPerson = document.querySelector("[data-modal-person]");
+
+  openPerson.addEventListener("click", () => {
+    modalPerson.showModal();
+  });
+
+  closePerson.addEventListener("click", () => {
+    modalPerson.close();
+  });
+
+</script>
+
 </html>
